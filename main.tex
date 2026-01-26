@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage[backend=biber, style=apa,]{biblatex}
+\usepackage{CJKutf8}
+\usepackage{csquotes}
+\usepackage[left=2.54cm,right=2.54cm,top=2.54cm,bottom=2.54cm]{geometry}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{setspace}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows.meta, positioning, calc}
+
+\addbibresource{bibliography.bib} %Imports bibliography file
+
+\begin{document}
+\begin{CJK}{UTF8}{min}
+\onehalfspacing
+
+\title{Bachelor Thesis}
+\author{Mikael Wijaya}
+\date{\today}
+
+\maketitle
+\newpage
+
+\tableofcontents
+\newpage
+
+% Use \include or \input to call your sections
+\include{sections/introduction_objective}
+\include{sections/methodology}
+\include{sections/results} % Future section
+
+\printbibliography
+\end{CJK}
+\end{document}
