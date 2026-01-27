@@ -15,11 +15,7 @@
 \contentsline {subsubsection}{\numberline {2.2.2}Computational Implementation and Workflow}{10}{}%
 \contentsline {subsubsection}{\numberline {2.2.3}Lagrangian Data Post-Processing and Statistical Reduction}{11}{}%
 \contentsline {subsection}{\numberline {2.3}Simulation Parameters and Case Setup}{11}{}%
-\contentsline {subsubsection}{\numberline {2.3.1}Data Processing and Validation Strategy}{14}{}%
-\contentsline {subsubsection}{\numberline {2.3.2}Validation Metric Equations}{14}{}%
-\contentsline {subsection}{\numberline {2.4}Factor of Two (FAC2)}{15}{}%
-\contentsline {subsection}{\numberline {2.5}Mean Absolute Error (MAE)}{15}{}%
-\contentsline {subsection}{\numberline {2.6}Root Mean Square Error (RMSE)}{15}{}%
-\contentsline {subsection}{\numberline {2.7}Reynolds Number}{15}{}%
-\contentsline {subsection}{\numberline {2.8}TKE (k)}{15}{}%
-\contentsline {subsection}{\numberline {2.9}Concentration}{16}{}%
+\contentsline {subsection}{\numberline {2.4}Physical and Dimensionless Parameters}{12}{}%
+\contentsline {subsection}{\numberline {2.5}Turbulence and Dispersion Modeling}{12}{}%
+\contentsline {subsection}{\numberline {2.6}Statistical Validation Metrics}{14}{}%
+\contentsline {subsubsection}{\numberline {2.6.1}Data Processing and Validation Strategy}{15}{}%

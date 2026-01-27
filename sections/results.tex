@@ -1,148 +1,78 @@
 \subsubsection{Data Processing and Validation Strategy}
 
-\begin{table}[ht]
-\centering
-\caption{Previous zemi, no approach. }
-\label{tab:validation_no_approach}
-\begin{tabular}{lrrrrrrr}
-\hline
-Metric & N & Hit Rate ($q$) & FAC2 & MAE & RMSE & (D) & (W) \\
-\hline
-$u_m/u_H$ & 90 & 0.578 & 0.756 & 0.1713 & 0.2431 & 0.25 & 0.050 \\
-$v_m/u_H$ & 90 & 0.967 & 1.000 & 0.0178 & 0.0232 & 0.25 & 0.050 \\
-$w_m/u_H$ & 90 & 0.289 & 0.311 & 0.0980 & 0.1165 & 0.25 & 0.050 \\
-$u_{\text{rms}}/u_H$ & 90 & 0.511 & 0.644 & 0.0783 & 0.0995 & 0.50 & 0.005 \\
-$v_{\text{rms}}/u_H$ & 90 & 0.544 & 0.644 & 0.0572 & 0.0680 & 0.50 & 0.005 \\
-$w_{\text{rms}}/u_H$ & 90 & 0.322 & 0.678 & 0.0581 & 0.0650 & 0.50 & 0.005 \\
-$\text{TKE}/u_H^2$ & 90 & 0.222 & 0.600 & 0.0281 & 0.0321 & 0.50 & 0.005 \\
-\hline
-\end{tabular}
+\begin{table}[htbp]
+    \centering
+    \caption{Full validation results ($q$ and $FAC2$) for velocity components and turbulence metrics across all approach flow cases. Underlined values indicate performance below the standard thresholds ($q < 0.66$, $FAC2 < 0.50$).}
+    \label{tab:full_validation_summary}
+    \resizebox{\textwidth}{!}{
+    \begin{tabular}{lcccccccccccccc}
+        \toprule
+        \textbf{Case} & \multicolumn{2}{c}{\textbf{$u$}} & \multicolumn{2}{c}{\textbf{$v$}} & \multicolumn{2}{c}{\textbf{$w$}} & \multicolumn{2}{c}{\textbf{$u_{rms}$}} & \multicolumn{2}{c}{\textbf{$v_{rms}$}} & \multicolumn{2}{c}{\textbf{$w_{rms}$}} & \multicolumn{2}{c}{\textbf{$TKE$}} \\
+        \cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7} \cmidrule(lr){8-9} \cmidrule(lr){10-11} \cmidrule(lr){12-13} \cmidrule(lr){14-15}
+        & $q$ & $FAC2$ & $q$ & $FAC2$ & $q$ & $FAC2$ & $q$ & $FAC2$ & $q$ & $FAC2$ & $q$ & $FAC2$ & $q$ & $FAC2$ \\
+        \midrule
+        Case 1: No Approach & \underline{0.533} & 0.700 & 0.933 & 0.978 & \underline{0.389} & \underline{0.433} & \underline{0.622} & 0.622 & \underline{0.644} & 0.644 & \underline{0.611} & 0.667 & \underline{0.489} & 0.589 \\
+        Case 2: 8m roughness & 0.900 & 0.956 & 0.933 & 0.989 & \underline{0.456} & 0.589 & 0.944 & 0.944 & 1.000 & 1.000 & 0.956 & 1.000 & \underline{0.611} & 0.678 \\
+        Case 3: 16m roughness & 0.911 & 0.967 & 0.978 & 1.000 & \underline{0.533} & 0.567 & 1.000 & 1.000 & 1.000 & 1.000 & 0.956 & 1.000 & 0.933 & 1.000 \\
+        Case 4: 20m roughness & 0.822 & 0.933 & 0.900 & 0.967 & \underline{0.567} & 0.600 & 1.000 & 1.000 & 1.000 & 1.000 & 1.000 & 1.000 & 0.978 & 1.000 \\
+        Case 5: 24m roughness & 0.900 & 0.978 & 0.922 & 0.967 & 0.711 & 0.756 & 1.000 & 1.000 & 0.967 & 1.000 & 0.900 & 1.000 & \underline{0.656} & 0.978 \\
+        Case 6: 32m roughness & 0.933 & 0.978 & 0.822 & 0.978 & \underline{0.578} & 0.633 & 0.978 & 1.000 & 0.867 & 1.000 & 0.856 & 1.000 & \underline{0.478} & 0.833 \\
+        Case 7: 16m roughness - 0.1 z0 & 0.867 & 0.922 & 0.878 & 0.978 & 0.689 & 0.678 & 1.000 & 1.000 & 1.000 & 1.000 & 0.967 & 1.000 & 0.922 & 0.933 \\
+        Case 8: 20m roughness - 0.1 z0 & 0.911 & 0.956 & 0.967 & 1.000 & 0.756 & 0.644 & 1.000 & 1.000 & 1.000 & 1.000 & 0.922 & 1.000 & 0.811 & 1.000 \\
+        \bottomrule
+    \end{tabular}
+    }
 \end{table}
 
-\begin{table}[ht]
-\centering
-\caption{2 km approach. Calculated U$_H$ for normalization: 3.4744 m/s.}
-\label{tab:validation_2km_approach}
-\begin{tabular}{lrrrrrrr}
-\hline
-Metric & N & Hit Rate ($q$) & FAC2 & MAE & RMSE & (D) & (W) \\
-\hline
-$u_m/u_H$ & 90 & 0.856 & 0.944 & 0.0706 & 0.1392 & 0.25 & 0.050 \\
-$v_m/u_H$ & 90 & 0.933 & 1.000 & 0.0215 & 0.0264 & 0.25 & 0.050 \\
-$w_m/u_H$ & 90 & 0.489 & 0.578 & 0.0565 & 0.0686 & 0.25 & 0.050 \\
-$u_{\text{rms}}/u_H$ & 90 & 1.000 & 1.000 & 0.0313 & 0.0396 & 0.50 & 0.005 \\
-$v_{\text{rms}}/u_H$ & 90 & 1.000 & 1.000 & 0.0426 & 0.0519 & 0.50 & 0.005 \\
-$w_{\text{rms}}/u_H$ & 90 & 0.922 & 1.000 & 0.0375 & 0.0470 & 0.50 & 0.005 \\
-$\text{TKE}/u_H^2$ & 90 & 0.689 & 0.978 & 0.0255 & 0.0321 & 0.50 & 0.005 \\
-\hline
-\end{tabular}
+The validation results highlight the critical role of approach flow modeling in the validation study.
+While Case 1 (No Approach) consistently fails the $0.66$ hit-rate ($q$) threshold across several components, the introduction of surface roughness in Cases 2-8 brings the streamwise velocity ($u$) and fluctuation components ($u_{rms}$, $v_{rms}$, $w_{rms}$) into strong alignment with experimental standards.
+Notably, vertical velocity ($w$) and Turbulent Kinetic Energy ($TKE$) remain the most sensitive parameters, occasionally falling below the standard in lower-roughness scenarios, but showing marked improvement as roughness height increases.
+This suggests that the LBM solver combined with the TSUBAME 4.0 is highly capable of capturing complex urban wind fields, provided the inflow turbulence is correctly parameterized.
+
+\begin{table}[htbp]
+    \centering
+    \caption{MAE and RMSE validation metrics for velocity components and TKE across all approach flow cases.}
+    \label{tab:mae_rmse_validation}
+    \resizebox{\textwidth}{!}{
+    \begin{tabular}{lcccccccccccccc}
+        \toprule
+        \textbf{Case} & \multicolumn{2}{c}{\textbf{$u$}} & \multicolumn{2}{c}{\textbf{$v$}} & \multicolumn{2}{c}{\textbf{$w$}} & \multicolumn{2}{c}{\textbf{$u_{rms}$}} & \multicolumn{2}{c}{\textbf{$v_{rms}$}} & \multicolumn{2}{c}{\textbf{$w_{rms}$}} & \multicolumn{2}{c}{\textbf{$TKE$}} \\
+        \cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7} \cmidrule(lr){8-9} \cmidrule(lr){10-11} \cmidrule(lr){12-13} \cmidrule(lr){14-15}
+        & MAE & RMSE & MAE & RMSE & MAE & RMSE & MAE & RMSE & MAE & RMSE & MAE & RMSE & MAE & RMSE \\
+        \midrule
+        Case 1: No Approach & 0.2009 & 0.2726 & 0.0202 & 0.0267 & 0.0979 & 0.1212 & 0.0759 & 0.0996 & 0.0585 & 0.0675 & 0.0539 & 0.0619 & 0.0268 & 0.0320 \\
+        Case 2: 8m roughness & 0.0751 & 0.1518 & 0.0171 & 0.0232 & 0.0585 & 0.0705 & 0.0438 & 0.0575 & 0.0433 & 0.0485 & 0.0394 & 0.0450 & 0.0220 & 0.0254 \\
+        Case 3: 16m roughness & 0.0600 & 0.1286 & 0.0133 & 0.0184 & 0.0548 & 0.0650 & 0.0243 & 0.0304 & 0.0354 & 0.0407 & 0.0289 & 0.0341 & 0.0172 & 0.0208 \\
+        Case 4: 20m roughness & 0.0690 & 0.1266 & 0.0271 & 0.0321 & 0.0461 & 0.0538 & 0.0232 & 0.0296 & 0.0218 & 0.0259 & 0.0261 & 0.0307 & 0.0123 & 0.0150 \\
+        Case 5: 24m roughness & 0.0698 & 0.1194 & 0.0248 & 0.0304 & 0.0354 & 0.0429 & 0.0289 & 0.0366 & 0.0466 & 0.0518 & 0.0408 & 0.0471 & 0.0236 & 0.0286 \\
+        Case 6: 32m roughness & 0.0527 & 0.0925 & 0.0290 & 0.0338 & 0.0419 & 0.0501 & 0.0447 & 0.0537 & 0.0470 & 0.0537 & 0.0463 & 0.0524 & 0.0294 & 0.0348 \\
+        Case 7: 16m roughness - 0.1 z0 & 0.0843 & 0.1398 & 0.0247 & 0.0317 & 0.0387 & 0.0459 & 0.0304 & 0.0401 & 0.0215 & 0.0251 & 0.0310 & 0.0366 & 0.0135 & 0.0161 \\
+        Case 8: 20m roughness - 0.1 z0 & 0.0714 & 0.1238 & 0.0145 & 0.0184 & 0.0364 & 0.0415 & 0.0241 & 0.0291 & 0.0256 & 0.0328 & 0.0269 & 0.0377 & 0.0149 & 0.0206 \\
+        \bottomrule
+    \end{tabular}
+    }
 \end{table}
 
-\begin{table}[ht]
-\centering
-\caption{3 km approach. Calculated U$_H$ for normalization: 4.0868 m/s.}
-\label{tab:my_data_3km}
-\begin{tabular}{lrrrrrrr}
-\hline
-Metric & N & Hit Rate ($q$) & FAC2 & MAE & RMSE & (D) & (W) \\
-\hline
-$u_m/u_H$ & 90 & 0.722 & 0.878 & 0.0871 & 0.1563 & 0.25 & 0.050 \\
-$v_m/u_H$ & 90 & 0.956 & 0.978 & 0.0221 & 0.0278 & 0.25 & 0.050 \\
-$w_m/u_H$ & 90 & 0.544 & 0.544 & 0.0609 & 0.0737 & 0.25 & 0.050 \\
-$u_{\text{rms}}/u_H$ & 90 & 1.000 & 1.000 & 0.0424 & 0.0525 & 0.50 & 0.005 \\
-$v_{\text{rms}}/u_H$ & 90 & 1.000 & 1.000 & 0.0363 & 0.0420 & 0.50 & 0.005 \\
-$w_{\text{rms}}/u_H$ & 90 & 0.956 & 1.000 & 0.0370 & 0.0419 & 0.50 & 0.005 \\
-$\text{TKE}/u_H^2$ & 90 & 0.667 & 0.744 & 0.0213 & 0.0248 & 0.50 & 0.005 \\
-\hline
-\end{tabular}
+The quantitative assessment of the error metrics further supports the conclusions drawn from the hit rate analysis. In Case 1, the RMSE for streamwise velocity $u$ is notably high at 0.2726, representing a significant deviation from experimental values. However, across the roughness-modified Cases 2-8, the RMSE for $u$ is reduced by over 50\% in most instances, reaching its minimum in Case 6 (0.0925). Interestingly, the vertical velocity components ($v, w$) and turbulence fluctuations show relatively stable and low MAE values ($< 0.05$) across the majority of the cases. The $TKE$ errors are particularly low in the optimized roughness scenarios (e.g., Case 4 with an RMSE of 0.0150), demonstrating that the solver's ability to capture the energy distribution within the flow field is highly dependent on the correct specification of the approach flow boundary layer. These low absolute errors confirm that the model's predictions are not only statistically correlated but also physically accurate in magnitude.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Concentration validation metrics across all approach flow cases. Underlined values indicate performance below the standard thresholds ($q < 0.66$, $FAC2 < 0.50$).}
+    \label{tab:concentration_validation}
+    \begin{tabular}{lccccc}
+        \toprule
+        \textbf{Case} & \textbf{N} & \textbf{$q$} & \textbf{FAC2} & \textbf{MAE} & \textbf{RMSE} \\
+        \midrule
+        No Approach            & 119 & \underline{0.387} & \underline{0.496} & 1.4737 & 3.6180 \\
+        8m roughness           & 119 & \underline{0.403} & 0.513 & 1.6328 & 5.6510 \\
+        16m roughness          & 119 & \underline{0.395} & 0.588 & 1.0878 & 2.7165 \\
+        20m roughness          & 119 & \underline{0.353} & 0.504 & 1.3134 & 3.7468 \\
+        24m roughness          & 119 & \underline{0.387} & 0.538 & 1.0368 & 2.1463 \\
+        32m roughness          & 119 & \underline{0.353} & 0.529 & 2.0231 & 9.4304 \\
+        16m roughness (z0 0.1) & 119 & \underline{0.420} & 0.605 & 1.0131 & 2.7927 \\
+        20m roughness (z0 0.1) & 119 & \underline{0.395} & 0.538 & 1.1069 & 2.2813 \\
+        \bottomrule
+    \end{tabular}
 \end{table}
 
-\subsubsection{Validation Metric Equations}
-\label{sec:equations}
-
-Here are the formal definitions for the validation metrics, where $P_i$ is the predicted (LBM) value, $O_i$ is the observed (AIJ) value, and $N$ is the total number of data points.
-
-\textbf{Hit Rate ($q$)}
-The fraction of data points where the relative error is within a tolerance $D$ OR the absolute error is within a tolerance $W$.
-
-\begin{equation}
-q = \frac{1}{N} \sum_{i=1}^{N} n_i
-\end{equation}
-where
-\begin{equation}
-n_i = \begin{cases}
-1 & \text{if } \left| \frac{P_i - O_i}{O_i} \right| \le D \quad \text{or} \quad |P_i - O_i| \le W \\
-0 & \text{else}
-\end{cases}
-\end{equation}
-
-\subsection{Factor of Two (FAC2)}
-The fraction of data points where the ratio of prediction to observation is between 0.5 and 2.0, OR *both* the prediction and observation are below a low-value threshold $W$.
-
-\begin{equation}
-\text{FAC2} = \frac{1}{N} \sum_{i=1}^{N} n_i
-\end{equation}
-where
-\begin{equation}
-n_i = \begin{cases}
-1 & \text{if } 0.5 \le \frac{P_i}{O_i} \le 2.0 \quad \text{or} \quad \left( |P_i| \le W \text{ and } |O_i| \le W \right) \\
-0 & \text{else}
-\end{cases}
-\end{equation}
-
-\subsection{Mean Absolute Error (MAE)}
-The average of the absolute differences between prediction and observation.
-
-\begin{equation}
-\text{MAE} = \frac{1}{N} \sum_{i=1}^{N} |P_i - O_i|
-\end{equation}
-
-\subsection{Root Mean Square Error (RMSE)}
-The square root of the average of the squared differences. This metric penalizes large errors more heavily.
-
-\begin{equation}
-\text{RMSE} = \sqrt{\frac{1}{N} \sum_{i=1}^{N} (P_i - O_i)^2}
-\end{equation}
-
-\subsection{Reynolds Number}
-
-\begin{equation}
-    Re = \frac{U \cdot L}{\nu}
-\end{equation}
-
-\begin{equation*}
-    Re_{exp} = 4.3\cdot 10^{4}
-\end{equation*}
-
-\begin{align*}
-    Re_{LBM} = \frac{4.940\cdot64}{1.512\cdot10^{-5}} = 2.091\cdot10^7
-\end{align*}
-
-Adapted to the experiment and simulation scenario, choosing building height $H$ as the
-
-\begin{equation}
-    Re = \frac{U_H \cdot H}{\nu}
-\end{equation}
-
-\subsection{TKE (k)}
-
-\begin{align}
-u_{rms}^2 &= \overline{u^2} - \bar{u}^2 \label{eq:urms} \\
-v_{rms}^2 &= \overline{v^2} - \bar{v}^2 \label{eq:vrms} \\
-w_{rms}^2 &= \overline{w^2} - \bar{w}^2 \label{eq:wrms}
-\end{align}
-
-% --- Turbulent Kinetic Energy (TKE) ---
-% The 'equation' environment is for a single, numbered equation.
-% We use \text{TKE} to ensure "TKE" is rendered as upright text,
-% not as variables T*K*E.
-
-\begin{equation}
-\text{k} = \frac{1}{2} (u_{rms}^2 + v_{rms}^2 + w_{rms}^2) \label{eq:tke}
-\end{equation}
-
-\subsection{Concentration}
-
-\begin{equation}
-C_{norm} = \frac{C_o \cdot U_H \cdot H^2}{Q}
-\end{equation}
+The concentration validation results show a marked contrast to the velocity validation, with significantly lower accuracy across all metrics. For all simulation cases, the hit rate ($q$) remains well below the $0.66$ standard, peaking at only 0.420 in Case 7. While the $FAC2$ values mostly meet the $0.50$ threshold (with the exception of the "No Approach" baseline), they are considerably lower than the scores achieved for the flow field. These results suggest that the current Lagrangian particle tracker (LPT) within the GPGPU-LBM solver may not yet fully capture the complex dispersion characteristics of pollutants in an urban environment. This discrepancy could be attributed to the simplified physical modeling of generic particles in the solver, whereas the experimental data were collected using gases that exhibit different diffusion behaviors. Furthermore, the high RMSE observed in Case 6 (9.4304) suggests that even with optimized inflow roughness, the modeling of pollutant concentration remains highly sensitive and requires more specialized treatment of gas-phase physics or turbulent mass diffusion to align with physical observations.

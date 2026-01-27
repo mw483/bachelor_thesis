@@ -217,3 +217,52 @@ The specific configurations for the validation and research cases are summarized
 \end{table}
 
 \newpage
+
+\subsection{Physical and Dimensionless Parameters}
+To ensure the dynamic similarity between the wind tunnel experiment and the Lattice Boltzmann Method (LBM) simulation, the Reynolds number ($Re$) is calculated. This dimensionless value represents the ratio of inertial forces to viscous forces.\textbf{Reynolds Number ($Re$)}For this study, the characteristic length is defined as the building height $H$, and the velocity is the wind speed at that height $U_H$.
+
+\begin{equation}
+    Re = \frac{U_H \cdot H}{\nu}
+\end{equation}
+
+While the experimental $Re_{exp}$ is $4.3 \times 10^4$, the LBM simulation on TSUBAME 4.0 operates at a significantly higher effective Reynolds number ($Re_{LBM} \approx 2.09 \times 10^7$), reflecting the high-fidelity nature of the Large Eddy Simulation (LES) approach.
+
+\subsection{Turbulence and Dispersion Modeling}
+The intensity of the wind fluctuations and the resulting pollutant spread are quantified using Turbulent Kinetic Energy (TKE) and normalized concentration values. \textbf{Turbulent Kinetic Energy ($k$)} TKE represents the mean kinetic energy per unit mass associated with eddies in the turbulent flow. It is derived from the root-mean-square (RMS) of the velocity fluctuations in the streamwise ($u$), spanwise ($v$), and vertical ($w$) directions:
+
+\begin{align}
+    u_{rms}^2 &= \overline{u^2} - \bar{u}^2, 
+    \quad v_{rms}^2 = \overline{v^2} - \bar{v}^2, 
+    \quad w_{rms}^2 = \overline{w^2} - \bar{w}^2 \\ 
+    k &= \frac{1}{2} (u_{rms}^2 + v_{rms}^2 + w_{rms}^2)
+\end{align}
+
+\textbf{Normalized Concentration ($C_{norm}$)} To allow for a direct comparison between experimental gas data and the Lagrangian particle model, concentration values are normalized based on the flow rate $Q$, velocity $U_H$, and building scale $H$.
+
+\begin{equation}
+    C_{norm} = \frac{C_o \cdot U_H \cdot H^2}{Q}
+\end{equation}
+
+\subsection{Statistical Validation Metrics}
+Following the AIJ guidelines for urban wind environments, four metrics are used to compare the predicted values ($P_i$) against the observed experimental data ($O_i$).\textbf{Hit Rate ($q$)}The Hit Rate measures the reliability of the model. A data point is a "hit" if the prediction is within a relative tolerance $D$ (usually 0.25) or an absolute tolerance $W$ (usually 0.05).
+
+\begin{equation}q = \frac{1}{N} \sum_{i=1}^{N} n_i, \quad n_i = 
+    \begin{cases} 
+        1 & \text{if } \left| \frac{P_i - O_i}{O_i} \right| \le D \text{ or } |P_i - O_i| \le W \\ 0 & \text{else} 
+    \end{cases}
+\end{equation}
+
+\textbf{Factor of Two (FAC2)} FAC2 is a robust measure of the overall spread. It checks if the predicted value is between half and double the observed value.
+
+\begin{equation}\text{FAC2} = \frac{1}{N} \sum_{i=1}^{N} n_i, \quad n_i = 
+    \begin{cases} 
+        1 & \text{if } 0.5 \le \frac{P_i}{O_i} \le 2.0 \\ 0 & \text{else} 
+    \end{cases}
+\end{equation}
+
+\textbf{Error Metrics (MAE and RMSE)} The Mean Absolute Error (MAE) provides the average magnitude of the errors, while the Root Mean Square Error (RMSE) gives a higher weight to large outliers, providing a stricter assessment of simulation accuracy.
+
+\begin{equation}
+    \text{MAE} = \frac{1}{N} \sum_{i=1}^{N} |P_i - O_i|, \quad \text{RMSE} = \sqrt{\frac{1}{N} \sum_{i=1}^{N} (P_i - O_i)^2}\end{equation}
+
+\newpage
