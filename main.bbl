@@ -1,0 +1,1233 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/apasortcite//global/global/global}
+    \entry{AIJCaseH}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=aba9a0a9ab2f59eda31d3131d84379a7}{%
+           family={{Architectural Institute of Japan}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{aba9a0a9ab2f59eda31d3131d84379a7}
+      \strng{fullhash}{aba9a0a9ab2f59eda31d3131d84379a7}
+      \strng{fullhashraw}{aba9a0a9ab2f59eda31d3131d84379a7}
+      \strng{bibnamehash}{aba9a0a9ab2f59eda31d3131d84379a7}
+      \strng{authorbibnamehash}{aba9a0a9ab2f59eda31d3131d84379a7}
+      \strng{authornamehash}{aba9a0a9ab2f59eda31d3131d84379a7}
+      \strng{authorfullhash}{aba9a0a9ab2f59eda31d3131d84379a7}
+      \strng{authorfullhashraw}{aba9a0a9ab2f59eda31d3131d84379a7}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Guidebook for {CFD} {P}redictions of {U}rban {W}ind {E}nvironment: {B}enchmark {C}ase {H}}
+      \field{urlday}{23}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.aij.or.jp/jpn/publish/cfdguide/index_e.htm
+      \endverb
+      \verb{url}
+      \verb https://www.aij.or.jp/jpn/publish/cfdguide/index_e.htm
+      \endverb
+    \endentry
+    \entry{Blazek2015CFD}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=effc67d293b799aa803c734c4dc45c4f}{%
+           family={Blazek},
+           familyi={B\bibinitperiod},
+           given={Jiri},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{effc67d293b799aa803c734c4dc45c4f}
+      \strng{fullhash}{effc67d293b799aa803c734c4dc45c4f}
+      \strng{fullhashraw}{effc67d293b799aa803c734c4dc45c4f}
+      \strng{bibnamehash}{effc67d293b799aa803c734c4dc45c4f}
+      \strng{authorbibnamehash}{effc67d293b799aa803c734c4dc45c4f}
+      \strng{authornamehash}{effc67d293b799aa803c734c4dc45c4f}
+      \strng{authorfullhash}{effc67d293b799aa803c734c4dc45c4f}
+      \strng{authorfullhashraw}{effc67d293b799aa803c734c4dc45c4f}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3rd}
+      \field{title}{Computational Fluid Dynamics: Principles and Applications}
+      \field{year}{2015}
+      \verb{doi}
+      \verb 10.1016/C2014-0-03823-3
+      \endverb
+    \endentry
+    \entry{Han2021WFB}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=d099958a823a249737952548c3152910}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Mengtao},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b3aff0de192a51db01dabfaee5bdc943}{%
+           family={Ooka},
+           familyi={O\bibinitperiod},
+           given={Ryozo},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=df0cf50a5d23ee2b3d99a63eb8b1ce00}{%
+           family={Kikumoto},
+           familyi={K\bibinitperiod},
+           given={Hideki},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{5231ab539f8a042d40f6296954dd57ad}
+      \strng{fullhash}{638d7068365c05a4b2e6fd4bc14a6e0e}
+      \strng{fullhashraw}{638d7068365c05a4b2e6fd4bc14a6e0e}
+      \strng{bibnamehash}{638d7068365c05a4b2e6fd4bc14a6e0e}
+      \strng{authorbibnamehash}{638d7068365c05a4b2e6fd4bc14a6e0e}
+      \strng{authornamehash}{5231ab539f8a042d40f6296954dd57ad}
+      \strng{authorfullhash}{638d7068365c05a4b2e6fd4bc14a6e0e}
+      \strng{authorfullhashraw}{638d7068365c05a4b2e6fd4bc14a6e0e}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Building and Environment}
+      \field{title}{Effects of wall function model in lattice {B}oltzmann method-based large-eddy simulation on built environment flows}
+      \field{volume}{195}
+      \field{year}{2021}
+      \field{pages}{107764}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.buildenv.2021.107764
+      \endverb
+    \endentry
+    \entry{Kruger2017LBM}{book}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=0ac28eb0b4644afc5f56a77196ab8144}{%
+           family={Krüger},
+           familyi={K\bibinitperiod},
+           given={Timm},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d34a700c514436cd2dd3e326ebbe1729}{%
+           family={Kusumaatmaja},
+           familyi={K\bibinitperiod},
+           given={Halim},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a83a5ce59a4677ea90606b906911c608}{%
+           family={Kuzmin},
+           familyi={K\bibinitperiod},
+           given={Alexandr},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=14666c7c31359089f992eabfd087b840}{%
+           family={Shardt},
+           familyi={S\bibinitperiod},
+           given={Orest},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dd122cb15d3fba32c23566c02a7b7419}{%
+           family={Silva},
+           familyi={S\bibinitperiod},
+           given={Goncalo},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a9dcce68834b7fb484eb4e337629abda}{%
+           family={Viggen},
+           familyi={V\bibinitperiod},
+           given={Erlend\bibnamedelima Magnus},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{69d742af0ed1a2e152c48edbd29d473e}
+      \strng{fullhash}{79b40fb014a171994c66a679c3a8821c}
+      \strng{fullhashraw}{79b40fb014a171994c66a679c3a8821c}
+      \strng{bibnamehash}{79b40fb014a171994c66a679c3a8821c}
+      \strng{authorbibnamehash}{79b40fb014a171994c66a679c3a8821c}
+      \strng{authornamehash}{69d742af0ed1a2e152c48edbd29d473e}
+      \strng{authorfullhash}{79b40fb014a171994c66a679c3a8821c}
+      \strng{authorfullhashraw}{79b40fb014a171994c66a679c3a8821c}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{Graduate Texts in Physics}
+      \field{title}{The Lattice Boltzmann Method: Principles and Practice}
+      \field{year}{2017}
+      \verb{doi}
+      \verb 10.1007/978-3-319-44649-3
+      \endverb
+    \endentry
+    \entry{Li2021Review}{article}{}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=ddc63c851f5e2ecc520b15d7acd939f0}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Zhengtong},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=02af2fbf7f33354e79f7b6f9c457a3c6}{%
+           family={Ming},
+           familyi={M\bibinitperiod},
+           given={Tingzhen},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8916dd91a42fa49395ac10445f55fa25}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Shurong},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1d5c2d465cce1478b6bdbe9d1bd08532}{%
+           family={Peng},
+           familyi={P\bibinitperiod},
+           given={Chong},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fdaebb77a1cfd85eacb6a02dac39459c}{%
+           family={Richter},
+           familyi={R\bibinitperiod},
+           given={Renaud},
+           giveni={R\bibinitperiod},
+           givenun=0,
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=be6f1b6df7f1ddfafad18806238fa391}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8c6d18e2d167e1a3dc88c0166bbc3471}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Hao},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=41a5d36ecb60c657a19f6f1c4f307ddb}{%
+           family={Wen},
+           familyi={W\bibinitperiod},
+           given={Chih-Yung},
+           giveni={C\bibinithyphendelim Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{34e9d14292e28f876510fd4a23cd0cfa}
+      \strng{fullhash}{872f59a5e2cbf81a82162b509a682b8d}
+      \strng{fullhashraw}{872f59a5e2cbf81a82162b509a682b8d}
+      \strng{bibnamehash}{872f59a5e2cbf81a82162b509a682b8d}
+      \strng{authorbibnamehash}{872f59a5e2cbf81a82162b509a682b8d}
+      \strng{authornamehash}{34e9d14292e28f876510fd4a23cd0cfa}
+      \strng{authorfullhash}{872f59a5e2cbf81a82162b509a682b8d}
+      \strng{authorfullhashraw}{872f59a5e2cbf81a82162b509a682b8d}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Building and Environment}
+      \field{title}{Review on pollutant dispersion in urban areas-part A: Effects of mechanical factors and urban morphology}
+      \field{volume}{190}
+      \field{year}{2021}
+      \field{pages}{107534}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.buildenv.2020.107534
+      \endverb
+    \endentry
+    \entry{Okaze2021LES}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=de1ecd17e9c1ecd0229ff57c74dd7329}{%
+           family={Okaze},
+           familyi={O\bibinitperiod},
+           given={Tsubasa},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9cc633cc86d0becdcbc7f038b967312d}{%
+           family={Terada},
+           familyi={T\bibinitperiod},
+           given={Akitsugu},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1876d1355c958c1342241eaddb7b4289}{%
+           family={Kono},
+           familyi={K\bibinitperiod},
+           given={Takanori},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=21c88c67d6993d0f1624158fbf56b367}{%
+           family={Kato},
+           familyi={K\bibinitperiod},
+           given={Shinsuke},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{e8a9d34e597b9db5086c49df5f6655ab}
+      \strng{fullhash}{ca640701e6cee9606e395f0ae3087b1b}
+      \strng{fullhashraw}{ca640701e6cee9606e395f0ae3087b1b}
+      \strng{bibnamehash}{ca640701e6cee9606e395f0ae3087b1b}
+      \strng{authorbibnamehash}{ca640701e6cee9606e395f0ae3087b1b}
+      \strng{authornamehash}{e8a9d34e597b9db5086c49df5f6655ab}
+      \strng{authorfullhash}{ca640701e6cee9606e395f0ae3087b1b}
+      \strng{authorfullhashraw}{ca640701e6cee9606e395f0ae3087b1b}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Building and Environment}
+      \field{title}{Large-eddy simulation of flow around an isolated building: {A} step-by-step analysis of influencing factors on turbulent statistics}
+      \field{volume}{198}
+      \field{year}{2021}
+      \field{pages}{108021}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.buildenv.2021.108021
+      \endverb
+    \endentry
+    \entry{Phuc2018CSM}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=3cd734a6168c1281ce53c4020e7ef614}{%
+           family={Phuc},
+           familyi={P\bibinitperiod},
+           given={Pham\bibnamedelima Van},
+           giveni={P\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b59cc5f9aa5ab8fceda17c2455f4cc49}{%
+           family={Inagaki},
+           familyi={I\bibinitperiod},
+           given={Atsushi},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5747224429f80bbf614eddb57839372f}{%
+           family={Kanda},
+           familyi={K\bibinitperiod},
+           given={Manabu},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI}%
+      }
+      \strng{namehash}{56737e1d94f800f1319b575f01335a0c}
+      \strng{fullhash}{9b0c293ab966b75b6bae63d8e68190c1}
+      \strng{fullhashraw}{9b0c293ab966b75b6bae63d8e68190c1}
+      \strng{bibnamehash}{9b0c293ab966b75b6bae63d8e68190c1}
+      \strng{authorbibnamehash}{9b0c293ab966b75b6bae63d8e68190c1}
+      \strng{authornamehash}{56737e1d94f800f1319b575f01335a0c}
+      \strng{authorfullhash}{9b0c293ab966b75b6bae63d8e68190c1}
+      \strng{authorfullhashraw}{9b0c293ab966b75b6bae63d8e68190c1}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Fluids}
+      \field{number}{2}
+      \field{title}{Evaluation of a Coherent Structure Smagorinsky Model for the Lattice Boltzmann Method in Complex Urban Environments}
+      \field{volume}{6}
+      \field{year}{2018}
+      \field{pages}{32}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/fluids3020032
+      \endverb
+    \endentry
+    \entry{Suga2015D3Q27}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=80eb6a05c9eedfe8e243e97936843b33}{%
+           family={Suga},
+           familyi={S\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bb5855209747842e7c0febcb7677bd1d}{%
+           family={Kuwata},
+           familyi={K\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=19bcd1840bb832e3fd112a5cc75f7108}{%
+           family={Takashima},
+           familyi={T\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d88eca94aa810440860ee250fc67afcc}{%
+           family={Chikasue},
+           familyi={C\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{0264b91ab6986ad97362f518d4ac2eb4}
+      \strng{fullhash}{5a20610a2b3b24951b8b63999a236c50}
+      \strng{fullhashraw}{5a20610a2b3b24951b8b63999a236c50}
+      \strng{bibnamehash}{5a20610a2b3b24951b8b63999a236c50}
+      \strng{authorbibnamehash}{5a20610a2b3b24951b8b63999a236c50}
+      \strng{authornamehash}{0264b91ab6986ad97362f518d4ac2eb4}
+      \strng{authorfullhash}{5a20610a2b3b24951b8b63999a236c50}
+      \strng{authorfullhashraw}{5a20610a2b3b24951b8b63999a236c50}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computers \& Mathematics with Applications}
+      \field{number}{6}
+      \field{title}{A {D3Q27} multiple-relaxation-time lattice {B}oltzmann method for turbulent flows}
+      \field{volume}{69}
+      \field{year}{2015}
+      \field{pages}{518\bibrangedash 531}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1016/j.camwa.2015.01.011
+      \endverb
+    \endentry
+    \entry{Thomson1987Stochastic}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9a9e0aea996af74d957b65abc1286951}{%
+           family={Thomson},
+           familyi={T\bibinitperiod},
+           given={David\bibnamedelima J.},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{9a9e0aea996af74d957b65abc1286951}
+      \strng{fullhash}{9a9e0aea996af74d957b65abc1286951}
+      \strng{fullhashraw}{9a9e0aea996af74d957b65abc1286951}
+      \strng{bibnamehash}{9a9e0aea996af74d957b65abc1286951}
+      \strng{authorbibnamehash}{9a9e0aea996af74d957b65abc1286951}
+      \strng{authornamehash}{9a9e0aea996af74d957b65abc1286951}
+      \strng{authorfullhash}{9a9e0aea996af74d957b65abc1286951}
+      \strng{authorfullhashraw}{9a9e0aea996af74d957b65abc1286951}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Fluid Mechanics}
+      \field{title}{Criteria for the selection of stochastic models of particle trajectories in turbulent flows}
+      \field{volume}{180}
+      \field{year}{1987}
+      \field{pages}{529\bibrangedash 556}
+      \range{pages}{28}
+      \verb{doi}
+      \verb 10.1017/S0022112087001940
+      \endverb
+    \endentry
+    \entry{Weil2024LSM}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=9bcd160aa9053963a9ef857a6a2a46be}{%
+           family={Weil},
+           familyi={W\bibinitperiod},
+           given={J.\bibnamedelimi C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c4b81f760718f065e70ff276733c59f4}{%
+           family={Sullivan},
+           familyi={S\bibinitperiod},
+           given={P.\bibnamedelimi P.},
+           giveni={P\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6c309e85554111d1a54b734cb634b5ec}{%
+           family={Moeng},
+           familyi={M\bibinitperiod},
+           given={C.-H.},
+           giveni={C\bibinithyphendelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{129643e6629833d67c5d94c3c072f60c}
+      \strng{fullhash}{0acdc077de93b62a2f01e82980d5a005}
+      \strng{fullhashraw}{0acdc077de93b62a2f01e82980d5a005}
+      \strng{bibnamehash}{0acdc077de93b62a2f01e82980d5a005}
+      \strng{authorbibnamehash}{0acdc077de93b62a2f01e82980d5a005}
+      \strng{authornamehash}{129643e6629833d67c5d94c3c072f60c}
+      \strng{authorfullhash}{0acdc077de93b62a2f01e82980d5a005}
+      \strng{authorfullhashraw}{0acdc077de93b62a2f01e82980d5a005}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the Atmospheric Sciences}
+      \field{number}{23}
+      \field{title}{The {L}agrangian stochastic model for settling particles applied to a {L}arge-{E}ddy {S}imulation boundary layer}
+      \field{volume}{61}
+      \field{year}{2004}
+      \field{pages}{2810\bibrangedash 2834}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1175/JAS-3302.1
+      \endverb
+    \endentry
+    \entry{WHO2024Ambient}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=531217507bec092b6ec36c0f78f46736}{%
+           family={{World Health Organization}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {World Health Organization}%
+      }
+      \strng{namehash}{531217507bec092b6ec36c0f78f46736}
+      \strng{fullhash}{531217507bec092b6ec36c0f78f46736}
+      \strng{fullhashraw}{531217507bec092b6ec36c0f78f46736}
+      \strng{bibnamehash}{531217507bec092b6ec36c0f78f46736}
+      \strng{authorbibnamehash}{531217507bec092b6ec36c0f78f46736}
+      \strng{authornamehash}{531217507bec092b6ec36c0f78f46736}
+      \strng{authorfullhash}{531217507bec092b6ec36c0f78f46736}
+      \strng{authorfullhashraw}{531217507bec092b6ec36c0f78f46736}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{24}
+      \field{month}{10}
+      \field{title}{Ambient (outdoor) air pollution}
+      \field{urlday}{15}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.who.int/news-room/fact-sheets/detail/ambient-(outdoor)-air-quality-and-health
+      \endverb
+      \verb{url}
+      \verb https://www.who.int/news-room/fact-sheets/detail/ambient-(outdoor)-air-quality-and-health
+      \endverb
+    \endentry
+    \entry{Yokouchi2020Simulation}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=f684b129faf0abfd4e9656bf8b56d6c5}{%
+           family={Yokouchi},
+           familyi={Y\bibinitperiod},
+           given={Hiroshi},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b59cc5f9aa5ab8fceda17c2455f4cc49}{%
+           family={Inagaki},
+           familyi={I\bibinitperiod},
+           given={Atsushi},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5747224429f80bbf614eddb57839372f}{%
+           family={Kanda},
+           familyi={K\bibinitperiod},
+           given={Manabu},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f6afa00fd05e1397daeeee298f505405}{%
+           family={Onodera},
+           familyi={O\bibinitperiod},
+           given={Naoyuki},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Japan Society of Civil Engineers}%
+      }
+      \strng{namehash}{ac324c81c39c73cd6f724c84b495c8b8}
+      \strng{fullhash}{eed1f3f505a5c87f17a65cee0aeef09d}
+      \strng{fullhashraw}{eed1f3f505a5c87f17a65cee0aeef09d}
+      \strng{bibnamehash}{eed1f3f505a5c87f17a65cee0aeef09d}
+      \strng{authorbibnamehash}{eed1f3f505a5c87f17a65cee0aeef09d}
+      \strng{authornamehash}{ac324c81c39c73cd6f724c84b495c8b8}
+      \strng{authorfullhash}{eed1f3f505a5c87f17a65cee0aeef09d}
+      \strng{authorfullhashraw}{eed1f3f505a5c87f17a65cee0aeef09d}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Japan Society of Civil Engineers, Ser. B1 (Hydraulic Engineering)}
+      \field{number}{2}
+      \field{title}{Simulation of {L}agrangian pollutant in {J}akarta urban district using {L}attice {B}oltzmann method [{格子ボルツマン法によるジャカルタ都市街区のラグランジュ粒子状汚染物質シミュレーション}]}
+      \field{volume}{76}
+      \field{year}{2020}
+      \field{pages}{I\_253\bibrangedash I\_258}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.2208/jscejhe.76.2_I_253
+      \endverb
+    \endentry
+  \enddatalist
+  \datalist[entry]{apa/global//global/global/global}
+    \entry{AIJCaseH}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=aba9a0a9ab2f59eda31d3131d84379a7}{%
+           family={{Architectural Institute of Japan}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{aba9a0a9ab2f59eda31d3131d84379a7}
+      \strng{fullhash}{aba9a0a9ab2f59eda31d3131d84379a7}
+      \strng{fullhashraw}{aba9a0a9ab2f59eda31d3131d84379a7}
+      \strng{bibnamehash}{aba9a0a9ab2f59eda31d3131d84379a7}
+      \strng{authorbibnamehash}{aba9a0a9ab2f59eda31d3131d84379a7}
+      \strng{authornamehash}{aba9a0a9ab2f59eda31d3131d84379a7}
+      \strng{authorfullhash}{aba9a0a9ab2f59eda31d3131d84379a7}
+      \strng{authorfullhashraw}{aba9a0a9ab2f59eda31d3131d84379a7}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Guidebook for {CFD} {P}redictions of {U}rban {W}ind {E}nvironment: {B}enchmark {C}ase {H}}
+      \field{urlday}{23}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.aij.or.jp/jpn/publish/cfdguide/index_e.htm
+      \endverb
+      \verb{url}
+      \verb https://www.aij.or.jp/jpn/publish/cfdguide/index_e.htm
+      \endverb
+    \endentry
+    \entry{Blazek2015CFD}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=effc67d293b799aa803c734c4dc45c4f}{%
+           family={Blazek},
+           familyi={B\bibinitperiod},
+           given={Jiri},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{effc67d293b799aa803c734c4dc45c4f}
+      \strng{fullhash}{effc67d293b799aa803c734c4dc45c4f}
+      \strng{fullhashraw}{effc67d293b799aa803c734c4dc45c4f}
+      \strng{bibnamehash}{effc67d293b799aa803c734c4dc45c4f}
+      \strng{authorbibnamehash}{effc67d293b799aa803c734c4dc45c4f}
+      \strng{authornamehash}{effc67d293b799aa803c734c4dc45c4f}
+      \strng{authorfullhash}{effc67d293b799aa803c734c4dc45c4f}
+      \strng{authorfullhashraw}{effc67d293b799aa803c734c4dc45c4f}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3rd}
+      \field{title}{Computational Fluid Dynamics: Principles and Applications}
+      \field{year}{2015}
+      \verb{doi}
+      \verb 10.1016/C2014-0-03823-3
+      \endverb
+    \endentry
+    \entry{Han2021WFB}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=d099958a823a249737952548c3152910}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Mengtao},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b3aff0de192a51db01dabfaee5bdc943}{%
+           family={Ooka},
+           familyi={O\bibinitperiod},
+           given={Ryozo},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=df0cf50a5d23ee2b3d99a63eb8b1ce00}{%
+           family={Kikumoto},
+           familyi={K\bibinitperiod},
+           given={Hideki},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{5231ab539f8a042d40f6296954dd57ad}
+      \strng{fullhash}{638d7068365c05a4b2e6fd4bc14a6e0e}
+      \strng{fullhashraw}{638d7068365c05a4b2e6fd4bc14a6e0e}
+      \strng{bibnamehash}{638d7068365c05a4b2e6fd4bc14a6e0e}
+      \strng{authorbibnamehash}{638d7068365c05a4b2e6fd4bc14a6e0e}
+      \strng{authornamehash}{5231ab539f8a042d40f6296954dd57ad}
+      \strng{authorfullhash}{638d7068365c05a4b2e6fd4bc14a6e0e}
+      \strng{authorfullhashraw}{638d7068365c05a4b2e6fd4bc14a6e0e}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Building and Environment}
+      \field{title}{Effects of wall function model in lattice {B}oltzmann method-based large-eddy simulation on built environment flows}
+      \field{volume}{195}
+      \field{year}{2021}
+      \field{pages}{107764}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.buildenv.2021.107764
+      \endverb
+    \endentry
+    \entry{Kruger2017LBM}{book}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=0ac28eb0b4644afc5f56a77196ab8144}{%
+           family={Krüger},
+           familyi={K\bibinitperiod},
+           given={Timm},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d34a700c514436cd2dd3e326ebbe1729}{%
+           family={Kusumaatmaja},
+           familyi={K\bibinitperiod},
+           given={Halim},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a83a5ce59a4677ea90606b906911c608}{%
+           family={Kuzmin},
+           familyi={K\bibinitperiod},
+           given={Alexandr},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=14666c7c31359089f992eabfd087b840}{%
+           family={Shardt},
+           familyi={S\bibinitperiod},
+           given={Orest},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dd122cb15d3fba32c23566c02a7b7419}{%
+           family={Silva},
+           familyi={S\bibinitperiod},
+           given={Goncalo},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a9dcce68834b7fb484eb4e337629abda}{%
+           family={Viggen},
+           familyi={V\bibinitperiod},
+           given={Erlend\bibnamedelima Magnus},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{69d742af0ed1a2e152c48edbd29d473e}
+      \strng{fullhash}{79b40fb014a171994c66a679c3a8821c}
+      \strng{fullhashraw}{79b40fb014a171994c66a679c3a8821c}
+      \strng{bibnamehash}{79b40fb014a171994c66a679c3a8821c}
+      \strng{authorbibnamehash}{79b40fb014a171994c66a679c3a8821c}
+      \strng{authornamehash}{69d742af0ed1a2e152c48edbd29d473e}
+      \strng{authorfullhash}{79b40fb014a171994c66a679c3a8821c}
+      \strng{authorfullhashraw}{79b40fb014a171994c66a679c3a8821c}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{Graduate Texts in Physics}
+      \field{title}{The Lattice Boltzmann Method: Principles and Practice}
+      \field{year}{2017}
+      \verb{doi}
+      \verb 10.1007/978-3-319-44649-3
+      \endverb
+    \endentry
+    \entry{Li2021Review}{article}{}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=ddc63c851f5e2ecc520b15d7acd939f0}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Zhengtong},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=02af2fbf7f33354e79f7b6f9c457a3c6}{%
+           family={Ming},
+           familyi={M\bibinitperiod},
+           given={Tingzhen},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8916dd91a42fa49395ac10445f55fa25}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Shurong},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1d5c2d465cce1478b6bdbe9d1bd08532}{%
+           family={Peng},
+           familyi={P\bibinitperiod},
+           given={Chong},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fdaebb77a1cfd85eacb6a02dac39459c}{%
+           family={Richter},
+           familyi={R\bibinitperiod},
+           given={Renaud},
+           giveni={R\bibinitperiod},
+           givenun=0,
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=be6f1b6df7f1ddfafad18806238fa391}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8c6d18e2d167e1a3dc88c0166bbc3471}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Hao},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=41a5d36ecb60c657a19f6f1c4f307ddb}{%
+           family={Wen},
+           familyi={W\bibinitperiod},
+           given={Chih-Yung},
+           giveni={C\bibinithyphendelim Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{34e9d14292e28f876510fd4a23cd0cfa}
+      \strng{fullhash}{872f59a5e2cbf81a82162b509a682b8d}
+      \strng{fullhashraw}{872f59a5e2cbf81a82162b509a682b8d}
+      \strng{bibnamehash}{872f59a5e2cbf81a82162b509a682b8d}
+      \strng{authorbibnamehash}{872f59a5e2cbf81a82162b509a682b8d}
+      \strng{authornamehash}{34e9d14292e28f876510fd4a23cd0cfa}
+      \strng{authorfullhash}{872f59a5e2cbf81a82162b509a682b8d}
+      \strng{authorfullhashraw}{872f59a5e2cbf81a82162b509a682b8d}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Building and Environment}
+      \field{title}{Review on pollutant dispersion in urban areas-part A: Effects of mechanical factors and urban morphology}
+      \field{volume}{190}
+      \field{year}{2021}
+      \field{pages}{107534}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.buildenv.2020.107534
+      \endverb
+    \endentry
+    \entry{Okaze2021LES}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=de1ecd17e9c1ecd0229ff57c74dd7329}{%
+           family={Okaze},
+           familyi={O\bibinitperiod},
+           given={Tsubasa},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9cc633cc86d0becdcbc7f038b967312d}{%
+           family={Terada},
+           familyi={T\bibinitperiod},
+           given={Akitsugu},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1876d1355c958c1342241eaddb7b4289}{%
+           family={Kono},
+           familyi={K\bibinitperiod},
+           given={Takanori},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=21c88c67d6993d0f1624158fbf56b367}{%
+           family={Kato},
+           familyi={K\bibinitperiod},
+           given={Shinsuke},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{e8a9d34e597b9db5086c49df5f6655ab}
+      \strng{fullhash}{ca640701e6cee9606e395f0ae3087b1b}
+      \strng{fullhashraw}{ca640701e6cee9606e395f0ae3087b1b}
+      \strng{bibnamehash}{ca640701e6cee9606e395f0ae3087b1b}
+      \strng{authorbibnamehash}{ca640701e6cee9606e395f0ae3087b1b}
+      \strng{authornamehash}{e8a9d34e597b9db5086c49df5f6655ab}
+      \strng{authorfullhash}{ca640701e6cee9606e395f0ae3087b1b}
+      \strng{authorfullhashraw}{ca640701e6cee9606e395f0ae3087b1b}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Building and Environment}
+      \field{title}{Large-eddy simulation of flow around an isolated building: {A} step-by-step analysis of influencing factors on turbulent statistics}
+      \field{volume}{198}
+      \field{year}{2021}
+      \field{pages}{108021}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.buildenv.2021.108021
+      \endverb
+    \endentry
+    \entry{Phuc2018CSM}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=3cd734a6168c1281ce53c4020e7ef614}{%
+           family={Phuc},
+           familyi={P\bibinitperiod},
+           given={Pham\bibnamedelima Van},
+           giveni={P\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b59cc5f9aa5ab8fceda17c2455f4cc49}{%
+           family={Inagaki},
+           familyi={I\bibinitperiod},
+           given={Atsushi},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5747224429f80bbf614eddb57839372f}{%
+           family={Kanda},
+           familyi={K\bibinitperiod},
+           given={Manabu},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI}%
+      }
+      \strng{namehash}{56737e1d94f800f1319b575f01335a0c}
+      \strng{fullhash}{9b0c293ab966b75b6bae63d8e68190c1}
+      \strng{fullhashraw}{9b0c293ab966b75b6bae63d8e68190c1}
+      \strng{bibnamehash}{9b0c293ab966b75b6bae63d8e68190c1}
+      \strng{authorbibnamehash}{9b0c293ab966b75b6bae63d8e68190c1}
+      \strng{authornamehash}{56737e1d94f800f1319b575f01335a0c}
+      \strng{authorfullhash}{9b0c293ab966b75b6bae63d8e68190c1}
+      \strng{authorfullhashraw}{9b0c293ab966b75b6bae63d8e68190c1}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Fluids}
+      \field{number}{2}
+      \field{title}{Evaluation of a Coherent Structure Smagorinsky Model for the Lattice Boltzmann Method in Complex Urban Environments}
+      \field{volume}{6}
+      \field{year}{2018}
+      \field{pages}{32}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/fluids3020032
+      \endverb
+    \endentry
+    \entry{Suga2015D3Q27}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=80eb6a05c9eedfe8e243e97936843b33}{%
+           family={Suga},
+           familyi={S\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bb5855209747842e7c0febcb7677bd1d}{%
+           family={Kuwata},
+           familyi={K\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=19bcd1840bb832e3fd112a5cc75f7108}{%
+           family={Takashima},
+           familyi={T\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d88eca94aa810440860ee250fc67afcc}{%
+           family={Chikasue},
+           familyi={C\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{0264b91ab6986ad97362f518d4ac2eb4}
+      \strng{fullhash}{5a20610a2b3b24951b8b63999a236c50}
+      \strng{fullhashraw}{5a20610a2b3b24951b8b63999a236c50}
+      \strng{bibnamehash}{5a20610a2b3b24951b8b63999a236c50}
+      \strng{authorbibnamehash}{5a20610a2b3b24951b8b63999a236c50}
+      \strng{authornamehash}{0264b91ab6986ad97362f518d4ac2eb4}
+      \strng{authorfullhash}{5a20610a2b3b24951b8b63999a236c50}
+      \strng{authorfullhashraw}{5a20610a2b3b24951b8b63999a236c50}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computers \& Mathematics with Applications}
+      \field{number}{6}
+      \field{title}{A {D3Q27} multiple-relaxation-time lattice {B}oltzmann method for turbulent flows}
+      \field{volume}{69}
+      \field{year}{2015}
+      \field{pages}{518\bibrangedash 531}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1016/j.camwa.2015.01.011
+      \endverb
+    \endentry
+    \entry{Thomson1987Stochastic}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9a9e0aea996af74d957b65abc1286951}{%
+           family={Thomson},
+           familyi={T\bibinitperiod},
+           given={David\bibnamedelima J.},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{9a9e0aea996af74d957b65abc1286951}
+      \strng{fullhash}{9a9e0aea996af74d957b65abc1286951}
+      \strng{fullhashraw}{9a9e0aea996af74d957b65abc1286951}
+      \strng{bibnamehash}{9a9e0aea996af74d957b65abc1286951}
+      \strng{authorbibnamehash}{9a9e0aea996af74d957b65abc1286951}
+      \strng{authornamehash}{9a9e0aea996af74d957b65abc1286951}
+      \strng{authorfullhash}{9a9e0aea996af74d957b65abc1286951}
+      \strng{authorfullhashraw}{9a9e0aea996af74d957b65abc1286951}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Fluid Mechanics}
+      \field{title}{Criteria for the selection of stochastic models of particle trajectories in turbulent flows}
+      \field{volume}{180}
+      \field{year}{1987}
+      \field{pages}{529\bibrangedash 556}
+      \range{pages}{28}
+      \verb{doi}
+      \verb 10.1017/S0022112087001940
+      \endverb
+    \endentry
+    \entry{Weil2024LSM}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=9bcd160aa9053963a9ef857a6a2a46be}{%
+           family={Weil},
+           familyi={W\bibinitperiod},
+           given={J.\bibnamedelimi C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c4b81f760718f065e70ff276733c59f4}{%
+           family={Sullivan},
+           familyi={S\bibinitperiod},
+           given={P.\bibnamedelimi P.},
+           giveni={P\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6c309e85554111d1a54b734cb634b5ec}{%
+           family={Moeng},
+           familyi={M\bibinitperiod},
+           given={C.-H.},
+           giveni={C\bibinithyphendelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{129643e6629833d67c5d94c3c072f60c}
+      \strng{fullhash}{0acdc077de93b62a2f01e82980d5a005}
+      \strng{fullhashraw}{0acdc077de93b62a2f01e82980d5a005}
+      \strng{bibnamehash}{0acdc077de93b62a2f01e82980d5a005}
+      \strng{authorbibnamehash}{0acdc077de93b62a2f01e82980d5a005}
+      \strng{authornamehash}{129643e6629833d67c5d94c3c072f60c}
+      \strng{authorfullhash}{0acdc077de93b62a2f01e82980d5a005}
+      \strng{authorfullhashraw}{0acdc077de93b62a2f01e82980d5a005}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the Atmospheric Sciences}
+      \field{number}{23}
+      \field{title}{The {L}agrangian stochastic model for settling particles applied to a {L}arge-{E}ddy {S}imulation boundary layer}
+      \field{volume}{61}
+      \field{year}{2004}
+      \field{pages}{2810\bibrangedash 2834}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1175/JAS-3302.1
+      \endverb
+    \endentry
+    \entry{WHO2024Ambient}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=531217507bec092b6ec36c0f78f46736}{%
+           family={{World Health Organization}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {World Health Organization}%
+      }
+      \strng{namehash}{531217507bec092b6ec36c0f78f46736}
+      \strng{fullhash}{531217507bec092b6ec36c0f78f46736}
+      \strng{fullhashraw}{531217507bec092b6ec36c0f78f46736}
+      \strng{bibnamehash}{531217507bec092b6ec36c0f78f46736}
+      \strng{authorbibnamehash}{531217507bec092b6ec36c0f78f46736}
+      \strng{authornamehash}{531217507bec092b6ec36c0f78f46736}
+      \strng{authorfullhash}{531217507bec092b6ec36c0f78f46736}
+      \strng{authorfullhashraw}{531217507bec092b6ec36c0f78f46736}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{24}
+      \field{month}{10}
+      \field{title}{Ambient (outdoor) air pollution}
+      \field{urlday}{15}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.who.int/news-room/fact-sheets/detail/ambient-(outdoor)-air-quality-and-health
+      \endverb
+      \verb{url}
+      \verb https://www.who.int/news-room/fact-sheets/detail/ambient-(outdoor)-air-quality-and-health
+      \endverb
+    \endentry
+    \entry{Yokouchi2020Simulation}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=f684b129faf0abfd4e9656bf8b56d6c5}{%
+           family={Yokouchi},
+           familyi={Y\bibinitperiod},
+           given={Hiroshi},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b59cc5f9aa5ab8fceda17c2455f4cc49}{%
+           family={Inagaki},
+           familyi={I\bibinitperiod},
+           given={Atsushi},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5747224429f80bbf614eddb57839372f}{%
+           family={Kanda},
+           familyi={K\bibinitperiod},
+           given={Manabu},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f6afa00fd05e1397daeeee298f505405}{%
+           family={Onodera},
+           familyi={O\bibinitperiod},
+           given={Naoyuki},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Japan Society of Civil Engineers}%
+      }
+      \strng{namehash}{ac324c81c39c73cd6f724c84b495c8b8}
+      \strng{fullhash}{eed1f3f505a5c87f17a65cee0aeef09d}
+      \strng{fullhashraw}{eed1f3f505a5c87f17a65cee0aeef09d}
+      \strng{bibnamehash}{eed1f3f505a5c87f17a65cee0aeef09d}
+      \strng{authorbibnamehash}{eed1f3f505a5c87f17a65cee0aeef09d}
+      \strng{authornamehash}{ac324c81c39c73cd6f724c84b495c8b8}
+      \strng{authorfullhash}{eed1f3f505a5c87f17a65cee0aeef09d}
+      \strng{authorfullhashraw}{eed1f3f505a5c87f17a65cee0aeef09d}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Japan Society of Civil Engineers, Ser. B1 (Hydraulic Engineering)}
+      \field{number}{2}
+      \field{title}{Simulation of {L}agrangian pollutant in {J}akarta urban district using {L}attice {B}oltzmann method [{格子ボルツマン法によるジャカルタ都市街区のラグランジュ粒子状汚染物質シミュレーション}]}
+      \field{volume}{76}
+      \field{year}{2020}
+      \field{pages}{I\_253\bibrangedash I\_258}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.2208/jscejhe.76.2_I_253
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
