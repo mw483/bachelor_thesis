@@ -27,6 +27,7 @@ The calculation of the SGS TKE ($e_s$) is vital for the Lagrangian Stochastic Mo
 The stochastic component of the LSM involves the integration of Gaussian white noise, $\xi(t)$, which is formally defined as the time derivative of a Wiener process $W(t)$:$$W_i(t) = \int_0^t \xi(s) ds$$In accordance with Brownian motion theory, the variance of this process increases linearly with time. Given that the SGS velocity $u_s$ is modeled as a random walk, the stochastic term $(f_s C_0 \epsilon)^{1/2} d\xi$ can occasionally produce unrealistically high instantaneous velocities. This is particularly prevalent near building walls where $e_s$ is high and the gradient terms in the LSM equation are steep. To prevent numerical instability and maintain physical consistency, a velocity limitation is enforced, ensuring that the total Lagrangian particle velocity $u_p$ remains within physically plausible bounds relative to the local mean flow \cite{Yokouchi2020Simulation}.
 
 \subsubsection{Model Selection and Validation via Flat Plate Analysis}
+
 Before applying the model to complex urban morphologies, \textcite{Yokouchi2020Simulation} conducted a validation study using particle dispersion over a flat plate to identify the most accurate combination of numerical schemes. The evaluation compared three primary configurations: (1) a baseline model using a simple Bounce-Back (BB) boundary and the standard subgrid-scale (SGS) model; (2) a model incorporating the Wall Function (WF) and Suga’s refined SGS TKE calculation; and (3) an integrated model combining the WF-Suga framework with the Lagrangian Stochastic Model (LSM) and a velocity limitation.The accuracy of these models was evaluated based on their ability to replicate the theoretical logarithmic profile of particle concentration in a neutral boundary layer:$$\frac{C_0 - C}{C^*} = \frac{1}{\kappa} \ln \frac{z}{z_0}$$where $C_0$ represents the particle density at ground level, $C^*$ is the friction density, $\kappa$ is the von Kármán constant, and $z_0$ is the roughness length.The results demonstrated that the WF-Suga-LSM model provided the highest correlation with the logarithmic profile. In contrast, models without the LSM or the specialized SGS TKE tended to deviate from the expected distribution, particularly in the near-wall region. Furthermore, the necessity of the speed limitation—defined as $|u_s| < k_{sgs}^{1/2}$—was confirmed through an analysis of the particle velocity variance. Without this limitation, the stochastic term in the LSM produced unrealistically high velocity fluctuations near the boundary. Implementing the speed limit successfully reduced this variance, ensuring a stable and physically consistent velocity distribution across the vertical profile.By adopting this validated WF-Suga-LSM framework with speed limitations, this research ensures that the fundamental transport mechanisms are correctly modeled before introducing the complexities of the AIJ Case H urban block.
 
 \subsection{Validation and Numerical Workflow}
@@ -51,7 +52,6 @@ The numerical validation of the Lattice Boltzmann Method (LBM) in this study is 
     \caption{Numerical domain configuration and measurement locations for the LES validation study  \parencite[adapted from][]{Okaze2021LES}.}
     \label{fig:Okaze_setting}
 \end{figure}
-
 
 \subsubsection{Computational Implementation and Workflow}
 
@@ -190,12 +190,6 @@ During the compilation phase, the \texttt{Makefile} utilizes the NVIDIA CUDA Com
     \label{fig:tsubame_arch}
 \end{figure}
 
-\subsubsection{Wind and Turbulence Data Post-Processing and Statistical Analysis}
-
-
-\subsubsection{Lagrangian Particle Data Post-Processing and Statistical Analysis}
-Due to the high temporal and spatial resolution of the Lagrangian tracking, the raw output is generated in a compact binary format to minimize I/O overhead. To translate these large-scale datasets into physically interpretable results, a dedicated post-processing suite was developed in C++. This suite follows a modular architecture, where specific physical quantities are computed by discrete analytical engines coordinated through a central execution framework. The post-processing workflow is orchestrated by a multi-threaded C++ executable, compiled via a modular \texttt{Makefile} that links specialized modules for density calculation, flux analysis, vertical profiling, and flux footprint prediction (FFP). The system is designed for high flexibility; rather than hard-coding simulation parameters, the tool utilizes a Command-Line Interface (CLI) where domain dimensions, grid size, time steps, and output intervals are passed as dynamic arguments at runtime. This allows the same analytical core to be applied across various experimental cases, ranging from local isolated building tests to large-scale urban simulations without the need for frequent re-compilation. Execution is managed through batch scripts (\texttt{run.bat}) For instance, the framework can simultaneously extract particle density profiles at specified heights ($z_{out}$) and compute the source area contributions at defined sensor locations. By leveraging OpenMP for multi-threading (\texttt{OMP\_NUM\_THREADS}), the post-processor efficiently iterates through millions of Lagrangian trajectories stored in the binary files, aggregating them into averaged statistical summaries (CSV or text format) suitable for final visualization in Python.
-
 \subsection{Simulation Parameters and Case Setup}
 The specific configurations for the validation and research cases are summarized in Table~\ref{tab:simulation_cases_full}. These cases represent the transition from local prototyping to large-scale supercomputer execution.
 
@@ -219,8 +213,6 @@ The specific configurations for the validation and research cases are summarized
 }
 \end{table}
 
-\newpage
-
 \subsection{Physical and Dimensionless Parameters}
 To ensure the dynamic similarity between the wind tunnel experiment and the Lattice Boltzmann Method (LBM) simulation, the Reynolds number ($Re$) is calculated. This dimensionless value represents the ratio of inertial forces to viscous forces.\textbf{Reynolds Number ($Re$)}For this study, the characteristic length is defined as the building height $H$, and the velocity is the wind speed at that height $U_H$.
 
@@ -230,15 +222,47 @@ To ensure the dynamic similarity between the wind tunnel experiment and the Latt
 
 While the experimental $Re_{exp}$ is $4.3 \times 10^4$, the LBM simulation on TSUBAME 4.0 operates at a significantly higher effective Reynolds number ($Re_{LBM} \approx 2.09 \times 10^7$), reflecting the high-fidelity nature of the Large Eddy Simulation (LES) approach.
 
-\subsection{Turbulence and Dispersion Modeling}
-The intensity of the wind fluctuations and the resulting pollutant spread are quantified using Turbulent Kinetic Energy (TKE) and normalized concentration values. \textbf{Turbulent Kinetic Energy ($k$)} TKE represents the mean kinetic energy per unit mass associated with eddies in the turbulent flow. It is derived from the root-mean-square (RMS) of the velocity fluctuations in the streamwise ($u$), spanwise ($v$), and vertical ($w$) directions:
+\subsubsection{Wind and Turbulence Data Post-Processing and Statistical Analysis}
+
+The Large Eddy Simulation (LES) results were post-processed to extract time-averaged wind statistics and turbulence characteristics. The simulation domain was decomposed into four parallel sub-domains (indexed 0000 to 0003) for computational efficiency on the TSUBAME 4.0 supercomputer. 
+
+Data analysis focused primarily on the fourth sub-domain (0003), which contains the building model and the validation points of interest, excluding the approach flow sections (0000–0002).
+
+\textbf{Data Structure and Extraction}
+Wind field data were exported as planar cross-sections ($xy$-planes) at various vertical grid heights ($k$). The raw output files follow a stacked structure where each height level is preceded by a header indicating the vertical grid index, followed by a $192 \times 544$ matrix representing the spanwise ($y$) and streamwise ($x$) velocity components. On the small domain simulation (Case 1), the data structure is similar, except for the inexistence of the approach section. Thus, for the small domain simulation, only one sub-domain, 0000, exists, and the analysis is done over that sub-domain only.
+
+The analysis utilizes time-averaged velocity components ($\bar{u}, \bar{v}, \bar{w}$) and second-order velocity moments ($\overline{u^2}, \overline{v^2}, \overline{w^2}$), averaged over 540,000 time steps (equivalent to 5,400 physical seconds) to ensure statistical convergence. These variables correspond to the output files \texttt{xy\_um}, \texttt{xy\_vm}, \texttt{xy\_wm} (first-order moments) and \texttt{xy\_uu}, \texttt{xy\_vv}, \texttt{xy\_ww} (second-order moments).
+
+\textbf{Turbulence Statistics}
+To evaluate the turbulent flow characteristics, Reynolds stresses were calculated by subtracting the square of the mean velocity from the mean of the squared velocity. The streamwise ($\langle u'^2 \rangle$), spanwise ($\langle v'^2 \rangle$), and vertical ($\langle w'^2 \rangle$) Reynolds normal stresses were derived as follows:
 
 \begin{align}
-    u_{rms}^2 &= \overline{u^2} - \bar{u}^2, 
-    \quad v_{rms}^2 = \overline{v^2} - \bar{v}^2, 
-    \quad w_{rms}^2 = \overline{w^2} - \bar{w}^2 \\ 
-    k &= \frac{1}{2} (u_{rms}^2 + v_{rms}^2 + w_{rms}^2)
+    \langle u'^2 \rangle &= \overline{u^2} - (\bar{u})^2 \\
+    \langle v'^2 \rangle &= \overline{v^2} - (\bar{v})^2 \\
+    \langle w'^2 \rangle &= \overline{w^2} - (\bar{w})^2 
 \end{align}
+
+\textbf{Root Mean Square (RMS) Fluctuations}
+The Root Mean Square (RMS) velocity fluctuations, which indicate the intensity of turbulence in each direction, were calculated and normalized by the reference approach flow velocity ($U_H$) at building height $H$:
+
+\begin{equation}
+    u_{rms} = \frac{\sqrt{\langle u'^2 \rangle}}{U_H}, \quad v_{rms} = \frac{\sqrt{\langle v'^2 \rangle}}{U_H}, \quad w_{rms} = \frac{\sqrt{\langle w'^2 \rangle}}{U_H}
+\end{equation}
+
+\textbf{Turbulence Kinetic Energy (TKE)}
+The Turbulence Kinetic Energy ($k$), representing the mean kinetic energy per unit mass associated with eddies in the turbulent flow, was computed as half the sum of the Reynolds normal stresses:
+
+\begin{equation}
+    k = \frac{1}{2} \left( \langle u'^2 \rangle + \langle v'^2 \rangle + \langle w'^2 \rangle \right)
+\end{equation}
+
+To handle numerical stability during post-processing, a constraint was applied such that any negative stress values resulting from floating-point errors were clamped to zero before the square root operation ($\text{max}(0, \sigma^2)$). All statistical results were mapped to the physical domain coordinates to facilitate direct comparison with the Architectural Institute of Japan (AIJ) wind tunnel experimental benchmarks.
+
+\subsubsection{Lagrangian Particle Data Post-Processing and Statistical Analysis}
+
+Due to the high temporal and spatial resolution of the Lagrangian tracking, the raw output is generated in a compact binary format to minimize I/O overhead. To translate these large-scale datasets into physically interpretable results, a dedicated post-processing suite was developed in C++. This suite follows a modular architecture, where specific physical quantities are computed by discrete analytical engines coordinated through a central execution framework. The post-processing workflow is orchestrated by a multi-threaded C++ executable, compiled via a modular \texttt{Makefile} that links specialized modules for density calculation, flux analysis, vertical profiling, and flux footprint prediction (FFP). The system is designed for high flexibility; rather than hard-coding simulation parameters, the tool utilizes a Command-Line Interface (CLI) where domain dimensions, grid size, time steps, and output intervals are passed as dynamic arguments at runtime. This allows the same analytical core to be applied across various experimental cases, ranging from local isolated building tests to large-scale urban simulations without the need for frequent re-compilation. Execution is managed through batch scripts (\texttt{run.bat}) For instance, the framework can simultaneously extract particle density profiles at specified heights ($z_{out}$) and compute the source area contributions at defined sensor locations. By leveraging OpenMP for multi-threading (\texttt{OMP\_NUM\_THREADS}), the post-processor efficiently iterates through millions of Lagrangian trajectories stored in the binary files, aggregating them into averaged statistical summaries (CSV or text format) suitable for final visualization in Python.
+
+\subsection{Turbulence and Dispersion Modeling}
 
 \textbf{Normalized Concentration ($C_{norm}$)} To allow for a direct comparison between experimental gas data and the Lagrangian particle model, concentration values are normalized based on the flow rate $Q$, velocity $U_H$, and building scale $H$.
 
