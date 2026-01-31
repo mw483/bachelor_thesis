@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.1.26)  29 JAN 2026 22:26
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.1.31)  31 JAN 2026 11:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -6,7 +6,7 @@ entering extended mode
 **c:/Users/mikae/Documents/GitHub/bachelor_thesis/main.tex
 (c:/Users/mikae/Documents/GitHub/bachelor_thesis/main.tex
 LaTeX2e <2025-11-01>
-L3 programming layer <2025-12-24>
+L3 programming layer <2025-12-29>
 (C:\Users\mikae\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
 (C:\Users\mikae\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
@@ -356,7 +356,7 @@ Package biblatex Info: XeTeX detected.
 (biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Document encoding is UTF8 ....
  (C:\Users\mikae\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
-Package: expl3 2025-12-24 L3 programming layer (loader) 
+Package: expl3 2025-12-29 L3 programming layer (loader) 
  (C:\Users\mikae\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-xetex.def
 File: l3backend-xetex.def 2025-10-09 L3 backend support: XeTeX
 \g__graphics_track_int=\count428
@@ -364,7 +364,7 @@ File: l3backend-xetex.def 2025-10-09 L3 backend support: XeTeX
 \g__pdfannot_backend_link_int=\count430
 ))
 Package biblatex Info: ... and expl3
-(biblatex)             2025-12-24 L3 programming layer (loader) 
+(biblatex)             2025-12-29 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
  (C:\Users\mikae\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-case-expl3.sty (C:\Users\mikae\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty
@@ -932,19 +932,13 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 
 
 ] [6] [7] [8]
-File: figures/AIJ_setting.jpg Graphic file (type bmp)
-<figures/AIJ_setting.jpg>
- [9]
-File: figures/Okaze_setting.jpg Graphic file (type bmp)
-<figures/Okaze_setting.jpg>
-
 
 Package xeCJK Warning: Unknown CJK family `\CJKttdefault' is being ignored.
 (xeCJK)                
 (xeCJK)                Try to use `\setCJKmonofont[<...>]{<...>}' to define
 (xeCJK)                it.
 
-[10] [11] [12] [13] [14] [15])
+[9] [10] [11] [12] [13] [14] [15])
 \openout2 = `sections/results.aux'.
 
  (sections/results.tex [16
@@ -964,12 +958,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27526 strings out of 402987
- 609132 string characters out of 5448524
- 1637315 words of memory out of 5000000
- 55832 multiletter control sequences out of 15000+600000
+ 27512 strings out of 402987
+ 608324 string characters out of 5448524
+ 1637336 words of memory out of 5000000
+ 55818 multiletter control sequences out of 15000+600000
  633488 words of font info for 86 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 84i,12n,104p,2784b,5388s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,12n,104p,2116b,5388s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (18 pages, 434348 bytes).
+Output written on main.xdv (18 pages, 435272 bytes).
