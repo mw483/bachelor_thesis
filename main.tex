@@ -4,7 +4,8 @@
 \usepackage{booktabs}  % Required for \toprule, \midrule, \bottomrule, and \cmidrule
 \usepackage{csquotes}
 \usepackage[left=2.54cm,right=2.54cm,top=2.54cm,bottom=2.54cm]{geometry}
-\usepackage[draft]{graphicx} % Required for inserting images
+% \usepackage[draft]{graphicx} % Draft mode
+\usepackage{graphicx}
 \usepackage{setspace}
 \usepackage{tikz}
 \usetikzlibrary{shapes.geometric, arrows.meta, positioning, calc}
@@ -31,8 +32,10 @@
 
 % Use \include or \input to call your sections
 \include{sections/introduction_objective}
+\include{sections/theory}
 \include{sections/methodology}
-\include{sections/results} % Future section
+\include{sections/results_discussion}
+\include{sections/conclusion}
 
 \printbibliography{}
 \end{document}

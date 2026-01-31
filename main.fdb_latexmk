@@ -1,17 +1,17 @@
 # Fdb version 4
-["biber main"] 1769692795.06071 "main.bcf" "main.bbl" "main" 1769825784.02498 0
+["biber main"] 1769828219.93935 "main.bcf" "main.bbl" "main" 1769828228.9193 0
   "bibliography.bib" 1769424991 4792 55d6fd07a82c34dbcce913542bd2a6be ""
-  "main.bcf" 1769825783 136795 3016b081d705c78a9d7da5d78dc23e8c "xelatex"
+  "main.bcf" 1769828228 136795 3016b081d705c78a9d7da5d78dc23e8c "xelatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["xdvipdfmx"] 1769825783.66389 "main.xdv" "main.pdf" "main" 1769825784.03026 0
-  "main.xdv" 1769825783 435272 366753ff0739e2965a131188b9a01805 "xelatex"
+["xdvipdfmx"] 1769828228.46199 "main.xdv" "main.pdf" "main" 1769828228.9296 0
+  "main.xdv" 1769828228 436588 a5a802c12ce9a542bdb228ab40d32a9d "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1769825781.05392 "c:/Users/mikae/Documents/GitHub/bachelor_thesis/main.tex" "main.xdv" "main" 1769825784.02519 0
+["xelatex"] 1769828225.68303 "c:/Users/mikae/Documents/GitHub/bachelor_thesis/main.tex" "main.xdv" "main" 1769828228.91959 0
   "C:/Users/mikae/AppData/Local/MiKTeX/miktex/data/le/xetex/xelatex.fmt" 1769824527 27176672 96931c8a836baee932a0aa37bea1d4ba ""
   "C:/Users/mikae/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "C:/Users/mikae/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233951848 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -162,20 +162,24 @@
   "C:/Users/mikae/AppData/Local/Programs/MiKTeX/tex/xelatex/xecjk/xeCJK.cfg" 1659726270 408 7369c27beaa819c5f46de3795b22ee3e ""
   "C:/Users/mikae/AppData/Local/Programs/MiKTeX/tex/xelatex/xecjk/xeCJK.sty" 1659726270 183137 ed372550124703b2b73cbcc0b47cb20f ""
   "C:/Users/mikae/AppData/Local/Programs/MiKTeX/tex/xelatex/xecjk/xeCJKfntef.sty" 1659726270 39577 b470f8a1dbecc9c45c9bf05ca7db9188 ""
-  "c:/Users/mikae/Documents/GitHub/bachelor_thesis/main.tex" 1769825780 970 1e6e5cec1bc4114c7b288731e109957f ""
+  "c:/Users/mikae/Documents/GitHub/bachelor_thesis/main.tex" 1769828211 1022 6d60b063a396958f6a5dac3f8c5d2ee9 ""
   "figures/AIJ_setting.jpg" 1769424991 82731 6e17a4f0003be2b1b2c1b8a8bb995fea ""
   "figures/Okaze_setting.jpg" 1769424991 84623 a82e627a486dcc681786ebab6c16f3e9 ""
-  "main.aux" 1769825783 6272 6d5cb91eb9d9b31096d4ffeb6559bf8b "xelatex"
-  "main.bbl" 1769692797 50641 b6f3c2f0e815b44054d78db9a8e0720d "biber main"
-  "main.run.xml" 1769825783 2464 d6ede92d93a407e8c6f777692c300ac0 "xelatex"
-  "main.tex" 1769825780 970 1e6e5cec1bc4114c7b288731e109957f ""
-  "main.toc" 1769825783 1969 11d21f29f01196f4edbeb42468a3ccfc "xelatex"
-  "sections/introduction_objective.aux" 1769825782 4296 ea9170d08e7364e7bccfb95844f0e010 "xelatex"
+  "main.aux" 1769828228 6346 13388ab55c875e41bd54f05642d0f1b2 "xelatex"
+  "main.bbl" 1769828221 50641 b6f3c2f0e815b44054d78db9a8e0720d "biber main"
+  "main.run.xml" 1769828228 2464 d6ede92d93a407e8c6f777692c300ac0 "xelatex"
+  "main.tex" 1769828211 1022 6d60b063a396958f6a5dac3f8c5d2ee9 ""
+  "main.toc" 1769828228 2153 9461aa59c486e7f0fcc49fa8145e6b1a "xelatex"
+  "sections/conclusion.aux" 1769828227 4081 5d43805eb0cde195a0f21effb7319bb1 "xelatex"
+  "sections/conclusion.tex" 1769828152 49 947eaacea93ef553dc68801b6bc12aab ""
+  "sections/introduction_objective.aux" 1769828227 4296 ea9170d08e7364e7bccfb95844f0e010 "xelatex"
   "sections/introduction_objective.tex" 1769691461 2039 6012d50391882dc1ce938b4a2a3b49ef ""
-  "sections/methodology.aux" 1769825783 7799 c63a96aec0a218ca76503d8639453c1f "xelatex"
-  "sections/methodology.tex" 1769825580 35827 6a9311b55f41b51cdb2c19f5ba963159 ""
-  "sections/results.aux" 1769825783 5080 28d8c0f828154b3b758321cc7376df2f "xelatex"
-  "sections/results.tex" 1769691461 9461 3bd8b0c928a817d6dcc5f37229c7ad37 ""
+  "sections/methodology.aux" 1769828227 6706 537ea4d80053ae525c327501a805c4bb "xelatex"
+  "sections/methodology.tex" 1769828163 20934 432053a0348d9a3a616494f2810531be ""
+  "sections/results_discussion.aux" 1769828227 5202 e2d9a510602012aecafdffbe4c9d8227 "xelatex"
+  "sections/results_discussion.tex" 1769828160 9507 8d0c4aaee6fe46ca45a7429ea4123d3e ""
+  "sections/theory.aux" 1769828227 5170 d1810ff3681765aa476b779e976d279e "xelatex"
+  "sections/theory.tex" 1769828163 14862 77ab7d290f4bace2a426f9065a002f6a ""
   (generated)
   "main.aux"
   "main.bcf"
@@ -183,7 +187,9 @@
   "main.run.xml"
   "main.toc"
   "main.xdv"
+  "sections/conclusion.aux"
   "sections/introduction_objective.aux"
   "sections/methodology.aux"
-  "sections/results.aux"
+  "sections/results_discussion.aux"
+  "sections/theory.aux"
   (rewritten before read)

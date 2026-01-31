@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.1.31)  31 JAN 2026 11:16
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.1.31)  31 JAN 2026 11:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -769,7 +769,7 @@ Package fontspec Info:
 
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
- (main.aux (sections/introduction_objective.aux) (sections/methodology.aux) (sections/results.aux))
+ (main.aux (sections/introduction_objective.aux) (sections/theory.aux) (sections/methodology.aux) (sections/results_discussion.aux) (sections/conclusion.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
@@ -925,30 +925,44 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
  (sections/introduction_objective.tex [3
 
 ] [4])
+\openout2 = `sections/theory.aux'.
+
+ (sections/theory.tex [5
+
+
+
+] [6] [7] [8] [9])
 \openout2 = `sections/methodology.aux'.
 
- (sections/methodology.tex [5
-
-
-
-] [6] [7] [8]
+ (sections/methodology.tex
 
 Package xeCJK Warning: Unknown CJK family `\CJKttdefault' is being ignored.
 (xeCJK)                
 (xeCJK)                Try to use `\setCJKmonofont[<...>]{<...>}' to define
 (xeCJK)                it.
 
-[9] [10] [11] [12] [13] [14] [15])
-\openout2 = `sections/results.aux'.
-
- (sections/results.tex [16
+[10
 
 
 
-]) [17] [18
+] [11] [12] [13] [14] [15] [16])
+\openout2 = `sections/results_discussion.aux'.
+
+ (sections/results_discussion.tex [17
 
 
-] (main.aux (sections/introduction_objective.aux) (sections/methodology.aux) (sections/results.aux))
+
+] [18])
+\openout2 = `sections/conclusion.aux'.
+
+ (sections/conclusion.tex [19
+
+
+
+]) [20
+
+
+] (main.aux (sections/introduction_objective.aux) (sections/theory.aux) (sections/methodology.aux) (sections/results_discussion.aux) (sections/conclusion.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/08/05>
@@ -958,12 +972,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27512 strings out of 402987
- 608324 string characters out of 5448524
- 1637336 words of memory out of 5000000
- 55818 multiletter control sequences out of 15000+600000
+ 27562 strings out of 402987
+ 610163 string characters out of 5448524
+ 1641404 words of memory out of 5000000
+ 55854 multiletter control sequences out of 15000+600000
  633488 words of font info for 86 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 84i,12n,104p,2116b,5388s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,12n,104p,2059b,5388s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (18 pages, 435272 bytes).
+Output written on main.xdv (20 pages, 436588 bytes).
