@@ -1,5 +1,194 @@
 \section{Results and Discussion}
-\subsubsection{Data Processing and Validation Strategy}
+\subsubsection{Validation of Wind and Turbulence Statistics}
+
+% --- Mean Streamwise Velocity (u) ---
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[width=0.85\textwidth]{figures/multi_case_comparisons_z0change/multi_case_comparison_um_part1.png}
+        \caption{}
+    \end{subfigure}
+    \vspace{1ex}
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[width=0.85\textwidth]{figures/multi_case_comparisons_z0change/multi_case_comparison_um_part2.png}
+        \caption{}
+    \end{subfigure}
+    \vspace{1ex}
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[width=0.85\textwidth]{figures/multi_case_comparisons_z0change/multi_case_comparison_um_part3.png}
+        \caption{}
+    \end{subfigure}
+    \caption{Normalized mean streamwise velocity ($\bar{u}/U_H$) profiles at (a) Windward locations ($x/H = -1.0$ to $-0.25$), (b) Near Wake locations ($x/H = 0.0$ to $0.75$), and (c) Far Wake locations ($x/H = 1.0$ to $2.0$).}
+    \label{fig:results_um}
+\end{figure}
+
+% --- Mean Spanwise Velocity (v) ---
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[width=0.85\textwidth]{figures/multi_case_comparisons_z0change/multi_case_comparison_vm_part1.png}
+        \caption{}
+    \end{subfigure}
+    \vspace{1ex}
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[width=0.85\textwidth]{figures/multi_case_comparisons_z0change/multi_case_comparison_vm_part2.png}
+        \caption{}
+    \end{subfigure}
+    \vspace{1ex}
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[width=0.85\textwidth]{figures/multi_case_comparisons_z0change/multi_case_comparison_vm_part3.png}
+        \caption{}
+    \end{subfigure}
+    \caption{Normalized mean spanwise velocity ($\bar{v}/U_H$) profiles at (a) $x/H = -1.0$ to $-0.25$, (b) $x/H = 0.0$ to $0.75$, and (c) $x/H = 1.0$ to $2.0$.}
+    \label{fig:results_vm}
+\end{figure}
+
+% --- Mean Vertical Velocity (w) ---
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[width=0.85\textwidth]{figures/multi_case_comparisons_z0change/multi_case_comparison_wm_part1.png}
+        \caption{}
+    \end{subfigure}
+    \vspace{1ex}
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[width=0.85\textwidth]{figures/multi_case_comparisons_z0change/multi_case_comparison_wm_part2.png}
+        \caption{}
+    \end{subfigure}
+    \vspace{1ex}
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[width=0.85\textwidth]{figures/multi_case_comparisons_z0change/multi_case_comparison_wm_part3.png}
+        \caption{}
+    \end{subfigure}
+    \caption{Normalized mean spanwise velocity ($\bar{w}/U_H$) profiles at (a) $x/H = -1.0$ to $-0.25$, (b) $x/H = 0.0$ to $0.75$, and (c) $x/H = 1.0$ to $2.0$.}
+    \label{fig:results_wm}
+\end{figure}
+
+% --- Streamwise Fluctuations (u_rms) ---
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[width=0.85\textwidth]{figures/multi_case_comparisons_z0change/u/comparison_u_rms_part1.png}
+        \caption{}
+    \end{subfigure}
+    \vspace{1ex}
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[width=0.85\textwidth]{figures/multi_case_comparisons_z0change/u/comparison_u_rms_part2.png}
+        \caption{}
+    \end{subfigure}
+    \vspace{1ex}
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[width=0.85\textwidth]{figures/multi_case_comparisons_z0change/u/comparison_u_rms_part3.png}
+        \caption{}
+    \end{subfigure}
+    \caption{Normalized streamwise velocity fluctuations ($u_{rms}/U_H$) at (a) Upwind/Rooftop, (b) Leeward Side ($x/H=0$ to $0.75$), and (c) Downwind Wake ($x/H=1.0$ to $2.0$).}
+    \label{fig:results_urms}
+\end{figure}
+
+% --- Spanwise Fluctuations (v_rms) ---
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[width=0.85\textwidth]{figures/multi_case_comparisons_z0change/v/comparison_v_rms_part1.png}
+        \caption{}
+    \end{subfigure}
+    \vspace{1ex}
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[width=0.85\textwidth]{figures/multi_case_comparisons_z0change/v/comparison_v_rms_part2.png}
+        \caption{}
+    \end{subfigure}
+    \vspace{1ex}
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[width=0.85\textwidth]{figures/multi_case_comparisons_z0change/v/comparison_v_rms_part3.png}
+        \caption{}
+    \end{subfigure}
+    \caption{Normalized streamwise velocity fluctuations ($v_{rms}/U_H$) at (a) Upwind/Rooftop, (b) Leeward Side ($x/H=0$ to $0.75$), and (c) Downwind Wake ($x/H=1.0$ to $2.0$).}
+    \label{fig:results_vrms}
+\end{figure}
+
+% --- Vertical Fluctuations (w_rms) ---
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[width=0.85\textwidth]{figures/multi_case_comparisons_z0change/w/comparison_w_rms_part1.png}
+        \caption{}
+    \end{subfigure}
+    \vspace{1ex}
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[width=0.85\textwidth]{figures/multi_case_comparisons_z0change/w/comparison_w_rms_part2.png}
+        \caption{}
+    \end{subfigure}
+    \vspace{1ex}
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[width=0.85\textwidth]{figures/multi_case_comparisons_z0change/w/comparison_w_rms_part3.png}
+        \caption{}
+    \end{subfigure}
+    \caption{Normalized streamwise velocity fluctuations ($w_{rms}/U_H$) at (a) Upwind/Rooftop, (b) Leeward Side ($x/H=0$ to $0.75$), and (c) Downwind Wake ($x/H=1.0$ to $2.0$).}
+    \label{fig:results_wrms}
+\end{figure}
+
+% --- Turbulent Kinetic Energy (TKE) ---
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[width=0.85\textwidth]{figures/multi_case_comparisons_z0change/multi_case_comparison_TKE_part1.png}
+        \caption{}
+    \end{subfigure}
+    \vspace{1ex}
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[width=0.85\textwidth]{figures/multi_case_comparisons_z0change/multi_case_comparison_TKE_part2.png}
+        \caption{}
+    \end{subfigure}
+    \vspace{1ex}
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[width=0.85\textwidth]{figures/multi_case_comparisons_z0change/multi_case_comparison_TKE_part3.png}
+        \caption{}
+    \end{subfigure}
+    \caption{Normalized Turbulent Kinetic Energy ($k/U_H^2$) profiles at (a) Upwind locations ($x/H < 0$), (b) Near Wake locations ($x/H \ge 0$), and (c) Far Wake locations.}
+    \label{fig:results_tke}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.85\textwidth]{figures/validation_plots_combined_z0change/combined_mean_velocities.png}
+    \caption{Scatter plot comparison of normalized mean velocity components ($\bar{u}, \bar{v}, \bar{w}$) against AIJ experimental data across all cases. Solid lines represent the 1:1 correlation, while dashed lines indicate the $FAC2$ boundaries.}
+    \label{fig:scatter_mean_velocities}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.85\textwidth]{figures/validation_plots_combined_z0change/combined_rms_velocities.png}
+    \caption{Validation scatter plot for RMS velocity fluctuations ($u_{rms}, v_{rms}, w_{rms}$), demonstrating the solver's ability to capture turbulence intensity across the domain.}
+    \label{fig:scatter_rms_velocities}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.85\textwidth]{figures/validation_plots_combined_z0change/combined_tke.png}
+    \caption{Correlation of predicted vs. observed Turbulent Kinetic Energy ($k$), highlighting the impact of the refined $z_0$ and roughness configurations on energy modeling accuracy.}
+    \label{fig:scatter_tke}
+\end{figure}
 
 \begin{table}[htbp]
     \centering
