@@ -417,6 +417,42 @@
       \verb 10.3390/fluids3020032
       \endverb
     \endentry
+    \entry{Schmid1994}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=48d3d826445761dffe28890d3e098319}{%
+           family={Schmid},
+           familyi={S\bibinitperiod},
+           given={H.\bibnamedelimi P.},
+           giveni={H\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{48d3d826445761dffe28890d3e098319}
+      \strng{fullhash}{48d3d826445761dffe28890d3e098319}
+      \strng{fullhashraw}{48d3d826445761dffe28890d3e098319}
+      \strng{bibnamehash}{48d3d826445761dffe28890d3e098319}
+      \strng{authorbibnamehash}{48d3d826445761dffe28890d3e098319}
+      \strng{authornamehash}{48d3d826445761dffe28890d3e098319}
+      \strng{authorfullhash}{48d3d826445761dffe28890d3e098319}
+      \strng{authorfullhashraw}{48d3d826445761dffe28890d3e098319}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Boundary-Layer Meteorology}
+      \field{month}{1}
+      \field{number}{3}
+      \field{title}{Source areas for scalars and scalar fluxes}
+      \field{volume}{67}
+      \field{year}{1994}
+      \field{pages}{293\bibrangedash 318}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1007/bf00713146
+      \endverb
+    \endentry
     \entry{Snyder1981}{report}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=005a479e2375b54379faaa85e1260f5c}{%
@@ -1087,6 +1123,42 @@
       \range{pages}{1}
       \verb{doi}
       \verb 10.3390/fluids3020032
+      \endverb
+    \endentry
+    \entry{Schmid1994}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=48d3d826445761dffe28890d3e098319}{%
+           family={Schmid},
+           familyi={S\bibinitperiod},
+           given={H.\bibnamedelimi P.},
+           giveni={H\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{48d3d826445761dffe28890d3e098319}
+      \strng{fullhash}{48d3d826445761dffe28890d3e098319}
+      \strng{fullhashraw}{48d3d826445761dffe28890d3e098319}
+      \strng{bibnamehash}{48d3d826445761dffe28890d3e098319}
+      \strng{authorbibnamehash}{48d3d826445761dffe28890d3e098319}
+      \strng{authornamehash}{48d3d826445761dffe28890d3e098319}
+      \strng{authorfullhash}{48d3d826445761dffe28890d3e098319}
+      \strng{authorfullhashraw}{48d3d826445761dffe28890d3e098319}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Boundary-Layer Meteorology}
+      \field{month}{1}
+      \field{number}{3}
+      \field{title}{Source areas for scalars and scalar fluxes}
+      \field{volume}{67}
+      \field{year}{1994}
+      \field{pages}{293\bibrangedash 318}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1007/bf00713146
       \endverb
     \endentry
     \entry{Snyder1981}{report}{}{}

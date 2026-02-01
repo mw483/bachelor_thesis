@@ -1,0 +1,30 @@
+
+\begin{thenomenclature} 
+\nomgroup{F}
+  \item [{$\eta$}]\begingroup Measured scalar concentration or flux\nomeqref {0}\nompageref{1}
+  \item [{$\Omega_P$}]\begingroup Source area of level $P$\nomeqref {0}\nompageref{1}
+  \item [{$\Phi_{tot}$}]\begingroup Total influence (integral of the source weight function)\nomeqref {0}\nompageref{1}
+  \item [{$f$}]\begingroup Source weight function (footprint function)\nomeqref {0}\nompageref{1}
+  \item [{$L$}]\begingroup Obukhov length (atmospheric stability parameter) [m]\nomeqref {0}\nompageref{1}
+  \item [{$P$}]\begingroup Fractional contribution to total measured signal\nomeqref {0}\nompageref{1}
+  \item [{$Q$}]\begingroup Source strength or emission rate\nomeqref {0}\nompageref{1}
+\nomgroup{P}
+  \item [{$\nu$}]\begingroup Kinematic viscosity of air [m$^2$/s]\nomeqref {0}\nompageref{1}
+  \item [{$H$}]\begingroup Reference building height [m]\nomeqref {0}\nompageref{1}
+  \item [{$k$}]\begingroup Turbulent Kinetic Energy (TKE) [m$^2$/s$^2$]\nomeqref {0}\nompageref{1}
+  \item [{$Re$}]\begingroup Reynolds number\nomeqref {0}\nompageref{1}
+  \item [{$u, v, w$}]\begingroup Velocity components in $x, y, z$ directions [m/s]\nomeqref {0}\nompageref{1}
+  \item [{$U_H$}]\begingroup Mean wind velocity at building height [m/s]\nomeqref {0}\nompageref{1}
+  \item [{$u_{rms}, v_{rms}, w_{rms}$}]\begingroup Root-mean-square velocity fluctuations [m/s]\nomeqref {0}\nompageref{1}
+  \item [{$z_0$}]\begingroup Aerodynamic roughness length [m]\nomeqref {0}\nompageref{1}
+\nomgroup{S}
+  \item [{$D$}]\begingroup Relative error tolerance (typically 0.25)\nomeqref {0}\nompageref{1}
+  \item [{$FAC2$}]\begingroup Factor of two (fraction of data within a factor of two)\nomeqref {0}\nompageref{1}
+  \item [{$MAE$}]\begingroup Mean Absolute Error\nomeqref {0}\nompageref{1}
+  \item [{$O_i$}]\begingroup Observed value from AIJ experimental data\nomeqref {0}\nompageref{1}
+  \item [{$P_i$}]\begingroup Predicted value from LBM simulation\nomeqref {0}\nompageref{1}
+  \item [{$q$}]\begingroup Hit rate (fraction of predictions within tolerance)\nomeqref {0}\nompageref{1}
+  \item [{$RMSE$}]\begingroup Root Mean Square Error\nomeqref {0}\nompageref{1}
+  \item [{$W$}]\begingroup Absolute error tolerance (typically 0.05)\nomeqref {0}\nompageref{1}
+
+\end{thenomenclature}

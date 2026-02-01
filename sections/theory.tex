@@ -107,4 +107,53 @@ Before applying the model to complex urban morphologies, \textcite{Yokouchi2020S
 
 where $C_0$ represents the particle density at ground level, $C^*$ is the friction density, $\kappa$ is the von Kármán constant, and $z_0$ is the roughness length.The results demonstrated that the WF-Suga-LSM model provided the highest correlation with the logarithmic profile. In contrast, models without the LSM or the specialized SGS TKE tended to deviate from the expected distribution, particularly in the near-wall region. Furthermore, the necessity of the speed limitation—defined as $|u_s| < k_{sgs}^{1/2}$—was confirmed through an analysis of the particle velocity variance. Without this limitation, the stochastic term in the LSM produced unrealistically high velocity fluctuations near the boundary. Implementing the speed limit successfully reduced this variance, ensuring a stable and physically consistent velocity distribution across the vertical profile.By adopting this validated WF-Suga-LSM framework with speed limitations, this research ensures that the fundamental transport mechanisms are correctly modeled before introducing the complexities of the AIJ Case H urban block.
 
+\subsection{Source Area Modeling for Scalars and Fluxes}
+
+In micrometeorological measurements, particularly within complex urban environments, it is critical to determine the spatial representativeness of data collected at a specific height. While traditional models often assume homogeneous surfaces, real-world applications require an understanding of which specific surface areas influence a sensor. \textcite{Schmid1994} addressed this by defining the Source Area as the surface region contributing to a measured scalar concentration or flux, using the concept of a Source Weight Function (SWF).
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\linewidth]{figures/schmidSourceArea.png}
+    \caption{Conceptual illustration of the source area model, adapted from \textcite{Schmid1994}. The 3D surface represents the source weight function, which shows how much each ground location influences the sensor. The influence is small near the sensor, reaches a peak at a certain upwind distance, and then falls off. The shaded region under the horizontal slice (isopleth $f_P$) represents the fraction $P$ of the total influence. The source area $\Omega_P$ is the two-dimensional region on the $x$-$y$ plane formed by the downward projection of this slice.}
+    \label{schmidSourceArea}
+\end{figure}
+
+The relationship between a measurement at a specific point and the surface sources is fundamentally described by a convolution integral. Let $\eta(\mathbf{r})$ represent a measured quantity at position $\mathbf{r}$, and $Q(\mathbf{r}')$ represent the source strength at position $\mathbf{r}'$. The measurement is linked to the source via a probability transfer function, or Green's function, $f$:
+
+\begin{equation}
+    \eta(\mathbf{r}) = \int_{R} Q(\mathbf{r}') f(\mathbf{r} - \mathbf{r}') d\mathbf{r}'
+\end{equation}
+
+In this context, $f$ represents the probability that material emitted at the surface location $\mathbf{r}'$ will arrive at the sensor location $\mathbf{r}$.
+
+For measurements taken in the atmospheric surface layer at a height $z_m$, the general 3D convolution is reduced to a 2D surface integral. Here, $z_0$ represents the surface roughness length:
+
+\begin{equation}
+    \eta(0,0,z_m) = \int_{-\infty}^{\infty} \int_{-\infty}^{x} Q_{\eta}(x, y, z_0) f(-x, -y, z_m - z_0) dx dy
+\end{equation}
+
+To represent a specific point source at coordinates $(x_s, y_s, z_0)$ with strength $Q_u$, the source term is defined using Dirac delta distributions ($\delta$):
+
+\begin{equation}
+    Q(x, y, z_0) = Q_u \delta(x - x_s) \delta(y - y_s) \delta(z - z_0)
+\end{equation}
+
+By substituting the point source definition into the integral, the relationship simplifies to a direct link between the source strength and the sensor through the source weight function:
+
+\begin{equation}
+    \eta(0,0,z_m) = Q_u f(x_s, y_s, z_m - z_0)
+\end{equation}
+
+The "Source Area" is defined as the smallest surface area that accounts for a specified fraction $P$ (e.g., 50\%) of the total influence on the measured value. This is calculated by integrating the source weight function over the region where its values exceed a threshold $f_P$:
+
+\begin{equation}
+    P = \frac{1}{\Phi_{tot}} \iint_{f(x,y) \ge f_P} f(x,y) dx dy
+\end{equation}
+
+where the total influence $\Phi_{tot}$ is the integral of $f(x,y)$ over the entire surface:
+
+\begin{equation}
+    \Phi_{tot} = \iint f(x,y) dx dy
+\end{equation}
+
 \newpage
