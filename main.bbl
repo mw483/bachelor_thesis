@@ -417,6 +417,42 @@
       \verb 10.3390/fluids3020032
       \endverb
     \endentry
+    \entry{Snyder1981}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=005a479e2375b54379faaa85e1260f5c}{%
+           family={Snyder},
+           familyi={S\bibinitperiod},
+           given={W.\bibnamedelimi H.},
+           giveni={W\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{2}{%
+        {Environmental Sciences Research Laboratory, Office of Research}%
+        {Development, US Environmental Protection Agency}%
+      }
+      \list{location}{1}{%
+        {Research Triangle Park, NC}%
+      }
+      \strng{namehash}{005a479e2375b54379faaa85e1260f5c}
+      \strng{fullhash}{005a479e2375b54379faaa85e1260f5c}
+      \strng{fullhashraw}{005a479e2375b54379faaa85e1260f5c}
+      \strng{bibnamehash}{005a479e2375b54379faaa85e1260f5c}
+      \strng{authorbibnamehash}{005a479e2375b54379faaa85e1260f5c}
+      \strng{authornamehash}{005a479e2375b54379faaa85e1260f5c}
+      \strng{authorfullhash}{005a479e2375b54379faaa85e1260f5c}
+      \strng{authorfullhashraw}{005a479e2375b54379faaa85e1260f5c}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{EPA-600/8-81-009}
+      \field{title}{Guideline for Fluid Modeling of Atmospheric Diffusion}
+      \field{type}{techreport}
+      \field{year}{1981}
+    \endentry
     \entry{Suga2015D3Q27}{article}{}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=80eb6a05c9eedfe8e243e97936843b33}{%
@@ -1052,6 +1088,42 @@
       \verb{doi}
       \verb 10.3390/fluids3020032
       \endverb
+    \endentry
+    \entry{Snyder1981}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=005a479e2375b54379faaa85e1260f5c}{%
+           family={Snyder},
+           familyi={S\bibinitperiod},
+           given={W.\bibnamedelimi H.},
+           giveni={W\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{2}{%
+        {Environmental Sciences Research Laboratory, Office of Research}%
+        {Development, US Environmental Protection Agency}%
+      }
+      \list{location}{1}{%
+        {Research Triangle Park, NC}%
+      }
+      \strng{namehash}{005a479e2375b54379faaa85e1260f5c}
+      \strng{fullhash}{005a479e2375b54379faaa85e1260f5c}
+      \strng{fullhashraw}{005a479e2375b54379faaa85e1260f5c}
+      \strng{bibnamehash}{005a479e2375b54379faaa85e1260f5c}
+      \strng{authorbibnamehash}{005a479e2375b54379faaa85e1260f5c}
+      \strng{authornamehash}{005a479e2375b54379faaa85e1260f5c}
+      \strng{authorfullhash}{005a479e2375b54379faaa85e1260f5c}
+      \strng{authorfullhashraw}{005a479e2375b54379faaa85e1260f5c}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{EPA-600/8-81-009}
+      \field{title}{Guideline for Fluid Modeling of Atmospheric Diffusion}
+      \field{type}{techreport}
+      \field{year}{1981}
     \endentry
     \entry{Suga2015D3Q27}{article}{}{}
       \name{author}{4}{}{%
