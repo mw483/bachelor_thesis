@@ -25,20 +25,18 @@ The numerical validation of the Lattice Boltzmann Method (LBM) in this study is 
 
 \subsubsection{Computational Implementation and Workflow}
 
-The simulation framework is a high-performance heterogeneous system specifically optimized for GPU execution. It follows a modular design architecture where the Eulerian wind solver (LBM) and the Lagrangian particle tracker (LPT) are coupled in a one-way data flow. Based on the system's build configuration and modular \texttt{.mak} files, the architecture is categorized into six functional pillars:
+The simulation is designed to run efficiently by using the Graphics Processing Units (GPU) to handle the heavy mathematical workload. The source code is written using the CUDA platform, which allows a standard programming language like C to run thousands of calculations simultaneously on the GPU hardware \parencite{nvidiaCUDA}. The software is organized into modules where the wind simulation (LBM) and the particle tracking (LPT) are connected. The wind field is calculated first, and that information is then used to move the particles. The system is managed by configuration files (ending in \texttt{.mak}) and is organized into six functional parts:
 
-\begin{enumerate} 
-    \item \textbf{Fluid Core:} Manages the D3Q27 Lattice Boltzmann kernels, including the GPU-accelerated streaming and collision operators and Sub-Grid Scale (SGS) turbulence modeling. 
-    \item \textbf{Particle Engine:} A dedicated subsystem for Lagrangian tracking that handles particle generation, GPU-based advection, and inter-node MPI communication for particle data.
-    \item \textbf{Boundary and Solid Interface:} Resolves the interactions between the fluid phase and complex geometries (STL) or topography maps. 
-    \item \textbf{State and Parameter Manager:} Handles the initialization of the MPI environment, domain decomposition, and fundamental fluid properties. 
-    \item \textbf{Utility and Math Layer:} Provides the foundational logic for index mapping, memory allocation, and specialized LBM mathematical functions. 
-    \item \textbf{I/O Subsystem:} Orchestrates data serialization into Paraview-compatible formats and custom user-defined results. 
+\begin{enumerate}
+    \item \textbf{Simulation Setup and Constants}: This part handles the initial settings, such as the size of the wind domain and the physical properties of the air and particles. It uses header files (like \texttt{Define\_user.h}) to set the desired variables for the specific research case before the calculation begins.
+    \item \textbf{Data Memory Management}: Before calculations start, information must be moved from the computer's main memory to the GPU's high-speed memory. This module ensures that the wind grid and particle positions are stored where the GPU can access them quickly.
+    \item \textbf{Wind Field Calculation (LBM)}: This is the core of the wind solver. It calculates how the air moves and collide on a grid. Because these collisions happen at every point in space at the same time, the GPU handles this by calculating every grid cell in parallel.
+    \item \textbf{Boundary and Obstacle Handling}: This module manages how the wind interacts with boundaries, such as the ground surface or the building model. It applies the specific roughness settings ($z_0$) and ensures the wind cannot pass through solid walls.
+    \item \textbf{Particle Movement (LPT)}: Once the wind speed is known at a specific point, this module calculates the new position of each individual particle. It accounts for the forces the wind exerts on the particles, moving them through the complex flow patterns around the building.
+    \item \textbf{Data Output and Recording}: At set intervals, the simulation saves the state of the wind and particles to the storage system. These are the files (such as the \texttt{.csv} and binary results) used for the statistical validation and profile comparisons discussed in the results section.
 \end{enumerate}
 
-The operational workflow follows a parametric cycle that transitions from static configuration to high-performance execution. Initially, physical constants (such as surface roughness or latitude) and output sampling intervals are defined in the \texttt{Define\_user.h} header, while topographic assets are specified within \texttt{paramFluidProperty.cu}.
-
-During the compilation phase, the \texttt{Makefile} utilizes the NVIDIA CUDA Compiler (\texttt{nvcc}) to compile the modular source list into a binary targeted for the specific GPU architecture (e.g., \texttt{sm\_90} for NVIDIA Hopper). This process "bakes" user-defined constants directly into the machine code, maximizing runtime performance. Finally, the execution is launched via the \texttt{runlbm.sh} script using \texttt{mpirun}, which passes dynamic arguments such as reference wind speed and memory allocation flags for the 30-million-particle Lagrangian array.
+The graphical overview of the system architecure described above can be seen in \autoref{fig:sys_arch}.
 
 \begin{figure}[ht]
     \centering
@@ -52,7 +50,7 @@ During the compilation phase, the \texttt{Makefile} utilizes the NVIDIA CUDA Com
     ]
 
         % 1. Input/Control Layer
-        \node (config) [header] {Define\_user.h \\ paramFluidProperty.cu};
+        \node (config) [header] {Define\_user.h \\ map \\ particle\_position};
         \node (script) [header, right=of config] {runlbm.sh};
         \node (makefile) [box, below=0.8cm of $(config.south)!0.5!(script.south)$, fill=blue!10] {\textbf{Makefile / nvcc} \\ Build Orchestrator};
 
@@ -69,7 +67,8 @@ During the compilation phase, the \texttt{Makefile} utilizes the NVIDIA CUDA Com
         \node (gpu) [engine, below=1.2cm of func] {GPU Compute Kernel \\ (CUDA sm\_90)};
 
         % 5. Output Layer
-        \node (output_mod) [box, left=of gpu, xshift=-0.5cm] {I/O Subsystem \\ \textit{sourceList\_output}};
+        \node (output_mod) [box, left=of gpu, xshift=-0.5cm] {Data Output \\ \textit{sourceList\_output}};
+
         \node (data) [box, below=1cm of gpu, fill=red!5] {\textbf{Data Sink} \\ CSV (Wind) / Binary (Particle)};
 
         % Connections
@@ -89,13 +88,14 @@ During the compilation phase, the \texttt{Makefile} utilizes the NVIDIA CUDA Com
         \draw [arrow] (param) -- (gpu);
         \draw [arrow] (solid) -- (gpu);
         
-        \draw [arrow] (gpu) -- (output_mod);
-        \draw [arrow] (output_mod) |- (data);
+        \draw [arrow] (output_mod) -- (gpu);
         \draw [arrow] (gpu) -- (data);
     \end{tikzpicture}
     \caption{System architecture of the LBM simulation framework}
     \label{fig:sys_arch}
 \end{figure}
+
+The same source code for the simulation can also be used when running the simulation on a larger scale. However, to handle an even larger calculation and longer periods of time, multiple nodes and GPUs must be used. As such, even though the base code and the output process is the same, the code is ran in the TSUBAME 4.0 Supercomputer. A shell script \texttt{run\_program.sh} is used to queue the LBM-LSM simulation program into the supercomputer job scheduler, before the simulation is run. The system architecture diagram of this process can be viewed in \autoref{fig:tsubame_arch}.
 
 \begin{figure}[ht]
     \centering
@@ -110,15 +110,17 @@ During the compilation phase, the \texttt{Makefile} utilizes the NVIDIA CUDA Com
     ]
 
         % 1. Scheduler/Entry Layer
-        \node (run_prog) [header] {run\_program.sh \\ \texttt{qsub -g jh250051}};
+        \node (run_prog) [header] {run\_program.sh};
         \node (scheduler) [scheduler, below=0.8cm of run_prog] {TSUBAME 4.0 Scheduler \\ (Job Queue / Resource Allocation)};
         
         % 2. Batch Control Layer
         \node (mpirun_sh) [header, below=0.8cm of scheduler] {mpirun.sh \\ (Module Load / MPI Config)};
-        \node (makefile) [box, left=1.5cm of mpirun_sh, fill=blue!10] {\textbf{Makefile} \\ \texttt{nvcc} (sm\_90)};
+        \node (config) [header, left=of mpirun_sh] {Define\_user.h \\ map \\ particle\_position};
+        
+        \node (makefile) [box, below=0.8cm of mpirun_sh, fill=blue!10] {\textbf{Makefile} \\ \texttt{nvcc} (sm\_90)};
 
         % 3. Modular Source Layer
-        \node (lbm) [box, below=1.5cm of mpirun_sh] {Fluid Solver \\ \textit{sourceList\_calculation}};
+        \node (lbm) [box, below=1.5cm of makefile] {Fluid Solver \\ \textit{sourceList\_calculation}};
         \node (lpt) [box, right=of lbm] {Particle Tracker \\ \textit{SourceList\_Particle}};
         \node (param) [box, left=of lbm] {Param Manager \\ \textit{sourceList\_param}};
         \node (solid) [box, right=of lpt] {Solid/STL \\ \textit{sourceList\_solid}};
@@ -130,18 +132,19 @@ During the compilation phase, the \texttt{Makefile} utilizes the NVIDIA CUDA Com
         \node (gpu) [engine, below=1.2cm of func] {Multi-Node Execution \\ (4 Nodes $\times$ 4 GPUs)};
 
         % 6. Output Layer
-        \node (output_mod) [box, left=of gpu] {I/O Subsystem \\ \textit{sourceList\_output}};
+        \node (output_mod) [box, left=of gpu] {Data Output \\ \textit{sourceList\_output}};
         \node (data) [box, below=1cm of gpu, fill=red!5] {\textbf{Data Sink} \\ CSV (Wind) / Binary (Particle)};
 
         % Connections
         \draw [arrow] (run_prog) -- (scheduler);
         \draw [arrow] (scheduler) -- (mpirun_sh);
-        \draw [arrow] (makefile) -- (mpirun_sh);
+        \draw [arrow] (mpirun_sh) -- (makefile);
+        \draw [arrow] (config) -- (makefile);
         
-        \draw [arrow] (mpirun_sh) -- (lbm);
-        \draw [arrow] (mpirun_sh) -- (lpt);
-        \draw [arrow] (mpirun_sh) -- (param);
-        \draw [arrow] (mpirun_sh) -- (solid);
+        \draw [arrow] (makefile) -- (lbm);
+        \draw [arrow] (makefile) -- (lpt);
+        \draw [arrow] (makefile) -- (param);
+        \draw [arrow] (makefile) -- (solid);
         
         \draw [dashed] (func) -- (lbm);
         \draw [dashed] (func) -- (lpt);
@@ -151,8 +154,7 @@ During the compilation phase, the \texttt{Makefile} utilizes the NVIDIA CUDA Com
         \draw [arrow] (param) -- (gpu);
         \draw [arrow] (solid) -- (gpu);
         
-        \draw [arrow] (gpu) -- (output_mod);
-        \draw [arrow] (output_mod) |- (data);
+        \draw [arrow] (output_mod) -- (gpu);
         \draw [arrow] (gpu) -- (data);
 
     \end{tikzpicture}
@@ -184,7 +186,9 @@ The specific configurations for the validation and research cases are summarized
 \end{table}
 
 \subsection{Physical and Dimensionless Parameters}
-To ensure the dynamic similarity between the wind tunnel experiment and the Lattice Boltzmann Method (LBM) simulation, the Reynolds number ($Re$) is calculated. This dimensionless value represents the ratio of inertial forces to viscous forces.\textbf{Reynolds Number ($Re$)}For this study, the characteristic length is defined as the building height $H$, and the velocity is the wind speed at that height $U_H$.
+To ensure the dynamic similarity between the wind tunnel experiment and the Lattice Boltzmann Method (LBM) simulation, the Reynolds number ($Re$) is calculated. This dimensionless value represents the ratio of inertial forces to viscous forces.
+
+\textbf{Reynolds Number ($Re$)} For this study, the characteristic length is defined as the building height $H$, and the velocity is the wind speed at that height $U_H$.
 
 \begin{equation}
     Re = \frac{U_H \cdot H}{\nu}

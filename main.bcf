@@ -3112,6 +3112,7 @@
     <bcf:citekey order="37" intorder="1">Okaze2021LES</bcf:citekey>
     <bcf:citekey order="38" intorder="1">Okaze2021LES</bcf:citekey>
     <bcf:citekey order="39" intorder="1">Okaze2021LES</bcf:citekey>
+    <bcf:citekey order="40" intorder="1">nvidiaCUDA</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="apa">
