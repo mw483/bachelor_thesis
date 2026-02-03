@@ -246,6 +246,16 @@ To handle numerical stability during post-processing, a constraint was applied s
 The raw simulation output is generated in a condensed binary format to manage the high volume of data produced by the Lagrangian tracking. These binary files are recorded at 1-second intervals (equivalent to every 100 simulation time steps). For each output interval, a set of specialized files is created, including \texttt{header}, \texttt{index}, \texttt{position}, \texttt{velocity}, and \texttt{SGS\_velocity}. Each file contains the specific physical attributes of all particles active within the domain at that specific moment. For instance, a file named \texttt{position0-001.bin} stores the three-dimensional Cartesian coordinates ($x, y, z$) of every particle at $t = 1$ second.
 
 %% NOTE: Edit tomorrow after checking what is the specific names of the binary files : header, index, position, velocity (uvw), sgs velocity (uvw SGS), need to specify the file format and name.
+% Files:
+% Mode                 LastWriteTime         Length Name
+% ----                 -------------         ------ ----
+% -a----          2/2/2026  11:09 AM              4 header-100.bin
+% -a----          2/2/2026  11:09 AM              4 header_node0-100.bin
+% -a----          2/2/2026  11:10 AM        2457604 index0-100.bin
+% -a----          2/2/2026  11:15 AM        7372804 position0-100.bin
+% -a----          2/2/2026  11:29 AM        7372804 uvw0-100.bin
+% -a----          2/2/2026  11:41 AM        7372804 uvw_sgs0-100.bin
+% -a----          2/2/2026  11:54 AM        2457604 velocity0-100.bin
 
 To translate these large-scale datasets into physically interpretable results, a dedicated analysis suite was developed in C++. This suite utilizes a modular design where specific physical quantities are calculated by independent components managed by a central execution program. The workflow is handled by a C++ executable, compiled using a \texttt{Makefile} that links distinct modules for density calculation, flux analysis, vertical profiling, and Flux Footprint Prediction (FFP).
 
