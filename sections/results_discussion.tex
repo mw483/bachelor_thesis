@@ -1,3 +1,4 @@
+% !TeX root = ../main.tex
 \section{Results and Discussion}
 \subsection{Wind and Turbulence Statistics}
 This section will explore the results of the wind and turbulence produced by the LBM-LES simulation, as detailed in \autoref{sectionMethodology}, from the comparison of the vertical profile of the streamwise velocity ($u$), spanwise velocity ($v$), vertical velocity ($w$), streamwise velocity fluctuation ($u_{rms}$), spanwise velocity fluctuation ($v_{rms}$), vertical velocity fluctuation ($w_{rms}$), as well as turbulent kinetic energy ($TKE$).
@@ -27,11 +28,7 @@ This section will explore the results of the wind and turbulence produced by the
     \label{fig:results_um}
 \end{figure}
 
-\autoref{fig:results_um} illustrates the vertical profiles of the normalized streamwise velocity ($u/U_H$) at the locations defined in \autoref{fig:measurement_points}. A primary observation is that the simulation's ability to reproduce the experimental data improves significantly as the inflow turbulence increases, driven by the added roughness in the approach section. 
-
-Even in the most simplified cases lacking approach roughness, the LBM results maintain the general characteristic shape observed in the AIJ wind tunnel experiments, capturing the fundamental flow deceleration and wake recovery. However, the introduction of even minimal roughness provides a substantial increase in accuracy, effectively closing the gap between the numerical and experimental data. 
-
-Beyond this initial improvement, the profiles exhibit a plateau in refinement; the variation between different high-roughness cases is minimal, suggesting that once the atmospheric boundary layer is sufficiently developed, the broad-scale structure of the streamwise velocity becomes stable. This indicates that the presence of upstream turbulence is more critical for profile accuracy than the specific magnitude of the roughness height once a certain threshold is reached.
+\autoref{fig:results_um} illustrates the vertical profiles of the normalized streamwise velocity ($u/U_H$) at the locations defined in \autoref{fig:measurement_points}. A primary observation is that the simulation's ability to reproduce the experimental data improves significantly as the inflow turbulence increases, driven by the added roughness in the approach section. Even in the most simplified cases lacking approach roughness, the LBM results maintain the general characteristic shape observed in the AIJ wind tunnel experiments, capturing the fundamental flow deceleration and wake recovery. However, the introduction of even minimal roughness provides a substantial increase in accuracy, effectively closing the gap between the numerical and experimental data. Beyond this initial improvement, the profiles exhibit a plateau in refinement; the variation between different high-roughness cases is minimal, suggesting that once the atmospheric boundary layer is sufficiently developed, the broad-scale structure of the streamwise velocity becomes stable. This indicates that the presence of upstream turbulence is more critical for profile accuracy than the specific magnitude of the roughness height once a certain threshold is reached.
 
 % --- Mean Spanwise Velocity (v) ---
 \begin{figure}[htbp]
@@ -57,9 +54,7 @@ Beyond this initial improvement, the profiles exhibit a plateau in refinement; t
     \label{fig:results_vm}
 \end{figure}
 
-\autoref{fig:results_vm} presents the vertical profiles of the normalized spanwise velocity ($v/U_H$). In contrast to the streamwise results, the spanwise profiles are largely inconclusive regarding the impact of approach roughness. Both the experimental data and numerical results exhibit small-scale fluctuations with magnitudes on the order of $10^{-2}$, representing minor lateral shifts in the wind direction. 
-
-Due to the stochastic nature of these lateral movements and their negligible magnitude relative to the primary flow, the patterns appear relatively random. Consequently, no significant correlation can be established between the increase in upstream turbulence and the predictive accuracy of the spanwise velocity component in the near-field wake.
+\autoref{fig:results_vm} presents the vertical profiles of the normalized spanwise velocity ($v/U_H$). In contrast to the streamwise results, the spanwise profiles are largely inconclusive regarding the impact of approach roughness. Both the experimental data and numerical results exhibit small-scale fluctuations with magnitudes on the order of $10^{-2}$, representing minor lateral shifts in the wind direction. Due to the stochastic nature of these lateral movements and their negligible magnitude relative to the primary flow, the patterns appear relatively random. Consequently, no significant correlation can be established between the increase in upstream turbulence and the predictive accuracy of the spanwise velocity component in the near-field wake.
 
 % --- Mean Vertical Velocity (w) ---
 \begin{figure}[htbp]
@@ -85,13 +80,7 @@ Due to the stochastic nature of these lateral movements and their negligible mag
     \label{fig:results_wm}
 \end{figure}
 
-\autoref{fig:results_wm} illustrates the vertical profiles of the normalized vertical wind speed ($w/U_H$). These results provide the most significant insights into the model's performance, as they reveal a clear sensitivity to the approach flow conditions. 
-
-At the initial inflow location ($x/H = -1.0$), there is a general underprediction of the vertical velocity. However, as the flow reaches $x/H = -0.75$, the profiles across all cases show relatively good agreement with the experimental data. A critical discrepancy emerges at the building's center-line ($x/H = -0.25$), where the case lacking approach roughness significantly overpredicts the upward vertical velocity. 
-
-This overprediction becomes more pronounced in the leeward wake regions (behind the building), where the negative vertical wind speed—representing the downwash in the recirculation zone—is overestimated by a significant margin. 
-
-This bias persists in the lower-roughness cases, albeit to a lesser degree, but is relatively well-mitigated in Cases 5 through 8. Notably, these successful cases either employ larger roughness blocks (24 m and 32 m in Cases 5 and 6) or combine moderate blocks (16 m and 20 m) with an increased surface roughness parameter ($z_0 = 0.1$ in Cases 7 and 8). This suggests that a specific threshold of turbulent intensity and surface friction is required to correctly model the vertical momentum exchange in the building's near-field.
+\autoref{fig:results_wm} illustrates the vertical profiles of the normalized vertical wind speed ($w/U_H$). These results provide the most significant insights into the model's performance, as they reveal a clear sensitivity to the approach flow conditions. At the initial inflow location ($x/H = -1.0$), there is a general underprediction of the vertical velocity. However, as the flow reaches $x/H = -0.75$, the profiles across all cases show relatively good agreement with the experimental data. A critical discrepancy emerges at the building's center-line ($x/H = -0.25$), where the case lacking approach roughness significantly overpredicts the upward vertical velocity. This overprediction becomes more pronounced in the leeward wake regions (behind the building), where the negative vertical wind speed—representing the downwash in the recirculation zone—is overestimated by a significant margin. This bias persists in the lower-roughness cases, albeit to a lesser degree, but is relatively well-mitigated in Cases 5 through 8. Notably, these successful cases either employ larger roughness blocks (24 m and 32 m in Cases 5 and 6) or combine moderate blocks (16 m and 20 m) with an increased surface roughness parameter ($z_0 = 0.1$ in Cases 7 and 8). This suggests that a specific threshold of turbulent intensity and surface friction is required to correctly model the vertical momentum exchange in the building's near-field.
 
 % --- Streamwise Fluctuations (u_rms) ---
 \begin{figure}[htbp]
@@ -117,6 +106,8 @@ This bias persists in the lower-roughness cases, albeit to a lesser degree, but 
     \label{fig:results_urms}
 \end{figure}
 
+\autoref{fig:results_urms} illustrates the vertical profiles of the root-mean-square (RMS) streamwise velocity fluctuations ($u_{rms}/U_H$). Unlike the mean velocity profiles, which showed general agreement across most cases, the $u_{rms}$ results exhibit significant variability depending on the approach roughness. In the windward approach region ($x/H = -1.0$), the velocity variation is notably underpredicted, particularly in the case lacking an approach section. Accuracy improves as the roughness block size increases; however, the largest blocks (Cases 5 and 6) lead to a slight overprediction of the turbulence intensity. Directly above the building, the high-roughness cases and the medium-roughness cases with increased $z_0$ provide the most accurate predictions, while the case with no roughness severely underpredicts the fluctuations. In the immediate leeward wake, all cases capture the general pattern of the profile. Small roughness cases tend toward slight underprediction, whereas larger roughness blocks result in a slight overprediction. The discrepancy becomes most prominent in the far-wake region. Here, the no-roughness case fails to maintain the turbulent energy, leading to a severe underprediction of the profile. Conversely, while higher roughness slightly overestimates the variation, Cases 3 and 4 (medium roughness) and Cases 7 and 8 (medium roughness with increased $z_0$) demonstrate the highest overall predictive accuracy. This suggests that moderate turbulence levels best replicate the balanced energy state observed in the wind tunnel experiments.
+
 % --- Spanwise Fluctuations (v_rms) ---
 \begin{figure}[htbp]
     \centering
@@ -137,9 +128,11 @@ This bias persists in the lower-roughness cases, albeit to a lesser degree, but 
         \includegraphics[width=0.85\textwidth]{figures/multi_case_comparisons_z0change/v/comparison_v_rms_part3.png}
         \caption{}
     \end{subfigure}
-    \caption{Normalized streamwise velocity fluctuations ($v_{rms}/U_H$) at (a) Upwind/Rooftop, (b) Leeward Side ($x/H=0$ to $0.75$), and (c) Downwind Wake ($x/H=1.0$ to $2.0$).}
+    \caption{Normalized spanwise velocity fluctuations ($v_{rms}/U_H$) at (a) Upwind/Rooftop, (b) Leeward Side ($x/H=0$ to $0.75$), and (c) Downwind Wake ($x/H=1.0$ to $2.0$).}
     \label{fig:results_vrms}
 \end{figure}
+
+\autoref{fig:results_vrms} presents the vertical profiles of the normalized spanwise velocity fluctuations ($v_{rms}/U_H$). Similar to the observations in the $u_{rms}$ results, the approach section without roughness severely underpredicts the spanwise turbulence levels. Conversely, the cases with the largest roughness blocks (Cases 5 and 6) lead to an overprediction of these fluctuations in the windward region. Interestingly, while the high-roughness cases provide the most accurate predictions directly above the building, this accuracy transitions into a magnitude overprediction as the flow enters the leeward wake. A notable phenomenon occurs in the no-roughness case behind the building: rather than a simple underprediction, the model produces a significant overprediction of $v_{rms}$ with a distinct change in the profile shape. In these instances, the variation is characterized by a sharp peak reaching at height 0.5 $H$, whereas the experimental data and the more accurate simulation cases show a smoother, more stable curvature. While the large roughness blocks also overpredict the magnitude in the wake, they maintain the correct physical shape of the profile. Consistent with the results of other velocity components, the medium-roughness cases (Cases 3 and 4) and those combining medium roughness with increased surface friction (Cases 7 and 8) demonstrate the most reliable results overall. These cases avoid both the numerical instability seen in the no-roughness peaks and the excessive energy associated with the largest roughness obstacles.
 
 % --- Vertical Fluctuations (w_rms) ---
 \begin{figure}[htbp]
@@ -161,9 +154,11 @@ This bias persists in the lower-roughness cases, albeit to a lesser degree, but 
         \includegraphics[width=0.85\textwidth]{figures/multi_case_comparisons_z0change/w/comparison_w_rms_part3.png}
         \caption{}
     \end{subfigure}
-    \caption{Normalized streamwise velocity fluctuations ($w_{rms}/U_H$) at (a) Upwind/Rooftop, (b) Leeward Side ($x/H=0$ to $0.75$), and (c) Downwind Wake ($x/H=1.0$ to $2.0$).}
+    \caption{Normalized vertical velocity fluctuations ($w_{rms}/U_H$) at (a) Upwind/Rooftop, (b) Leeward Side ($x/H=0$ to $0.75$), and (c) Downwind Wake ($x/H=1.0$ to $2.0$).}
     \label{fig:results_wrms}
 \end{figure}
+
+\autoref{fig:results_wrms} illustrates the vertical profiles of the normalized vertical velocity fluctuations ($w_{rms}/U_H$). The results closely mirror the patterns observed in the spanwise fluctuations ($v_{rms}$), both in terms of magnitude and profile shape. A recurring phenomenon is observed in the case without an approach section, which exhibits a sharp, non-physical peak in the leeward wake. This sharp peak matches the position and anomalous shape seen in the $v_{rms}$ results, further suggesting that the absence of upstream turbulence leads to numerical instabilities or an unnatural vortex structure behind the building. For the remaining cases, the patterns of underprediction in low-roughness setups and overprediction in high-roughness setups remain consistent. The profile shapes are nearly identical to those of the $v_{rms}$ cases, with Cases 7 and 8 again providing the most stable and accurate fit to the AIJ wind tunnel data. The similarity between the $v_{rms}$ and $w_{rms}$ profiles indicates that the turbulence in the wake is largely isotropic in its fluctuations, and that the approach flow roughness is the primary factor in correctly capturing this vertical energy distribution.
 
 % --- Turbulent Kinetic Energy (TKE) ---
 \begin{figure}[htbp]
@@ -188,6 +183,10 @@ This bias persists in the lower-roughness cases, albeit to a lesser degree, but 
     \caption{Normalized Turbulent Kinetic Energy ($k/U_H^2$) profiles at (a) Upwind locations ($x/H < 0$), (b) Near Wake locations ($x/H \ge 0$), and (c) Far Wake locations.}
     \label{fig:results_tke}
 \end{figure}
+
+\autoref{fig:results_tke} presents the vertical profiles of the normalized Turbulent Kinetic Energy (TKE). As expected, the TKE profiles closely follow the trends observed in the $v_{rms}$ and $w_{rms}$ results, given that TKE is mathematically defined as half the sum of the variances of the velocity components, as defined in \autoref{eq:TKE}.
+
+The profiles exhibit consistent patterns of underprediction in the low-roughness cases and overprediction in the high-roughness cases (Cases 5 and 6). While the absolute magnitudes are smaller than the individual RMS components, the structural characteristics—including the anomalous peaks observed in the no-approach case remain present. The strong similarity between the TKE, $v_{rms}$, and $w_{rms}$ profiles reinforces the conclusion that the turbulence in the wake is dominated by the lateral and vertical mixing energy. Once again, the medium-roughness configurations, specifically Cases 7 and 8, provide the most balanced representation of the TKE profiles, capturing the energy distribution with the highest degree of fidelity relative to the experimental benchmark.
 
 \subsubsection{Validation of Wind and Turbulence Statistics}
 

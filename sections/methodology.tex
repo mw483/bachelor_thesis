@@ -258,6 +258,7 @@ The Turbulence Kinetic Energy ($k$), representing the mean kinetic energy per un
 
 \begin{equation}
     k = \frac{1}{2} \left( \langle u'^2 \rangle + \langle v'^2 \rangle + \langle w'^2 \rangle \right)
+    \label{eq:TKE}
 \end{equation}
 
 To handle numerical stability during post-processing, a constraint was applied such that any negative stress values resulting from floating-point errors were clamped to zero before the square root operation ($\text{max}(0, \sigma^2)$). All statistical results were mapped to the physical domain coordinates to facilitate direct comparison with the Architectural Institute of Japan (AIJ) wind tunnel experimental benchmarks.
