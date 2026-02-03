@@ -1,6 +1,6 @@
 \documentclass{article}
 \usepackage{amsmath}
-\usepackage[backend=biber, style=apa,]{biblatex}
+\usepackage[backend=biber, style=apa]{biblatex}
 \usepackage{booktabs}  % Required for \toprule, \midrule, \bottomrule, and \cmidrule
 \usepackage{caption}
 \usepackage{csquotes}
@@ -30,7 +30,6 @@
 \usetikzlibrary{shapes.geometric, arrows.meta, positioning, calc}
 \usepackage{xeCJK}
 
-
 \setCJKmainfont{MS Mincho} % Or any Japanese font on your PC
 
 \addbibresource{bibliography.bib} %Imports bibliography file
@@ -55,11 +54,11 @@
 \newpage
 
 % Use \include or \input to call your sections
-\include{sections/introduction_objective}
-\include{sections/theory}
-\include{sections/methodology}
-\include{sections/results_discussion}
-\include{sections/conclusion}
+\input{sections/introduction_objective}
+\input{sections/theory}
+\input{sections/methodology}
+\input{sections/results_discussion}
+\input{sections/conclusion}
 
-\printbibliography{}
+\printbibliography
 \end{document}
