@@ -1,4 +1,3 @@
-% !TeX root = ../main.tex
 \section{Results and Discussion}
 \subsection{Wind and Turbulence Statistics}
 This section will explore the results of the wind and turbulence produced by the LBM-LES simulation, as detailed in \autoref{sectionMethodology}, from the comparison of the vertical profile of the streamwise velocity ($u$), spanwise velocity ($v$), vertical velocity ($w$), streamwise velocity fluctuation ($u_{rms}$), spanwise velocity fluctuation ($v_{rms}$), vertical velocity fluctuation ($w_{rms}$), as well as turbulent kinetic energy ($TKE$).
@@ -190,12 +189,18 @@ The profiles exhibit consistent patterns of underprediction in the low-roughness
 
 \subsubsection{Validation of Wind and Turbulence Statistics}
 
+To quantify the predictive accuracy of the simulation profiles, the LBM results are evaluated using correlation scatter plots and some validation metrics. As detailed in the previous section, the primary indicators used for this assessment are the hit rate ($q$) and the factor of two observations (FAC2). Through these metrics, a more systematic comparison between the simulated wind speed, fluctuations, as well as the turbulent kinetic energy (TKE), against the reference wind tunnel data can be performed to evaluate the accuracy of the simulation.
+
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.85\textwidth]{figures/validation_plots_combined_z0change/combined_mean_velocities.png}
     \caption{Scatter plot comparison of normalized mean velocity components ($\bar{u}, \bar{v}, \bar{w}$) against AIJ experimental data across all cases. Solid lines represent the 1:1 correlation, while dashed lines indicate the $FAC2$ boundaries.}
     \label{fig:scatter_mean_velocities}
 \end{figure}
+
+The correlation scatter plots for the mean velocity components ($u, v, w$) are presented in \autoref{fig:scatter_mean_velocities}. Overall, the streamwise velocity ($u$) demonstrates the highest degree of agreement with the experimental data. In contrast, the spanwise velocity ($v$) results are difficult to evaluate due to their near-zero magnitudes, and the vertical velocity ($w$) exhibits a lower correlation compared to the streamwise component. 
+
+However, a clear trend is observed regarding the domain configuration, which agrees with the previously seen profiles. The correlation significantly improves in cases featuring medium-height roughness blocks, particularly when the increased surface roughness ($z_0$) is applied. This suggests that a more developed upwind boundary layer is essential for accurately capturing the mean flow characteristics around the building model, although the inflow turbulence must not exceed a certain limit.
 
 \begin{figure}[htbp]
     \centering
@@ -204,12 +209,16 @@ The profiles exhibit consistent patterns of underprediction in the low-roughness
     \label{fig:scatter_rms_velocities}
 \end{figure}
 
+The correlation patterns observed in the profile comparisons are further supported by the RMS velocity scatter plots in \autoref{fig:scatter_rms_velocities}. Unlike the mean velocities, the root-mean-square fluctuations for the $u$, $v$, and $w$ components exhibit a high degree of similarity in their distribution. This consistency confirms that the turbulent intensity is captured uniformly across all three dimensions. Furthermore, the trend of increased accuracy in cases with medium roughness blocks is maintained.
+
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.85\textwidth]{figures/validation_plots_combined_z0change/combined_tke.png}
     \caption{Correlation of predicted vs. observed Turbulent Kinetic Energy ($k$), highlighting the impact of the refined $z_0$ and roughness configurations on energy modeling accuracy.}
     \label{fig:scatter_tke}
 \end{figure}
+
+The TKE scatter plots (\autoref{fig:scatter_tke}) show similar patterns to the trends observed in the RMS velocities, with a consistent increase in accuracy for the medium-roughness configurations. This alignment confirms that the overall turbulent energy distribution in the simulation is fundamentally tied to the development of the approach flow. Specifically, the medium-height roughness blocks appear to provide the optimal turbulence intensity required to match the AIJ experimental benchmarks.
 
 \begin{table}[htbp]
     \centering
@@ -235,10 +244,9 @@ The profiles exhibit consistent patterns of underprediction in the low-roughness
     }
 \end{table}
 
-The validation results highlight the critical role of approach flow modeling in the validation study.
-While Case 1 (No Approach) consistently fails the $0.66$ hit-rate ($q$) threshold across several components, the introduction of surface roughness in Cases 2-8 brings the streamwise velocity ($u$) and fluctuation components ($u_{rms}$, $v_{rms}$, $w_{rms}$) into strong alignment with experimental standards.
-Notably, vertical velocity ($w$) and Turbulent Kinetic Energy ($TKE$) remain the most sensitive parameters, occasionally falling below the standard in lower-roughness scenarios, but showing marked improvement as roughness height increases.
-This suggests that the LBM solver combined with the TSUBAME 4.0 is highly capable of capturing complex urban wind fields, provided the inflow turbulence is correctly parameterized.
+The validation results, summarized in \autoref{tab:full_validation_summary}, more clearly shows the importance of approach flow modeling for achieving experimental agreement. Case 1, which utilizes a local domain without an approach section, consistently fails to meet the $q \ge 0.66$ hit-rate threshold for most parameters. However, the introduction of roughness arrays in Cases 2--8 significantly enhances the development of the turbulent boundary layer, bringing the streamwise velocity ($u$) and the three fluctuation components ($u_{rms}$, $v_{rms}$, $w_{rms}$) into strong alignment with experimental standards.
+
+Similar to the observations in the profile comparisons, the vertical velocity ($w$) and Turbulent Kinetic Energy ($TKE$) are the parameters most sensitive to the upwind configuration. While these values occasionally fall below validation thresholds in lower-roughness scenarios (e.g., Case 2), they show significant improvement as the roughness height increases toward the medium-scale configurations. This confirms that the LBM solver, ran on the TSUBAME 4.0 supercomputer, is highly capable of capturing the turbulent structures near a building, provided the inflow turbulence and surface roughness are appropriately set up to match the real conditions.
 
 \begin{table}[htbp]
     \centering
@@ -264,38 +272,44 @@ This suggests that the LBM solver combined with the TSUBAME 4.0 is highly capabl
     }
 \end{table}
 
-The quantitative assessment of the error metrics further supports the conclusions drawn from the hit rate analysis. In Case 1, the RMSE for streamwise velocity $u$ is notably high at 0.2726, representing a significant deviation from experimental values. However, across the roughness-modified Cases 2-8, the RMSE for $u$ is reduced by over 50\% in most instances, reaching its minimum in Case 6 (0.0925). Interestingly, the vertical velocity components ($v, w$) and turbulence fluctuations show relatively stable and low MAE values ($< 0.05$) across the majority of the cases. The $TKE$ errors are particularly low in the optimized roughness scenarios (e.g., Case 4 with an RMSE of 0.0150), demonstrating that the solver's ability to capture the energy distribution within the flow field is highly dependent on the correct specification of the approach flow boundary layer. These low absolute errors confirm that the model's predictions are not only statistically correlated but also physically accurate in magnitude.
+The quantitative error metrics shown in \autoref{tab:mae_rmse_validation} reinforce the conclusions from the hit rate analysis. In Case 1, the RMSE for streamwise velocity ($u$) is notably high at 0.2726, indicating a significant local deviation. Conversely, in the roughness-modified Cases 2--8, the RMSE for $u$ is reduced by over 50\% in most instances, reaching a minimum of 0.0925 in Case 6. 
+
+The vertical and spanwise velocity components ($v, w$) along with turbulence fluctuations maintain stable and low MAE values ($< 0.05$) throughout most cases. The TKE errors are particularly minimized in the optimized roughness scenarios. This can be seen in Case 4 with an RMSE of 0.0150, demonstrating that again, the solver's ability to capture energy distribution depends heavily on the correct specification of the approach flow. These low absolute errors confirm that the model predictions are both statistically correlated and physically accurate in magnitude.
 
 \subsection{Particle Concentration}
 \subsubsection{Particle Concentration Profile}
 
 \begin{figure}[htbp]
     \centering
-    \begin{subfigure}[b]{\textwidth}
+    % Row 1: Parts 1 and 2
+    \begin{subfigure}[b]{0.48\textwidth}
         \centering
-        \includegraphics[width=0.85\textwidth]{figures/concentration_comparison/multi_case_comparison_part1.png}
-        \caption{}
+        \includegraphics[width=\textwidth]{figures/concentration_comparison/multi_case_comparison_part1.png}
+        \caption{Part 1}
     \end{subfigure}
-    \vspace{1ex}
-    \begin{subfigure}[b]{\textwidth}
+    \hfill
+    \begin{subfigure}[b]{0.48\textwidth}
         \centering
-        \includegraphics[width=0.85\textwidth]{figures/concentration_comparison/multi_case_comparison_part2.png}
-        \caption{}
+        \includegraphics[width=\textwidth]{figures/concentration_comparison/multi_case_comparison_part2.png}
+        \caption{Part 2}
     \end{subfigure}
-    \vspace{1ex}
-    \begin{subfigure}[b]{\textwidth}
+
+    \vspace{2ex} % Space between the two rows
+    % Row 2: Parts 3 and 4
+    \begin{subfigure}[b]{0.48\textwidth}
         \centering
-        \includegraphics[width=0.85\textwidth]{figures/concentration_comparison/multi_case_comparison_part3.png}
-        \caption{}
+        \includegraphics[width=\textwidth]{figures/concentration_comparison/multi_case_comparison_part3.png}
+        \caption{Part 3}
     \end{subfigure}
-    \vspace{1ex}
-    \begin{subfigure}[b]{\textwidth}
+    \hfill
+    \begin{subfigure}[b]{0.48\textwidth}
         \centering
-        \includegraphics[width=0.85\textwidth]{figures/concentration_comparison/multi_case_comparison_part4.png}
-        \caption{}
+        \includegraphics[width=\textwidth]{figures/concentration_comparison/multi_case_comparison_part4.png}
+        \caption{Part 4}
     \end{subfigure}
-    \caption{Normalized concentration ($C_{norm}$) profiles at (a) Part 1, (b) Part 2, (c) Part 3, and (d) Part 4. The profiles illustrate the pollutant dispersion characteristics across the 12 AIJ measurement locations.}
-    \label{fig:concentration_profiles_vertical}
+
+    \caption{Normalized concentration ($C_{norm}$) profiles across 12 AIJ measurement locations, divided into (a) Part 1, (b) Part 2, (c) Part 3, and (d) Part 4.}
+    \label{fig:concentration_profiles_grid}
 \end{figure}
 
 \subsubsection{Validation of Particle Concentration}
@@ -329,8 +343,8 @@ The quantitative assessment of the error metrics further supports the conclusion
 
 The concentration validation results show a marked contrast to the velocity validation, with significantly lower accuracy across all metrics. For all simulation cases, the hit rate ($q$) remains well below the $0.66$ standard, peaking at only 0.420 in Case 7. While the $FAC2$ values mostly meet the $0.50$ threshold (with the exception of the "No Approach" baseline), they are considerably lower than the scores achieved for the flow field. These results suggest that the current Lagrangian particle tracker (LPT) within the LBM solver may not yet fully capture the complex dispersion characteristics of pollutants in an urban environment. This discrepancy could be attributed to the simplified physical modeling of generic particles in the solver, whereas the experimental data were collected using gases that exhibit different diffusion behaviors. Furthermore, the high RMSE observed in Case 6 (9.4304) suggests that even with optimized inflow roughness, the modeling of pollutant concentration remains highly sensitive and requires more specialized treatment of gas-phase physics or turbulent mass diffusion to align with physical observations.
 
-Kanda-sensei comment 1: The results on the wind are actually quite good because with the uniform grid in LBM, it should be very difficult to reproduce results since in other LES, the grid becomes very fine as it gets closer to the building. Note this for the discussion in the thesis.
+% Kanda-sensei comment 1: The results on the wind are actually quite good because with the uniform grid in LBM, it should be very difficult to reproduce results since in other LES, the grid becomes very fine as it gets closer to the building. Note this for the discussion in the thesis.
 
-Kanda-sensei comment 2: The results on the concentration may not be very accurate due to the 1. grid issues, 2. the LBM is perfect passive scalar, the experiment uses C2H2 and does not specify the particle release momentum or speed. Better to clarify in the discussion and in the presentation, that I am using a perfect passive scalar.
+% Kanda-sensei comment 2: The results on the concentration may not be very accurate due to the 1. grid issues, 2. the LBM is perfect passive scalar, the experiment uses C2H2 and does not specify the particle release momentum or speed. Better to clarify in the discussion and in the presentation, that I am using a perfect passive scalar.
 
 \newpage

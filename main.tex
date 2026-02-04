@@ -1,59 +1,103 @@
 \documentclass{article}
 \usepackage{amsmath}
-\usepackage[backend=biber, style=apa]{biblatex}
-\usepackage{booktabs}  % Required for \toprule, \midrule, \bottomrule, and \cmidrule
+\usepackage{booktabs}
 \usepackage{caption}
 \usepackage{csquotes}
-
-\usepackage[intoc]{nomencl}
-\makenomenclature
-\input{sections/nomenclature.tex}
-
-% This part adds groups (Physics, Statistics, etc.) to your list
-\usepackage{etoolbox}
-\renewcommand
-\nomgroup[1]{%
-  \item[\bfseries
-  \ifstrequal{#1}{P}{Physical and Flow Parameters}{%
-  \ifstrequal{#1}{S}{Statistical and Validation Metrics}{%
-  \ifstrequal{#1}{F}{Footprint and Source Area Theory}{}}}%
-]}
-
 \usepackage[left=2.54cm,right=2.54cm,top=2.54cm,bottom=2.54cm]{geometry}
-% \usepackage[draft]{graphicx} % Draft mode
 \usepackage{graphicx}
-\usepackage{hyperref}
-
 \usepackage{setspace}
 \usepackage{subcaption}
 \usepackage{tikz}
 \usetikzlibrary{shapes.geometric, arrows.meta, positioning, calc}
 \usepackage{xeCJK}
 
-\setCJKmainfont{MS Mincho} % Or any Japanese font on your PC
+% --- Language & Fonts ---
+\setCJKmainfont{MS Mincho} % Ensure this font is installed on your Windows system
 
-\addbibresource{bibliography.bib} %Imports bibliography file
+% --- Bibliography ---
+% Load biblatex before hyperref
+\usepackage[backend=biber, style=apa]{biblatex}
+\addbibresource{bibliography.bib}
+
+% --- Nomenclature ---
+\usepackage[intoc]{nomencl}
+\makenomenclature
+
+% Fixed syntax for nomgroup
+\renewcommand{\nomgroup}[1]{%
+  \item[\bfseries
+  \ifstrequal{#1}{P}{Physical and Flow Parameters}{%
+  \ifstrequal{#1}{S}{Statistical and Validation Metrics}{%
+  \ifstrequal{#1}{F}{Footprint and Source Area Theory}{}}}%
+]}
+
+% --- Hyperref (LOAD LAST) ---
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    citecolor=black
+}
+
+% Input definitions after hyperref to ensure anchors work
+\input{sections/nomenclature.tex}
 
 \begin{document}
 \onehalfspacing{}
 
-\title{Bachelor Thesis}
-\author{Mikael Wijaya}
-\date{\today}
+\begin{titlepage}
+    \centering
+    \vspace*{1cm}
 
-\maketitle
+    % 16pt - Independent Research Project
+    {\fontsize{16}{20}\selectfont Independent Research Project\par}
+    
+    \vspace{1.5cm}
+
+    % 18pt Bold - Title
+    {\fontsize{18}{22}\selectfont \textbf{Evaluation of particle dispersion characteristics over flat field and idealized building array using Lattice Boltzmann method}\par}
+
+    \vspace{2cm}
+
+    % 12pt - Institutional Info
+    {\fontsize{12}{15}\selectfont 
+        Department of Transdisciplinary Science and Engineering \\
+        School of Environment and Society \\
+        Institute of Science Tokyo \par}
+
+    \vfill
+
+    % 14pt section
+    {\fontsize{14}{18}\selectfont
+        February 2026 \par
+        \vspace{1cm}
+        Submitted by \par
+        \vspace{0.5cm}
+        Mikael Wijaya \par
+        
+        \vspace{2cm}
+        
+        Research Supervisor \par
+        \vspace{0.5cm}
+        Professor Manabu Kanda \par}
+
+    \vspace{1cm}
+\end{titlepage}
+
 \newpage
-
 \tableofcontents
 \newpage
-
 \listoffigures
+\newpage
+\listoftables
 \newpage
 
 \printnomenclature
 \newpage
 
-% Use \include or \input to call your sections
+% Main Content
 \input{sections/introduction_objective}
 \input{sections/theory}
 \input{sections/methodology}

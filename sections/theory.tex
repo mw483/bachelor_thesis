@@ -156,4 +156,21 @@ where the total influence $\Phi_{tot}$ is the integral of $f(x,y)$ over the enti
     \Phi_{tot} = \iint f(x,y) dx dy
 \end{equation}
 
+\subsection{Evolution of Flux Footprint Models}
+
+While analytical models provide a baseline for understanding source areas, modern environmental monitoring requires a balance between accuracy and computational speed. \textcite{Kljun2015} highlights the current challenge in the field, noting:
+
+\begin{quote}
+    "Despite the widespread use of footprint models, the selection of a suitable model still poses a major challenge. Complex footprint models based on large-eddy simulation... can, to a certain degree, offer the ability to resolve complex flow structures... and surface heterogeneity. However, to date they are laborious to run, still highly CPU intensive... and hence can in practice be applied only for case studies over selected hours or days."
+\end{quote}
+
+As described by \textcite{Kljun2015}, there is a clear trade-off in the study of atmospheric dispersion:
+
+\begin{itemize}
+    \item \textbf{Complex Models:} These include the Large-Eddy Simulations (LES) and Lagrangian Stochastic Particle Dispersion (LPD) models. While they can handle complex urban geometry like street canyons, they require significant supercomputing power and are difficult to use for long-term data.
+    \item \textbf{Analytical Models:} Simplified models like those by \textcite{Schmid1994} are fast and efficient but are often limited to specific atmospheric conditions and heights.
+\end{itemize}
+
+In this thesis, the use of the GPGPU-LBM solver on the TSUBAME 4.0 supercomputer aims to bridge this gap. By leveraging GPU acceleration, the simulation can perform the "laborious" LES and particle tracking calculations at a much faster rate than traditional CPU-based models. This allows the research to evaluate if the high-fidelity results of a complex simulation align with the simplified footprint estimates often used in environmental monitoring.
+
 \newpage

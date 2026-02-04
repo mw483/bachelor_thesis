@@ -191,6 +191,59 @@ The specific configurations for the validation and research cases are summarized
 }
 \end{table}
 
+Additionally, to provide a spatial context for the validation studies, Figure \ref{fig:case_map_visualizations} presents the plan-view (birds-eye view) layouts for the various simulation domains. These maps illustrate the placement of the central building model relative to the upwind approach sections.
+
+\begin{figure}[htbp]
+    \centering
+    % Row 1
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/case_maps/c_AIJ_caseH_no_approach_case1_visualization.png}
+        \caption{Case 1: No approach flow}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/case_maps/c_AIJ_caseH_with_approach_case2_8m_visualization.png}
+        \caption{Case 2: 8m blocks}
+    \end{subfigure}
+
+    \vspace{2ex} % Vertical spacing between rows
+
+    % Row 2
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/case_maps/c_AIJ_caseH_with_approach_case3_16m_visualization.png}
+        \caption{Cases 3 \& 7: 16m blocks}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/case_maps/c_AIJ_caseH_with_approach_case4_20m_visualization.png}
+        \caption{Cases 4 \& 8: 20m blocks}
+    \end{subfigure}
+
+    \vspace{2ex}
+
+    % Row 3
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/case_maps/c_AIJ_caseH_with_approach_case5_24m_visualization.png}
+        \caption{Case 5: 24m blocks}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/case_maps/c_AIJ_caseH_with_approach_case6_32m_visualization.png}
+        \caption{Case 6: 32m blocks}
+    \end{subfigure}
+
+    \caption{Plan-view visualizations of the computational domains for all simulation cases. Cases 7 and 8 utilize the same geometric configurations as Cases 3 and 4, respectively, but feature an increased surface roughness ($z\_0 = 0.1$ m).}
+    \label{fig:case_map_visualizations}
+\end{figure}
+
+The domain layouts demonstrate the transition from the isolated building simulation in Case 1 to the extended domains used on the TSUBAME 4.0 supercomputer. The extended upwind area allows for the physical development of a turbulent boundary layer as the wind passes over the array of roughness cubes. As the height of these blocks ($H_{cube}$) increases across the cases, the resulting turbulence intensity is expected to better match the conditions of the AIJ Case H wind tunnel experiment.
+
 To ensure a direct comparison with the AIJ wind tunnel benchmarks, statistical data were extracted at specific coordinates within the LBM domain. As shown in Figure~\ref{fig:measurement_points}, 12 vertical profiles were selected along the center-line of the domain. These locations cover the windward, rooftop, and leeward wake regions, defined by their normalized distance from the building ($x/H$). 
 
 \begin{figure}[htbp]
@@ -238,6 +291,7 @@ Wind field data were exported as planar cross-sections ($xy$-planes) at various 
 The analysis utilizes time-averaged velocity components ($\bar{u}, \bar{v}, \bar{w}$) and second-order velocity moments ($\overline{u^2}, \overline{v^2}, \overline{w^2}$), averaged over 540,000 time steps (equivalent to 5,400 physical seconds) to ensure statistical convergence. These variables correspond to the output files \texttt{xy\_um}, \texttt{xy\_vm}, \texttt{xy\_wm} (first-order moments) and \texttt{xy\_uu}, \texttt{xy\_vv}, \texttt{xy\_ww} (second-order moments).
 
 \textbf{Turbulence Statistics}
+
 To evaluate the turbulent flow characteristics, Reynolds stresses were calculated by subtracting the square of the mean velocity from the mean of the squared velocity. The streamwise ($\langle u'^2 \rangle$), spanwise ($\langle v'^2 \rangle$), and vertical ($\langle w'^2 \rangle$) Reynolds normal stresses were derived as follows:
 
 \begin{align}
@@ -247,6 +301,7 @@ To evaluate the turbulent flow characteristics, Reynolds stresses were calculate
 \end{align}
 
 \textbf{Root Mean Square (RMS) Fluctuations}
+
 The Root Mean Square (RMS) velocity fluctuations, which indicate the intensity of turbulence in each direction, were calculated and normalized by the reference approach flow velocity ($U_H$) at building height $H$:
 
 \begin{equation}
@@ -254,6 +309,7 @@ The Root Mean Square (RMS) velocity fluctuations, which indicate the intensity o
 \end{equation}
 
 \textbf{Turbulence Kinetic Energy (TKE)}
+
 The Turbulence Kinetic Energy ($k$), representing the mean kinetic energy per unit mass associated with eddies in the turbulent flow, was computed as half the sum of the Reynolds normal stresses:
 
 \begin{equation}
@@ -261,7 +317,7 @@ The Turbulence Kinetic Energy ($k$), representing the mean kinetic energy per un
     \label{eq:TKE}
 \end{equation}
 
-To handle numerical stability during post-processing, a constraint was applied such that any negative stress values resulting from floating-point errors were clamped to zero before the square root operation ($\text{max}(0, \sigma^2)$). All statistical results were mapped to the physical domain coordinates to facilitate direct comparison with the Architectural Institute of Japan (AIJ) wind tunnel experimental benchmarks.
+To handle numerical stability during post-processing, a constraint was applied such that any negative stress values resulting from floating-point errors were converted to zero before the square root operation ($\text{max}(0, \sigma^2)$). All statistical results were mapped to the physical domain coordinates, and normalized with height $H$ as well as approach streamwise wind speed $U_H$ to facilitate direct comparison with the Architectural Institute of Japan (AIJ) wind tunnel experimental benchmarks.
 
 \subsubsection{Lagrangian Particle Data Post-Processing and Statistical Analysis}
 

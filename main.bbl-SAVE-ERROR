@@ -136,6 +136,59 @@
       \verb 10.1016/j.buildenv.2021.107764
       \endverb
     \endentry
+    \entry{Kljun2015}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=9a468dd18dc26eba71c33921eb839a29}{%
+           family={Kljun},
+           familyi={K\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=825b428c5725930f927b5045cd47ee0d}{%
+           family={Calanca},
+           familyi={C\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4f7ce36377545e2a58f2979ffe6bab26}{%
+           family={Rotach},
+           familyi={R\bibinitperiod},
+           given={M.\bibnamedelimi W.},
+           giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=48d3d826445761dffe28890d3e098319}{%
+           family={Schmid},
+           familyi={S\bibinitperiod},
+           given={H.\bibnamedelimi P.},
+           giveni={H\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{76da3bffbd4deda4e7b5e0eaef728f5b}
+      \strng{fullhash}{d92263a5ff0e52c7b7e547ffc0d9a7ad}
+      \strng{fullhashraw}{d92263a5ff0e52c7b7e547ffc0d9a7ad}
+      \strng{bibnamehash}{d92263a5ff0e52c7b7e547ffc0d9a7ad}
+      \strng{authorbibnamehash}{d92263a5ff0e52c7b7e547ffc0d9a7ad}
+      \strng{authornamehash}{76da3bffbd4deda4e7b5e0eaef728f5b}
+      \strng{authorfullhash}{d92263a5ff0e52c7b7e547ffc0d9a7ad}
+      \strng{authorfullhashraw}{d92263a5ff0e52c7b7e547ffc0d9a7ad}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Geoscientific Model Development}
+      \field{number}{11}
+      \field{title}{A simple two-dimensional parameterisation for {Flux Footprint Prediction (FFP)}}
+      \field{volume}{8}
+      \field{year}{2015}
+      \field{pages}{3695\bibrangedash 3713}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.5194/gmd-8-3695-2015
+      \endverb
+    \endentry
     \entry{Kruger2017LBM}{book}{}{}
       \name{author}{6}{}{%
         {{un=0,uniquepart=base,hash=0ac28eb0b4644afc5f56a77196ab8144}{%
@@ -922,6 +975,59 @@
       \range{pages}{1}
       \verb{doi}
       \verb 10.1016/j.buildenv.2021.107764
+      \endverb
+    \endentry
+    \entry{Kljun2015}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=9a468dd18dc26eba71c33921eb839a29}{%
+           family={Kljun},
+           familyi={K\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=825b428c5725930f927b5045cd47ee0d}{%
+           family={Calanca},
+           familyi={C\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4f7ce36377545e2a58f2979ffe6bab26}{%
+           family={Rotach},
+           familyi={R\bibinitperiod},
+           given={M.\bibnamedelimi W.},
+           giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=48d3d826445761dffe28890d3e098319}{%
+           family={Schmid},
+           familyi={S\bibinitperiod},
+           given={H.\bibnamedelimi P.},
+           giveni={H\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{76da3bffbd4deda4e7b5e0eaef728f5b}
+      \strng{fullhash}{d92263a5ff0e52c7b7e547ffc0d9a7ad}
+      \strng{fullhashraw}{d92263a5ff0e52c7b7e547ffc0d9a7ad}
+      \strng{bibnamehash}{d92263a5ff0e52c7b7e547ffc0d9a7ad}
+      \strng{authorbibnamehash}{d92263a5ff0e52c7b7e547ffc0d9a7ad}
+      \strng{authornamehash}{76da3bffbd4deda4e7b5e0eaef728f5b}
+      \strng{authorfullhash}{d92263a5ff0e52c7b7e547ffc0d9a7ad}
+      \strng{authorfullhashraw}{d92263a5ff0e52c7b7e547ffc0d9a7ad}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Geoscientific Model Development}
+      \field{number}{11}
+      \field{title}{A simple two-dimensional parameterisation for {Flux Footprint Prediction (FFP)}}
+      \field{volume}{8}
+      \field{year}{2015}
+      \field{pages}{3695\bibrangedash 3713}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.5194/gmd-8-3695-2015
       \endverb
     \endentry
     \entry{Kruger2017LBM}{book}{}{}

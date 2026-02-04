@@ -1,4 +1,4 @@
-\contentsline {section}{\nonumberline Nomenclature}{5}{section*.3}%
+\contentsline {section}{\nonumberline Nomenclature}{5}{section*.4}%
 \contentsline {section}{\numberline {1}Introduction}{6}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Background}{6}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Objective}{7}{subsection.1.2}%
@@ -12,20 +12,21 @@
 \contentsline {subsubsection}{\numberline {2.1.6}Stochastic Integration and Stability}{11}{subsubsection.2.1.6}%
 \contentsline {subsubsection}{\numberline {2.1.7}Model Selection and Validation via Flat Plate Analysis}{11}{subsubsection.2.1.7}%
 \contentsline {subsection}{\numberline {2.2}Source Area Modeling for Scalars and Fluxes}{12}{subsection.2.2}%
-\contentsline {section}{\numberline {3}Methodology}{14}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Validation and Numerical Workflow}{14}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}Benchmark Case: AIJ Case H}{14}{subsubsection.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.2}Computational Implementation and Workflow}{15}{subsubsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.2}Simulation Parameters and Case Setup}{17}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Physical and Dimensionless Parameters}{18}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}Wind and Turbulence Data Post-Processing and Statistical Analysis}{18}{subsubsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.2}Lagrangian Particle Data Post-Processing and Statistical Analysis}{20}{subsubsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.4}Statistical Validation Metrics}{21}{subsection.3.4}%
-\contentsline {section}{\numberline {4}Results and Discussion}{22}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Wind and Turbulence Statistics}{22}{subsection.4.1}%
-\contentsline {subsubsection}{\numberline {4.1.1}Wind and Turbulence Profile}{22}{subsubsection.4.1.1}%
-\contentsline {subsubsection}{\numberline {4.1.2}Validation of Wind and Turbulence Statistics}{31}{subsubsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.2}Particle Concentration}{33}{subsection.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.1}Particle Concentration Profile}{33}{subsubsection.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.2.2}Validation of Particle Concentration}{33}{subsubsection.4.2.2}%
-\contentsline {section}{\numberline {5}Conclusion}{37}{section.5}%
+\contentsline {subsection}{\numberline {2.3}Evolution of Flux Footprint Models}{13}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Methodology}{15}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Validation and Numerical Workflow}{15}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Benchmark Case: AIJ Case H}{15}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Computational Implementation and Workflow}{16}{subsubsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.2}Simulation Parameters and Case Setup}{18}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Physical and Dimensionless Parameters}{21}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Wind and Turbulence Data Post-Processing and Statistical Analysis}{21}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Lagrangian Particle Data Post-Processing and Statistical Analysis}{22}{subsubsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.4}Statistical Validation Metrics}{23}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Results and Discussion}{24}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Wind and Turbulence Statistics}{24}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Wind and Turbulence Profile}{24}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Validation of Wind and Turbulence Statistics}{33}{subsubsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.2}Particle Concentration}{36}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Particle Concentration Profile}{36}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Validation of Particle Concentration}{36}{subsubsection.4.2.2}%
+\contentsline {section}{\numberline {5}Conclusion}{39}{section.5}%
