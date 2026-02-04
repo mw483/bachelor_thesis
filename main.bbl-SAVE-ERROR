@@ -281,6 +281,37 @@
       \verb 10.1016/j.buildenv.2020.107534
       \endverb
     \endentry
+    \entry{nvidiaCUDA}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9ad14fae09b617d96cb4af76c555b394}{%
+           family={{NVIDIA Corporation}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{fullhash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{fullhashraw}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{bibnamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorbibnamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authornamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorfullhash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorfullhashraw}{9ad14fae09b617d96cb4af76c555b394}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2026-02-01}
+      \field{title}{{CUDA} C++ Programming Guide}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://developer.nvidia.com/cuda
+      \endverb
+      \verb{url}
+      \verb https://developer.nvidia.com/cuda
+      \endverb
+    \endentry
     \entry{Okaze2021LES}{article}{}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=de1ecd17e9c1ecd0229ff57c74dd7329}{%
@@ -386,6 +417,118 @@
       \verb 10.3390/fluids3020032
       \endverb
     \endentry
+    \entry{Schmid1994}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=48d3d826445761dffe28890d3e098319}{%
+           family={Schmid},
+           familyi={S\bibinitperiod},
+           given={H.\bibnamedelimi P.},
+           giveni={H\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{48d3d826445761dffe28890d3e098319}
+      \strng{fullhash}{48d3d826445761dffe28890d3e098319}
+      \strng{fullhashraw}{48d3d826445761dffe28890d3e098319}
+      \strng{bibnamehash}{48d3d826445761dffe28890d3e098319}
+      \strng{authorbibnamehash}{48d3d826445761dffe28890d3e098319}
+      \strng{authornamehash}{48d3d826445761dffe28890d3e098319}
+      \strng{authorfullhash}{48d3d826445761dffe28890d3e098319}
+      \strng{authorfullhashraw}{48d3d826445761dffe28890d3e098319}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Boundary-Layer Meteorology}
+      \field{month}{1}
+      \field{number}{3}
+      \field{title}{Source areas for scalars and scalar fluxes}
+      \field{volume}{67}
+      \field{year}{1994}
+      \field{pages}{293\bibrangedash 318}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1007/bf00713146
+      \endverb
+    \endentry
+    \entry{Shirzadi2024}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=957f7eaa2767911e53c543cc30cb7cd3}{%
+           family={Shirzadi},
+           familyi={S\bibinitperiod},
+           given={Mohammadreza},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b7470c817197dfa49ae71c4321d537b5}{%
+           family={Tominaga},
+           familyi={T\bibinitperiod},
+           given={Yoshihide},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4adf10931752320b1f282b4c927c1381}
+      \strng{fullhash}{4adf10931752320b1f282b4c927c1381}
+      \strng{fullhashraw}{4adf10931752320b1f282b4c927c1381}
+      \strng{bibnamehash}{4adf10931752320b1f282b4c927c1381}
+      \strng{authorbibnamehash}{4adf10931752320b1f282b4c927c1381}
+      \strng{authornamehash}{4adf10931752320b1f282b4c927c1381}
+      \strng{authorfullhash}{4adf10931752320b1f282b4c927c1381}
+      \strng{authorfullhashraw}{4adf10931752320b1f282b4c927c1381}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Building and Environment}
+      \field{title}{Computational fluid dynamics analysis of pollutant dispersion around a high-rise building: {Impact} of surrounding buildings}
+      \field{volume}{246}
+      \field{year}{2024}
+      \field{pages}{110922}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.buildenv.2023.110922
+      \endverb
+    \endentry
+    \entry{Snyder1981}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=005a479e2375b54379faaa85e1260f5c}{%
+           family={Snyder},
+           familyi={S\bibinitperiod},
+           given={W.\bibnamedelimi H.},
+           giveni={W\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{2}{%
+        {Environmental Sciences Research Laboratory, Office of Research}%
+        {Development, US Environmental Protection Agency}%
+      }
+      \list{location}{1}{%
+        {Research Triangle Park, NC}%
+      }
+      \strng{namehash}{005a479e2375b54379faaa85e1260f5c}
+      \strng{fullhash}{005a479e2375b54379faaa85e1260f5c}
+      \strng{fullhashraw}{005a479e2375b54379faaa85e1260f5c}
+      \strng{bibnamehash}{005a479e2375b54379faaa85e1260f5c}
+      \strng{authorbibnamehash}{005a479e2375b54379faaa85e1260f5c}
+      \strng{authornamehash}{005a479e2375b54379faaa85e1260f5c}
+      \strng{authorfullhash}{005a479e2375b54379faaa85e1260f5c}
+      \strng{authorfullhashraw}{005a479e2375b54379faaa85e1260f5c}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{EPA-600/8-81-009}
+      \field{title}{Guideline for Fluid Modeling of Atmospheric Diffusion}
+      \field{type}{techreport}
+      \field{year}{1981}
+    \endentry
     \entry{Suga2015D3Q27}{article}{}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=80eb6a05c9eedfe8e243e97936843b33}{%
@@ -477,6 +620,46 @@
       \range{pages}{28}
       \verb{doi}
       \verb 10.1017/S0022112087001940
+      \endverb
+    \endentry
+    \entry{Tominaga2024Review}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b7470c817197dfa49ae71c4321d537b5}{%
+           family={Tominaga},
+           familyi={T\bibinitperiod},
+           given={Yoshihide},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6f3d166fc212ece3cc944872f0c5ebab}{%
+           family={Stathopoulos},
+           familyi={S\bibinitperiod},
+           given={Ted},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{94b276da847f459ba00200f5b6b7d34a}
+      \strng{fullhash}{94b276da847f459ba00200f5b6b7d34a}
+      \strng{fullhashraw}{94b276da847f459ba00200f5b6b7d34a}
+      \strng{bibnamehash}{94b276da847f459ba00200f5b6b7d34a}
+      \strng{authorbibnamehash}{94b276da847f459ba00200f5b6b7d34a}
+      \strng{authornamehash}{94b276da847f459ba00200f5b6b7d34a}
+      \strng{authorfullhash}{94b276da847f459ba00200f5b6b7d34a}
+      \strng{authorfullhashraw}{94b276da847f459ba00200f5b6b7d34a}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Building and Environment}
+      \field{title}{{CFD} simulation of near-field pollutant dispersion in the urban environment: {A} review of current modeling techniques}
+      \field{volume}{246}
+      \field{year}{2024}
+      \field{pages}{110895}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.buildenv.2023.110895
       \endverb
     \endentry
     \entry{Weil2024LSM}{article}{}{}
@@ -886,6 +1069,37 @@
       \verb 10.1016/j.buildenv.2020.107534
       \endverb
     \endentry
+    \entry{nvidiaCUDA}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9ad14fae09b617d96cb4af76c555b394}{%
+           family={{NVIDIA Corporation}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{fullhash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{fullhashraw}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{bibnamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorbibnamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authornamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorfullhash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorfullhashraw}{9ad14fae09b617d96cb4af76c555b394}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2026-02-01}
+      \field{title}{{CUDA} C++ Programming Guide}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://developer.nvidia.com/cuda
+      \endverb
+      \verb{url}
+      \verb https://developer.nvidia.com/cuda
+      \endverb
+    \endentry
     \entry{Okaze2021LES}{article}{}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=de1ecd17e9c1ecd0229ff57c74dd7329}{%
@@ -991,6 +1205,118 @@
       \verb 10.3390/fluids3020032
       \endverb
     \endentry
+    \entry{Schmid1994}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=48d3d826445761dffe28890d3e098319}{%
+           family={Schmid},
+           familyi={S\bibinitperiod},
+           given={H.\bibnamedelimi P.},
+           giveni={H\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{48d3d826445761dffe28890d3e098319}
+      \strng{fullhash}{48d3d826445761dffe28890d3e098319}
+      \strng{fullhashraw}{48d3d826445761dffe28890d3e098319}
+      \strng{bibnamehash}{48d3d826445761dffe28890d3e098319}
+      \strng{authorbibnamehash}{48d3d826445761dffe28890d3e098319}
+      \strng{authornamehash}{48d3d826445761dffe28890d3e098319}
+      \strng{authorfullhash}{48d3d826445761dffe28890d3e098319}
+      \strng{authorfullhashraw}{48d3d826445761dffe28890d3e098319}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Boundary-Layer Meteorology}
+      \field{month}{1}
+      \field{number}{3}
+      \field{title}{Source areas for scalars and scalar fluxes}
+      \field{volume}{67}
+      \field{year}{1994}
+      \field{pages}{293\bibrangedash 318}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1007/bf00713146
+      \endverb
+    \endentry
+    \entry{Shirzadi2024}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=957f7eaa2767911e53c543cc30cb7cd3}{%
+           family={Shirzadi},
+           familyi={S\bibinitperiod},
+           given={Mohammadreza},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b7470c817197dfa49ae71c4321d537b5}{%
+           family={Tominaga},
+           familyi={T\bibinitperiod},
+           given={Yoshihide},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4adf10931752320b1f282b4c927c1381}
+      \strng{fullhash}{4adf10931752320b1f282b4c927c1381}
+      \strng{fullhashraw}{4adf10931752320b1f282b4c927c1381}
+      \strng{bibnamehash}{4adf10931752320b1f282b4c927c1381}
+      \strng{authorbibnamehash}{4adf10931752320b1f282b4c927c1381}
+      \strng{authornamehash}{4adf10931752320b1f282b4c927c1381}
+      \strng{authorfullhash}{4adf10931752320b1f282b4c927c1381}
+      \strng{authorfullhashraw}{4adf10931752320b1f282b4c927c1381}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Building and Environment}
+      \field{title}{Computational fluid dynamics analysis of pollutant dispersion around a high-rise building: {Impact} of surrounding buildings}
+      \field{volume}{246}
+      \field{year}{2024}
+      \field{pages}{110922}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.buildenv.2023.110922
+      \endverb
+    \endentry
+    \entry{Snyder1981}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=005a479e2375b54379faaa85e1260f5c}{%
+           family={Snyder},
+           familyi={S\bibinitperiod},
+           given={W.\bibnamedelimi H.},
+           giveni={W\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{2}{%
+        {Environmental Sciences Research Laboratory, Office of Research}%
+        {Development, US Environmental Protection Agency}%
+      }
+      \list{location}{1}{%
+        {Research Triangle Park, NC}%
+      }
+      \strng{namehash}{005a479e2375b54379faaa85e1260f5c}
+      \strng{fullhash}{005a479e2375b54379faaa85e1260f5c}
+      \strng{fullhashraw}{005a479e2375b54379faaa85e1260f5c}
+      \strng{bibnamehash}{005a479e2375b54379faaa85e1260f5c}
+      \strng{authorbibnamehash}{005a479e2375b54379faaa85e1260f5c}
+      \strng{authornamehash}{005a479e2375b54379faaa85e1260f5c}
+      \strng{authorfullhash}{005a479e2375b54379faaa85e1260f5c}
+      \strng{authorfullhashraw}{005a479e2375b54379faaa85e1260f5c}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{EPA-600/8-81-009}
+      \field{title}{Guideline for Fluid Modeling of Atmospheric Diffusion}
+      \field{type}{techreport}
+      \field{year}{1981}
+    \endentry
     \entry{Suga2015D3Q27}{article}{}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=80eb6a05c9eedfe8e243e97936843b33}{%
@@ -1082,6 +1408,46 @@
       \range{pages}{28}
       \verb{doi}
       \verb 10.1017/S0022112087001940
+      \endverb
+    \endentry
+    \entry{Tominaga2024Review}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b7470c817197dfa49ae71c4321d537b5}{%
+           family={Tominaga},
+           familyi={T\bibinitperiod},
+           given={Yoshihide},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6f3d166fc212ece3cc944872f0c5ebab}{%
+           family={Stathopoulos},
+           familyi={S\bibinitperiod},
+           given={Ted},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{94b276da847f459ba00200f5b6b7d34a}
+      \strng{fullhash}{94b276da847f459ba00200f5b6b7d34a}
+      \strng{fullhashraw}{94b276da847f459ba00200f5b6b7d34a}
+      \strng{bibnamehash}{94b276da847f459ba00200f5b6b7d34a}
+      \strng{authorbibnamehash}{94b276da847f459ba00200f5b6b7d34a}
+      \strng{authornamehash}{94b276da847f459ba00200f5b6b7d34a}
+      \strng{authorfullhash}{94b276da847f459ba00200f5b6b7d34a}
+      \strng{authorfullhashraw}{94b276da847f459ba00200f5b6b7d34a}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Building and Environment}
+      \field{title}{{CFD} simulation of near-field pollutant dispersion in the urban environment: {A} review of current modeling techniques}
+      \field{volume}{246}
+      \field{year}{2024}
+      \field{pages}{110895}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.buildenv.2023.110895
       \endverb
     \endentry
     \entry{Weil2024LSM}{article}{}{}

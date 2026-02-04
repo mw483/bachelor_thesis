@@ -1,4 +1,4 @@
-\section{Methodology}
+\section{Methodology}\label{sectionMethodology}
 
 \subsection{Validation and Numerical Workflow}
 
@@ -191,6 +191,27 @@ The specific configurations for the validation and research cases are summarized
 }
 \end{table}
 
+To ensure a direct comparison with the AIJ wind tunnel benchmarks, statistical data were extracted at specific coordinates within the LBM domain. As shown in Figure~\ref{fig:measurement_points}, 12 vertical profiles were selected along the center-line of the domain. These locations cover the windward, rooftop, and leeward wake regions, defined by their normalized distance from the building ($x/H$). 
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/measurement-point-xy.png}
+        \caption{Bird's-eye view ($xy$-plane)}
+    \end{subfigure}
+    \vspace{1ex}
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/measurement-point-xz.png}
+        \caption{Spanwise view ($xz$-plane)}
+    \end{subfigure}
+    \caption{Spatial distribution of measurement points within the LBM domain, showing the alignment with the AIJ experimental case.}
+    \label{fig:measurement_points}
+\end{figure}
+
+The $xy$-plane view (Figure~\ref{fig:measurement_points}a) confirms the streamwise alignment of the points, while the $xz$-plane view (Figure~\ref{fig:measurement_points}b) illustrates the vertical extent of the profiles relative to the building height $H$. This setup allows for the systematic evaluation of the flow field and pollutant dispersion in the near-field region.
+
 \subsection{Physical and Dimensionless Parameters}
 To ensure the dynamic similarity between the wind tunnel experiment and the Lattice Boltzmann Method (LBM) simulation, the Reynolds number ($Re$) is calculated. This dimensionless value represents the ratio of inertial forces to viscous forces.
 
@@ -237,6 +258,7 @@ The Turbulence Kinetic Energy ($k$), representing the mean kinetic energy per un
 
 \begin{equation}
     k = \frac{1}{2} \left( \langle u'^2 \rangle + \langle v'^2 \rangle + \langle w'^2 \rangle \right)
+    \label{eq:TKE}
 \end{equation}
 
 To handle numerical stability during post-processing, a constraint was applied such that any negative stress values resulting from floating-point errors were clamped to zero before the square root operation ($\text{max}(0, \sigma^2)$). All statistical results were mapped to the physical domain coordinates to facilitate direct comparison with the Architectural Institute of Japan (AIJ) wind tunnel experimental benchmarks.
