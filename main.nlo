@@ -14,10 +14,3 @@
 \nomenclatureentry{S$RMSE$@[{$RMSE$}]\begingroup Root Mean Square Error\nomeqref {0}|nompageref}{1}
 \nomenclatureentry{S$D$@[{$D$}]\begingroup Relative error tolerance (typically 0.25)\nomeqref {0}|nompageref}{1}
 \nomenclatureentry{S$W$@[{$W$}]\begingroup Absolute error tolerance (typically 0.05)\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{F$\eta$@[{$\eta$}]\begingroup Measured scalar concentration or flux\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{F$Q$@[{$Q$}]\begingroup Source strength or emission rate\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{F$f$@[{$f$}]\begingroup Source weight function (footprint function)\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{F$\Phi_{tot}$@[{$\Phi_{tot}$}]\begingroup Total influence (integral of the source weight function)\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{F$\Omega_P$@[{$\Omega_P$}]\begingroup Source area of level $P$\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{F$P$@[{$P$}]\begingroup Fractional contribution to total measured signal\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{F$L$@[{$L$}]\begingroup Obukhov length (atmospheric stability parameter) [m]\nomeqref {0}|nompageref}{1}

@@ -136,57 +136,44 @@
       \verb 10.1016/j.buildenv.2021.107764
       \endverb
     \endentry
-    \entry{Kljun2015}{article}{}{}
-      \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=9a468dd18dc26eba71c33921eb839a29}{%
-           family={Kljun},
-           familyi={K\bibinitperiod},
-           given={N.},
-           giveni={N\bibinitperiod},
+    \entry{Hu2025}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=855f3b81b4485b5f0dcd527f5803bb66}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Yifan},
+           giveni={Y\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=825b428c5725930f927b5045cd47ee0d}{%
-           family={Calanca},
-           familyi={C\bibinitperiod},
-           given={P.},
-           giveni={P\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=4f7ce36377545e2a58f2979ffe6bab26}{%
-           family={Rotach},
-           familyi={R\bibinitperiod},
-           given={M.\bibnamedelimi W.},
-           giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=48d3d826445761dffe28890d3e098319}{%
-           family={Schmid},
-           familyi={S\bibinitperiod},
-           given={H.\bibnamedelimi P.},
-           giveni={H\bibinitperiod\bibinitdelim P\bibinitperiod},
+        {{un=0,uniquepart=base,hash=d099958a823a249737952548c3152910}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Mengtao},
+           giveni={M\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{76da3bffbd4deda4e7b5e0eaef728f5b}
-      \strng{fullhash}{d92263a5ff0e52c7b7e547ffc0d9a7ad}
-      \strng{fullhashraw}{d92263a5ff0e52c7b7e547ffc0d9a7ad}
-      \strng{bibnamehash}{d92263a5ff0e52c7b7e547ffc0d9a7ad}
-      \strng{authorbibnamehash}{d92263a5ff0e52c7b7e547ffc0d9a7ad}
-      \strng{authornamehash}{76da3bffbd4deda4e7b5e0eaef728f5b}
-      \strng{authorfullhash}{d92263a5ff0e52c7b7e547ffc0d9a7ad}
-      \strng{authorfullhashraw}{d92263a5ff0e52c7b7e547ffc0d9a7ad}
-      \field{sortinit}{K}
-      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \strng{namehash}{42dd20b2eac1195fefbd185eaa1bd64d}
+      \strng{fullhash}{42dd20b2eac1195fefbd185eaa1bd64d}
+      \strng{fullhashraw}{42dd20b2eac1195fefbd185eaa1bd64d}
+      \strng{bibnamehash}{42dd20b2eac1195fefbd185eaa1bd64d}
+      \strng{authorbibnamehash}{42dd20b2eac1195fefbd185eaa1bd64d}
+      \strng{authornamehash}{42dd20b2eac1195fefbd185eaa1bd64d}
+      \strng{authorfullhash}{42dd20b2eac1195fefbd185eaa1bd64d}
+      \strng{authorfullhashraw}{42dd20b2eac1195fefbd185eaa1bd64d}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Geoscientific Model Development}
-      \field{number}{11}
-      \field{title}{A simple two-dimensional parameterisation for {Flux Footprint Prediction (FFP)}}
-      \field{volume}{8}
-      \field{year}{2015}
-      \field{pages}{3695\bibrangedash 3713}
-      \range{pages}{19}
+      \field{journaltitle}{Building and Environment}
+      \field{title}{Review of lattice {Boltzmann} method in urban wind simulation: {Progress}, challenges, and outlook}
+      \field{volume}{269}
+      \field{year}{2025}
+      \field{pages}{113915}
+      \range{pages}{1}
       \verb{doi}
-      \verb 10.5194/gmd-8-3695-2015
+      \verb 10.1016/j.buildenv.2025.113915
       \endverb
     \endentry
     \entry{Kruger2017LBM}{book}{}{}
@@ -334,6 +321,71 @@
       \verb 10.1016/j.buildenv.2020.107534
       \endverb
     \endentry
+    \entry{Meroney2016}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=416266252b6bd45dea07cc235c1462bd}{%
+           family={Meroney},
+           familyi={M\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fe8d9896d0a770137973d138cd744bf0}{%
+           family={Ohba},
+           familyi={O\bibinitperiod},
+           given={Ryohji},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e545c23d322fb1ce231a6c41e6374e8f}{%
+           family={Leitl},
+           familyi={L\bibinitperiod},
+           given={Bernd},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7b2cc42ed22ea29c0abdd470ef5f63f0}{%
+           family={Kondo},
+           familyi={K\bibinitperiod},
+           given={Hiroaki},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c59b3270c43745f9c0473a2e6b2694c1}{%
+           family={Grawe},
+           familyi={G\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b7470c817197dfa49ae71c4321d537b5}{%
+           family={Tominaga},
+           familyi={T\bibinitperiod},
+           given={Yoshihide},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{76d4fbd43b4f3d5ced314162b20bfd16}
+      \strng{fullhash}{ef2fecd0cb5d1736c2a6cfcc1ba42bd6}
+      \strng{fullhashraw}{ef2fecd0cb5d1736c2a6cfcc1ba42bd6}
+      \strng{bibnamehash}{ef2fecd0cb5d1736c2a6cfcc1ba42bd6}
+      \strng{authorbibnamehash}{ef2fecd0cb5d1736c2a6cfcc1ba42bd6}
+      \strng{authornamehash}{76d4fbd43b4f3d5ced314162b20bfd16}
+      \strng{authorfullhash}{ef2fecd0cb5d1736c2a6cfcc1ba42bd6}
+      \strng{authorfullhashraw}{ef2fecd0cb5d1736c2a6cfcc1ba42bd6}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Fluids}
+      \field{number}{2}
+      \field{title}{Review of {CFD} Guidelines for Dispersion Modeling}
+      \field{volume}{1}
+      \field{year}{2016}
+      \field{pages}{14}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/fluids1020014
+      \endverb
+    \endentry
     \entry{nvidiaCUDA}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=9ad14fae09b617d96cb4af76c555b394}{%
@@ -470,42 +522,6 @@
       \verb 10.3390/fluids3020032
       \endverb
     \endentry
-    \entry{Schmid1994}{article}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=48d3d826445761dffe28890d3e098319}{%
-           family={Schmid},
-           familyi={S\bibinitperiod},
-           given={H.\bibnamedelimi P.},
-           giveni={H\bibinitperiod\bibinitdelim P\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{48d3d826445761dffe28890d3e098319}
-      \strng{fullhash}{48d3d826445761dffe28890d3e098319}
-      \strng{fullhashraw}{48d3d826445761dffe28890d3e098319}
-      \strng{bibnamehash}{48d3d826445761dffe28890d3e098319}
-      \strng{authorbibnamehash}{48d3d826445761dffe28890d3e098319}
-      \strng{authornamehash}{48d3d826445761dffe28890d3e098319}
-      \strng{authorfullhash}{48d3d826445761dffe28890d3e098319}
-      \strng{authorfullhashraw}{48d3d826445761dffe28890d3e098319}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Boundary-Layer Meteorology}
-      \field{month}{1}
-      \field{number}{3}
-      \field{title}{Source areas for scalars and scalar fluxes}
-      \field{volume}{67}
-      \field{year}{1994}
-      \field{pages}{293\bibrangedash 318}
-      \range{pages}{26}
-      \verb{doi}
-      \verb 10.1007/bf00713146
-      \endverb
-    \endentry
     \entry{Shirzadi2024}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=957f7eaa2767911e53c543cc30cb7cd3}{%
@@ -636,6 +652,40 @@
       \range{pages}{14}
       \verb{doi}
       \verb 10.1016/j.camwa.2015.01.011
+      \endverb
+    \endentry
+    \entry{VDI2015}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2c1dd0eae2a534e67f856c60b2eb9e79}{%
+           family={{The Association of German Engineers (VDI)}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {VDI/DIN-Kommission Reinhaltung der Luft (KRl) - Normenausschuss}%
+      }
+      \strng{namehash}{2c1dd0eae2a534e67f856c60b2eb9e79}
+      \strng{fullhash}{2c1dd0eae2a534e67f856c60b2eb9e79}
+      \strng{fullhashraw}{2c1dd0eae2a534e67f856c60b2eb9e79}
+      \strng{bibnamehash}{2c1dd0eae2a534e67f856c60b2eb9e79}
+      \strng{authorbibnamehash}{2c1dd0eae2a534e67f856c60b2eb9e79}
+      \strng{authornamehash}{2c1dd0eae2a534e67f856c60b2eb9e79}
+      \strng{authorfullhash}{2c1dd0eae2a534e67f856c60b2eb9e79}
+      \strng{authorfullhashraw}{2c1dd0eae2a534e67f856c60b2eb9e79}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Environmental Meteorology. Prognostic Micro-Scale Wind Field Models. Evaluation for Flow around Buildings and Obstacles. {VDI 3783 Part 9}}
+      \field{type}{techreport}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb http://www.vdi.eu/nc/guidelines/vdi_3783_blatt_9
+      \endverb
+      \verb{url}
+      \verb http://www.vdi.eu/nc/guidelines/vdi_3783_blatt_9
       \endverb
     \endentry
     \entry{Thomson1987Stochastic}{article}{}{}
@@ -977,57 +1027,44 @@
       \verb 10.1016/j.buildenv.2021.107764
       \endverb
     \endentry
-    \entry{Kljun2015}{article}{}{}
-      \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=9a468dd18dc26eba71c33921eb839a29}{%
-           family={Kljun},
-           familyi={K\bibinitperiod},
-           given={N.},
-           giveni={N\bibinitperiod},
+    \entry{Hu2025}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=855f3b81b4485b5f0dcd527f5803bb66}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Yifan},
+           giveni={Y\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=825b428c5725930f927b5045cd47ee0d}{%
-           family={Calanca},
-           familyi={C\bibinitperiod},
-           given={P.},
-           giveni={P\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=4f7ce36377545e2a58f2979ffe6bab26}{%
-           family={Rotach},
-           familyi={R\bibinitperiod},
-           given={M.\bibnamedelimi W.},
-           giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=48d3d826445761dffe28890d3e098319}{%
-           family={Schmid},
-           familyi={S\bibinitperiod},
-           given={H.\bibnamedelimi P.},
-           giveni={H\bibinitperiod\bibinitdelim P\bibinitperiod},
+        {{un=0,uniquepart=base,hash=d099958a823a249737952548c3152910}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Mengtao},
+           giveni={M\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{76da3bffbd4deda4e7b5e0eaef728f5b}
-      \strng{fullhash}{d92263a5ff0e52c7b7e547ffc0d9a7ad}
-      \strng{fullhashraw}{d92263a5ff0e52c7b7e547ffc0d9a7ad}
-      \strng{bibnamehash}{d92263a5ff0e52c7b7e547ffc0d9a7ad}
-      \strng{authorbibnamehash}{d92263a5ff0e52c7b7e547ffc0d9a7ad}
-      \strng{authornamehash}{76da3bffbd4deda4e7b5e0eaef728f5b}
-      \strng{authorfullhash}{d92263a5ff0e52c7b7e547ffc0d9a7ad}
-      \strng{authorfullhashraw}{d92263a5ff0e52c7b7e547ffc0d9a7ad}
-      \field{sortinit}{K}
-      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \strng{namehash}{42dd20b2eac1195fefbd185eaa1bd64d}
+      \strng{fullhash}{42dd20b2eac1195fefbd185eaa1bd64d}
+      \strng{fullhashraw}{42dd20b2eac1195fefbd185eaa1bd64d}
+      \strng{bibnamehash}{42dd20b2eac1195fefbd185eaa1bd64d}
+      \strng{authorbibnamehash}{42dd20b2eac1195fefbd185eaa1bd64d}
+      \strng{authornamehash}{42dd20b2eac1195fefbd185eaa1bd64d}
+      \strng{authorfullhash}{42dd20b2eac1195fefbd185eaa1bd64d}
+      \strng{authorfullhashraw}{42dd20b2eac1195fefbd185eaa1bd64d}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Geoscientific Model Development}
-      \field{number}{11}
-      \field{title}{A simple two-dimensional parameterisation for {Flux Footprint Prediction (FFP)}}
-      \field{volume}{8}
-      \field{year}{2015}
-      \field{pages}{3695\bibrangedash 3713}
-      \range{pages}{19}
+      \field{journaltitle}{Building and Environment}
+      \field{title}{Review of lattice {Boltzmann} method in urban wind simulation: {Progress}, challenges, and outlook}
+      \field{volume}{269}
+      \field{year}{2025}
+      \field{pages}{113915}
+      \range{pages}{1}
       \verb{doi}
-      \verb 10.5194/gmd-8-3695-2015
+      \verb 10.1016/j.buildenv.2025.113915
       \endverb
     \endentry
     \entry{Kruger2017LBM}{book}{}{}
@@ -1175,6 +1212,71 @@
       \verb 10.1016/j.buildenv.2020.107534
       \endverb
     \endentry
+    \entry{Meroney2016}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=416266252b6bd45dea07cc235c1462bd}{%
+           family={Meroney},
+           familyi={M\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fe8d9896d0a770137973d138cd744bf0}{%
+           family={Ohba},
+           familyi={O\bibinitperiod},
+           given={Ryohji},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e545c23d322fb1ce231a6c41e6374e8f}{%
+           family={Leitl},
+           familyi={L\bibinitperiod},
+           given={Bernd},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7b2cc42ed22ea29c0abdd470ef5f63f0}{%
+           family={Kondo},
+           familyi={K\bibinitperiod},
+           given={Hiroaki},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c59b3270c43745f9c0473a2e6b2694c1}{%
+           family={Grawe},
+           familyi={G\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b7470c817197dfa49ae71c4321d537b5}{%
+           family={Tominaga},
+           familyi={T\bibinitperiod},
+           given={Yoshihide},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{76d4fbd43b4f3d5ced314162b20bfd16}
+      \strng{fullhash}{ef2fecd0cb5d1736c2a6cfcc1ba42bd6}
+      \strng{fullhashraw}{ef2fecd0cb5d1736c2a6cfcc1ba42bd6}
+      \strng{bibnamehash}{ef2fecd0cb5d1736c2a6cfcc1ba42bd6}
+      \strng{authorbibnamehash}{ef2fecd0cb5d1736c2a6cfcc1ba42bd6}
+      \strng{authornamehash}{76d4fbd43b4f3d5ced314162b20bfd16}
+      \strng{authorfullhash}{ef2fecd0cb5d1736c2a6cfcc1ba42bd6}
+      \strng{authorfullhashraw}{ef2fecd0cb5d1736c2a6cfcc1ba42bd6}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Fluids}
+      \field{number}{2}
+      \field{title}{Review of {CFD} Guidelines for Dispersion Modeling}
+      \field{volume}{1}
+      \field{year}{2016}
+      \field{pages}{14}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/fluids1020014
+      \endverb
+    \endentry
     \entry{nvidiaCUDA}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=9ad14fae09b617d96cb4af76c555b394}{%
@@ -1311,42 +1413,6 @@
       \verb 10.3390/fluids3020032
       \endverb
     \endentry
-    \entry{Schmid1994}{article}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=48d3d826445761dffe28890d3e098319}{%
-           family={Schmid},
-           familyi={S\bibinitperiod},
-           given={H.\bibnamedelimi P.},
-           giveni={H\bibinitperiod\bibinitdelim P\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{48d3d826445761dffe28890d3e098319}
-      \strng{fullhash}{48d3d826445761dffe28890d3e098319}
-      \strng{fullhashraw}{48d3d826445761dffe28890d3e098319}
-      \strng{bibnamehash}{48d3d826445761dffe28890d3e098319}
-      \strng{authorbibnamehash}{48d3d826445761dffe28890d3e098319}
-      \strng{authornamehash}{48d3d826445761dffe28890d3e098319}
-      \strng{authorfullhash}{48d3d826445761dffe28890d3e098319}
-      \strng{authorfullhashraw}{48d3d826445761dffe28890d3e098319}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Boundary-Layer Meteorology}
-      \field{month}{1}
-      \field{number}{3}
-      \field{title}{Source areas for scalars and scalar fluxes}
-      \field{volume}{67}
-      \field{year}{1994}
-      \field{pages}{293\bibrangedash 318}
-      \range{pages}{26}
-      \verb{doi}
-      \verb 10.1007/bf00713146
-      \endverb
-    \endentry
     \entry{Shirzadi2024}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=957f7eaa2767911e53c543cc30cb7cd3}{%
@@ -1477,6 +1543,40 @@
       \range{pages}{14}
       \verb{doi}
       \verb 10.1016/j.camwa.2015.01.011
+      \endverb
+    \endentry
+    \entry{VDI2015}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2c1dd0eae2a534e67f856c60b2eb9e79}{%
+           family={{The Association of German Engineers (VDI)}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {VDI/DIN-Kommission Reinhaltung der Luft (KRl) - Normenausschuss}%
+      }
+      \strng{namehash}{2c1dd0eae2a534e67f856c60b2eb9e79}
+      \strng{fullhash}{2c1dd0eae2a534e67f856c60b2eb9e79}
+      \strng{fullhashraw}{2c1dd0eae2a534e67f856c60b2eb9e79}
+      \strng{bibnamehash}{2c1dd0eae2a534e67f856c60b2eb9e79}
+      \strng{authorbibnamehash}{2c1dd0eae2a534e67f856c60b2eb9e79}
+      \strng{authornamehash}{2c1dd0eae2a534e67f856c60b2eb9e79}
+      \strng{authorfullhash}{2c1dd0eae2a534e67f856c60b2eb9e79}
+      \strng{authorfullhashraw}{2c1dd0eae2a534e67f856c60b2eb9e79}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Environmental Meteorology. Prognostic Micro-Scale Wind Field Models. Evaluation for Flow around Buildings and Obstacles. {VDI 3783 Part 9}}
+      \field{type}{techreport}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb http://www.vdi.eu/nc/guidelines/vdi_3783_blatt_9
+      \endverb
+      \verb{url}
+      \verb http://www.vdi.eu/nc/guidelines/vdi_3783_blatt_9
       \endverb
     \endentry
     \entry{Thomson1987Stochastic}{article}{}{}

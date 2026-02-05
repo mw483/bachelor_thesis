@@ -16,7 +16,7 @@
 
 The numerical validation of the Lattice Boltzmann Method (LBM) in this study is based on Case H of the Architectural Institute of Japan (AIJ) benchmark, which involves an isolated building model within a turbulent boundary layer. The physical experiment was conducted at Tokyo Polytechnic University using a 1:250 scale model. The building is a rectangular prism with a height-to-width ratio of $1:1:2$ ($H = 0.20$ m).The wind tunnel test section measures $2.8\,\text{m} \times 1.2\,\text{m} \times 1.0\,\text{m}$, corresponding to normalized dimensions of $14H \times 6H \times 5H$. Turbulence in the approach section was induced using spires and roughness elements to simulate a realistic atmospheric boundary layer. For the pollutant dispersion study, a tracer gas release point was located $50$ mm ($0.25H$) from the leeward side of the building. To ensure comparability across different scales, the reference velocity $U_H$ is defined as the mean inflow velocity at the building height.
 
-The LBM results in this research are cross-validated against the comprehensive Large Eddy Simulation (LES) study conducted by \textcite{Okaze2021LES}. Their study utilized OpenFOAM to investigate the influence of various subgrid-scale (SGS) models—including the Standard Smagorinsky (S), Dynamic Smagorinsky (DS), Wall-Adapting Local Eddy-Viscosity (WALE), and Coherent Structure (CS) models—on turbulent statistics. Notably, \textcite{Okaze2021LES} evaluated grid sensitivity across 10, 20, and 40-grid resolutions relative to the building width. This thesis focuses on comparing LBM performance against the validation study, using the same validation standards defined in the paper, which is a hit rate ($q$) of $\ge 0.66$ and a factor of two observations (FAC2) of $> 0.5$. By comparing the LBM-LSM results directly to these established OpenFOAM benchmarks, the predictive accuracy of the model can be evaluated.
+The LBM results in this research are cross-validated against the comprehensive Large Eddy Simulation (LES) study conducted by \textcite{Okaze2021LES}. Their study utilized OpenFOAM to investigate the influence of various subgrid-scale (SGS) models. This includes the Standard Smagorinsky (S), Dynamic Smagorinsky (DS), Wall-Adapting Local Eddy-Viscosity (WALE), and Coherent Structure (CS) models—on turbulent statistics. Notably, \textcite{Okaze2021LES} evaluated grid sensitivity across 10, 20, and 40-grid resolutions relative to the building width. This thesis focuses on comparing LBM performance against the validation study, using the same validation standards defined in the paper, which is a hit rate ($q$) of $\ge 0.66$ and a factor of two observations (FAC2) of $> 0.5$. By comparing the LBM-LSM results directly to these established OpenFOAM benchmarks, the predictive accuracy of the model can be evaluated.
 
 A significant factor in the accuracy of the benchmark study was the choice of the computational grid. \textcite{Okaze2021LES} utilized a domain of $12.5H(x) \times 6.0H(y) \times 5.0H(z)$ and intentionally avoided non-conformal grids—setups where the grid is made finer or coarser in specific areas to save on calculation time. They observed that sudden changes in grid size can cause mathematical errors and oscillations (unstable values) at the boundaries where the different grid scales meet. To ensure their comparisons of the physics models remained pure, they used a consistent, orthogonal grid system throughout their study.
 
@@ -38,7 +38,7 @@ The simulation is designed to run efficiently by using the Graphics Processing U
     \item \textbf{Data Memory Management}: Before calculations start, information must be moved from the computer's main memory to the GPU's high-speed memory. This module ensures that the wind grid and particle positions are stored where the GPU can access them quickly.
     \item \textbf{Wind Field Calculation (LBM)}: This is the core of the wind solver. It calculates how the air moves and collide on a grid. Because these collisions happen at every point in space at the same time, the GPU handles this by calculating every grid cell in parallel.
     \item \textbf{Boundary and Obstacle Handling}: This module manages how the wind interacts with boundaries, such as the ground surface or the building model. It applies the specific roughness settings ($z_0$) and ensures the wind cannot pass through solid walls.
-    \item \textbf{Particle Movement (LPT)}: Once the wind speed is known at a specific point, this module calculates the new position of each individual particle. It accounts for the forces the wind exerts on the particles, moving them through the complex flow patterns around the building.
+    \item \textbf{Particle Movement (LPT)}: Once the wind speed is known at a specific point, this module calculates the new position of each individual particle. It accounts for the forces the wind exerts on the particles, moving them through the complex flow patterns around the building. In particular, particle release is governed by a source configuration file (\texttt{particle\_position.txt}).
     \item \textbf{Data Output and Recording}: At set intervals, the simulation saves the state of the wind and particles to the storage system. These are the files (such as the \texttt{.csv} and binary results) used for the statistical validation and profile comparisons discussed in the results section.
 \end{enumerate}
 
@@ -169,7 +169,8 @@ The same source code for the simulation can also be used when running the simula
 \end{figure}
 
 \subsection{Simulation Parameters and Case Setup}
-The specific configurations for the validation and research cases are summarized in Table~\ref{tab:simulation_cases_full}. These cases represent the transition from local prototyping to large-scale supercomputer execution.
+
+To validate the LBM against the AIJ experimental data and the results by \textcite{Okaze2021LES}, several simulations were performed with different parameters. The initial aim of these simulations are to evaluate the accuracy of the LBM across a number of different cases that affect the turbulent boundary layer development and inflow turbulence. The specific configurations for the validation and research cases are summarized in Table~\ref{tab:simulation_cases_full}. These cases represent the transition from local prototyping to large-scale supercomputer execution.
 
 \begin{table}[ht]
 \centering
@@ -265,10 +266,11 @@ To ensure a direct comparison with the AIJ wind tunnel benchmarks, statistical d
 
 The $xy$-plane view (Figure~\ref{fig:measurement_points}a) confirms the streamwise alignment of the points, while the $xz$-plane view (Figure~\ref{fig:measurement_points}b) illustrates the vertical extent of the profiles relative to the building height $H$. This setup allows for the systematic evaluation of the flow field and pollutant dispersion in the near-field region.
 
-\subsection{Physical and Dimensionless Parameters}
+\subsection{Post-Processing and Statistical Analysis of Output Data}
+
+\subsubsection{The Reynolds Number}
 To ensure the dynamic similarity between the wind tunnel experiment and the Lattice Boltzmann Method (LBM) simulation, the Reynolds number ($Re$) is calculated. This dimensionless value represents the ratio of inertial forces to viscous forces.
 
-\textbf{Reynolds Number ($Re$)}  
 For this study, the characteristic length is defined as the building height $H$, and the velocity is the wind speed at that height $U_H$:
 
 \begin{equation}
@@ -279,18 +281,13 @@ While the experimental $Re_{exp}$ is $4.3 \times 10^{4}$, the LBM simulation on 
 
 Since both the experiment and the simulation significantly exceed this critical threshold, the large-scale turbulent structures that serve as the primary focus of the Large Eddy Simulation (LES) approach remain physically consistent. The higher $Re_{LBM}$ utilized in this thesis reflects the high-resolution grid permitted by the supercomputing environment, allowing for a more detailed capture of the flow without violating the principle of Reynolds-number independence.
 
-\subsubsection{Wind and Turbulence Data Post-Processing and Statistical Analysis}
+\subsubsection{Wind and Turbulence Data}
 
-The Large Eddy Simulation (LES) results were post-processed to extract time-averaged wind statistics and turbulence characteristics. The simulation domain was decomposed into four parallel sub-domains (indexed 0000 to 0003) for computational efficiency on the TSUBAME 4.0 supercomputer. 
+The Large Eddy Simulation (LES) results were post-processed to extract time-averaged wind statistics and turbulence characteristics. The simulation domain was decomposed into four parallel sub-domains (indexed 0000 to 0003) for computational efficiency on the TSUBAME 4.0 supercomputer. Data analysis focused primarily on the fourth sub-domain (0003), which contains the building model and the validation points of interest, excluding the approach flow sections (0000–0002).
 
-Data analysis focused primarily on the fourth sub-domain (0003), which contains the building model and the validation points of interest, excluding the approach flow sections (0000–0002).
-
-\textbf{Data Structure and Extraction}
 Wind field data were exported as planar cross-sections ($xy$-planes) at various vertical grid heights ($k$). The raw output files follow a stacked structure where each height level is preceded by a header indicating the vertical grid index, followed by a $192 \times 544$ matrix representing the spanwise ($y$) and streamwise ($x$) velocity components. On the small domain simulation (Case 1), the data structure is similar, except for the inexistence of the approach section. Thus, for the small domain simulation, only one sub-domain, 0000, exists, and the analysis is done over that sub-domain only.
 
 The analysis utilizes time-averaged velocity components ($\bar{u}, \bar{v}, \bar{w}$) and second-order velocity moments ($\overline{u^2}, \overline{v^2}, \overline{w^2}$), averaged over 540,000 time steps (equivalent to 5,400 physical seconds) to ensure statistical convergence. These variables correspond to the output files \texttt{xy\_um}, \texttt{xy\_vm}, \texttt{xy\_wm} (first-order moments) and \texttt{xy\_uu}, \texttt{xy\_vv}, \texttt{xy\_ww} (second-order moments).
-
-\textbf{Turbulence Statistics}
 
 To evaluate the turbulent flow characteristics, Reynolds stresses were calculated by subtracting the square of the mean velocity from the mean of the squared velocity. The streamwise ($\langle u'^2 \rangle$), spanwise ($\langle v'^2 \rangle$), and vertical ($\langle w'^2 \rangle$) Reynolds normal stresses were derived as follows:
 
@@ -300,15 +297,11 @@ To evaluate the turbulent flow characteristics, Reynolds stresses were calculate
     \langle w'^2 \rangle &= \overline{w^2} - (\bar{w})^2 
 \end{align}
 
-\textbf{Root Mean Square (RMS) Fluctuations}
-
 The Root Mean Square (RMS) velocity fluctuations, which indicate the intensity of turbulence in each direction, were calculated and normalized by the reference approach flow velocity ($U_H$) at building height $H$:
 
 \begin{equation}
     u_{rms} = \frac{\sqrt{\langle u'^2 \rangle}}{U_H}, \quad v_{rms} = \frac{\sqrt{\langle v'^2 \rangle}}{U_H}, \quad w_{rms} = \frac{\sqrt{\langle w'^2 \rangle}}{U_H}
 \end{equation}
-
-\textbf{Turbulence Kinetic Energy (TKE)}
 
 The Turbulence Kinetic Energy ($k$), representing the mean kinetic energy per unit mass associated with eddies in the turbulent flow, was computed as half the sum of the Reynolds normal stresses:
 
@@ -319,21 +312,22 @@ The Turbulence Kinetic Energy ($k$), representing the mean kinetic energy per un
 
 To handle numerical stability during post-processing, a constraint was applied such that any negative stress values resulting from floating-point errors were converted to zero before the square root operation ($\text{max}(0, \sigma^2)$). All statistical results were mapped to the physical domain coordinates, and normalized with height $H$ as well as approach streamwise wind speed $U_H$ to facilitate direct comparison with the Architectural Institute of Japan (AIJ) wind tunnel experimental benchmarks.
 
-\subsubsection{Lagrangian Particle Data Post-Processing and Statistical Analysis}
+\subsubsection{Lagrangian Particle Data}
 
-The raw simulation output is generated in a condensed binary format to manage the high volume of data produced by the Lagrangian tracking. These binary files are recorded at 1-second intervals (equivalent to every 100 simulation time steps). For each output interval, a set of specialized files is created, including \texttt{header}, \texttt{index}, \texttt{position}, \texttt{velocity}, and \texttt{SGS\_velocity}. Each file contains the specific physical attributes of all particles active within the domain at that specific moment. For instance, a file named \texttt{position0-001.bin} stores the three-dimensional Cartesian coordinates ($x, y, z$) of every particle at $t = 1$ second.
+The raw simulation output of the particles is recorded in a condensed binary format to manage the high volume of data generated by the Lagrangian tracking. These files are saved at a frequency corresponding to the physical time step of the simulation, typically every 1 second (or every 100 steps). The naming convention for these files follows the format \texttt{[type][node]-[step].bin}, where the final suffix represents the cumulative time step $n = 0, 1, 2, \dots$ until the end of the simulation.
 
-%% NOTE: Edit tomorrow after checking what is the specific names of the binary files : header, index, position, velocity (uvw), sgs velocity (uvw SGS), need to specify the file format and name.
-% Files:
-% Mode                 LastWriteTime         Length Name
-% ----                 -------------         ------ ----
-% -a----          2/2/2026  11:09 AM              4 header-100.bin
-% -a----          2/2/2026  11:09 AM              4 header_node0-100.bin
-% -a----          2/2/2026  11:10 AM        2457604 index0-100.bin
-% -a----          2/2/2026  11:15 AM        7372804 position0-100.bin
-% -a----          2/2/2026  11:29 AM        7372804 uvw0-100.bin
-% -a----          2/2/2026  11:41 AM        7372804 uvw_sgs0-100.bin
-% -a----          2/2/2026  11:54 AM        2457604 velocity0-100.bin
+On the TSUBAME 4.0 supercomputer, the computational domain is partitioned across multiple nodes to optimize GPU memory usage. Consequently, each output interval produces a set of files for each node (In the case of four nodes, as used in this report: $0, 1, 2, \text{and } 3$). For any given time step $n$, the generated files include:
+
+\begin{itemize}
+    \item \texttt{header\_node[0-3]-[n].bin}: Metadata describing the simulation state.
+    \item \texttt{index[0-3]-[n].bin}: Unique identification numbers for every active particle on that node.
+    \item \texttt{position[0-3]-[n].bin}: Three-dimensional Cartesian coordinates ($x, y, z$) for each particle.
+    \item \texttt{uvw[0-3]-[n].bin} and \texttt{uvw\_sgs[0-3]-[n].bin}: Resolved and sub-grid scale velocity components.
+\end{itemize}
+
+As mentioned in the computational workflow, particle release is governed by a source configuration file (\texttt{particle\_position.txt}), which specifies the spatial coordinates, initial velocities, \texttt{Group Number}, and an ID for each emission point. For this research, all sources are assigned to Group 1, ensuring a constant release rate of one particle per source per second.
+
+The ID assignment is important in footprint studies as it allows the post-processing code to identify the origin of each sampled particle. This is achieved through a structured ID assignment. When a source is assigned a base ID (e.g., $3001$), the particle released at $t=0$ carries that ID. At each subsequent time step, the ID of the newly released particle increments by one (e.g., $3002, 3003, \dots$). By applying a floor function based on the expected number of releases per source (e.g., $\lfloor ID / 1000 \rfloor$ or $\lfloor ID / 10000 \rfloor$), the post-processing suite can reconstruct which specific source a particle originated from, and by extension, its source coordinates by looking at the source configuration file. While the solver outputs a full physical suite, the analysis tool primarily iterates through the \texttt{index} and \texttt{position} files to map these IDs to their source coordinates and aggregate their spatial distribution into statistical summaries.
 
 To translate these large-scale datasets into physically interpretable results, a dedicated analysis suite was developed in C++. This suite utilizes a modular design where specific physical quantities are calculated by independent components managed by a central execution program. The workflow is handled by a C++ executable, compiled using a \texttt{Makefile} that links distinct modules for density calculation, flux analysis, vertical profiling, and Flux Footprint Prediction (FFP).
 
@@ -343,32 +337,47 @@ The analysis is typically managed through batch scripts (\texttt{run.bat}), allo
 
 To process the millions of Lagrangian trajectories efficiently, the post-processor utilizes OpenMP for multi-threading (\texttt{OMP\_NUM\_THREADS}). This allows the software to use multiple CPU cores simultaneously to read the binary data and perform calculations in parallel. The final results are aggregated into averaged statistical summaries in \texttt{.csv} or text format, which are then used for final visualization and plotting in Python.
 
-\textbf{Normalized Concentration ($C_{norm}$)}
-
-To allow for a direct comparison between experimental gas data and the Lagrangian particle model, concentration values are normalized based on the flow rate $Q$, velocity $U_H$, and building scale $H$.
+To allow for a direct comparison between experimental gas data and the Lagrangian particle model, normalized concentration values $C_{norm}$ are normalized based on the flow rate $Q$, velocity $U_H$, and building scale $H$.
 
 \begin{equation}
     C_{norm} = \frac{C_o \cdot U_H \cdot H^2}{Q}
 \end{equation}
 
-\subsection{Statistical Validation Metrics}
-Following the AIJ guidelines for urban wind environments, four metrics are used to compare the predicted values ($P_i$) against the observed experimental data ($O_i$).\textbf{Hit Rate ($q$)}The Hit Rate measures the reliability of the model. A data point is a "hit" if the prediction is within a relative tolerance $D$ (usually 0.25) or an absolute tolerance $W$ (usually 0.05).
+\subsubsection{Statistical Validation Metrics}
 
-\begin{equation}q = \frac{1}{N} \sum_{i=1}^{N} n_i, \quad n_i = 
+To evaluate the predictive accuracy of the GPGPU-LBM solver, four statistical metrics are employed to compare the predicted values ($P_i$) against the observed experimental data ($O_i$) from the AIJ Case H benchmark.
+
+The primary metric for validating micro-scale wind field models in this study is the Hit Rate ($q$). While adopted by AIJ and \textcite{Okaze2021LES}, the fundamental reasoning for this metric is established in the German technical guideline \textbf{VDI 3783 Part 9} \parencite{VDI2015}. This guideline ensures the "fitness-for-purpose" of prognostic models through a three-step procedure: general evaluation, scientific evaluation, and validation.
+
+According to the VDI standard, the Hit Rate represents the fraction of measurement points where the model results differ from the comparison data by less than an allowed absolute ($W$) or relative ($D$) difference \parencite{Meroney2016}.
+
+\begin{equation}
+q = \frac{1}{N} \sum_{i=1}^{N} n_i, \quad n_i = 
     \begin{cases} 
-        1 & \text{if } \left| \frac{P_i - O_i}{O_i} \right| \le D \text{ or } |P_i - O_i| \le W \\ 0 & \text{else} 
+        1 & \text{if } \left| \frac{P_i - O_i}{O_i} \right| \le D \text{ or } |P_i - O_i| \le W \\ 
+        0 & \text{otherwise} 
     \end{cases}
 \end{equation}
 
-\textbf{Factor of Two (FAC2)} FAC2 is a robust measure of the overall spread. It checks if the predicted value is between half and double the observed value.
+For comparisons with wind tunnel data involving individual obstacles (such as the AIJ cube), the VDI guideline defines thresholds of $D = 0.25$ and $W = 0.05$ (normalized values), requiring a minimal hit rate of $q \ge 0.66$ for the model to be considered validated.
 
-\begin{equation}\text{FAC2} = \frac{1}{N} \sum_{i=1}^{N} n_i, \quad n_i = 
+In addition to hit rate, the Factor of Two ($FAC2$) is used as a robust measure of the overall data spread. It checks if the predicted value is within a factor of two of the observed value, which is a standard requirement for dispersion modeling and complex urban flows.
+
+\begin{equation}
+\text{FAC2} = \frac{1}{N} \sum_{i=1}^{N} n_i, \quad n_i = 
     \begin{cases} 
-        1 & \text{if } 0.5 \le \frac{P_i}{O_i} \le 2.0 \\ 0 & \text{else} 
+        1 & \text{if } 0.5 \le \frac{P_i}{O_i} \le 2.0 \\ 
+        0 & \text{otherwise} 
     \end{cases}
 \end{equation}
 
-\textbf{Error Metrics (MAE and RMSE)} The Mean Absolute Error (MAE) provides the average magnitude of the errors, while the Root Mean Square Error (RMSE) gives a higher weight to large outliers, providing a stricter assessment of simulation accuracy.
+To supplement the threshold-based metrics, the Mean Absolute Error (MAE) and Root Mean Square Error (RMSE) are calculated. MAE provides the average magnitude of the errors, while RMSE gives a higher weight to large outliers, providing a stricter assessment of the simulation's numerical stability and accuracy.
+
+\begin{equation}
+    \text{MAE} = \frac{1}{N} \sum_{i=1}^{N} |P_i - O_i|, \quad \text{RMSE} = \sqrt{\frac{1}{N} \sum_{i=1}^{N} (P_i - O_i)^2}
+\end{equation}
+
+The Mean Absolute Error (MAE) provides the average magnitude of the errors, while the Root Mean Square Error (RMSE) gives a higher weight to large outliers, providing a stricter assessment of simulation accuracy.
 
 \begin{equation}
     \text{MAE} = \frac{1}{N} \sum_{i=1}^{N} |P_i - O_i|, \quad \text{RMSE} = \sqrt{\frac{1}{N} \sum_{i=1}^{N} (P_i - O_i)^2}\end{equation}

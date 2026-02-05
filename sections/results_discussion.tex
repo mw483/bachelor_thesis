@@ -276,7 +276,16 @@ The quantitative error metrics shown in \autoref{tab:mae_rmse_validation} reinfo
 
 The vertical and spanwise velocity components ($v, w$) along with turbulence fluctuations maintain stable and low MAE values ($< 0.05$) throughout most cases. The TKE errors are particularly minimized in the optimized roughness scenarios. This can be seen in Case 4 with an RMSE of 0.0150, demonstrating that again, the solver's ability to capture energy distribution depends heavily on the correct specification of the approach flow. These low absolute errors confirm that the model predictions are both statistically correlated and physically accurate in magnitude.
 
+A defining characteristic of this research is the use of a uniform Cartesian lattice to resolve the complex building geometry. As noted by \textcite{Hu2025}, the Lattice Boltzmann Method (LBM) differs significantly from the traditional Finite Volume Method (FVM) in its approach to grid resolution. In FVM, researchers typically refine grids locally in critical regions—such as boundary layers and vortex formation zones—to capture fluid details without increasing the computational cost of the entire domain. This is also seen in the validation simulation conducted by \textcite{Okaze2021LES}.
+
+In contrast, the nature of discrete velocity schemes in LBM implies that particle propagation velocities are uniform and fixed in magnitude throughout the domain \parencite{Hu2025}. This creates a significant challenge for urban-scale simulations, where buildings with sharp edges and irregular layouts can only be represented through the static resolution of the lattice. While advanced techniques such as octree-based refinement or multi-domain strategies exist to improve efficiency, they often require sophisticated interpolation at the coarse-fine interfaces which can introduce additional numerical errors \parencite{Hu2025}.
+
+Therefore, the high-fidelity wind field achieved in this study is noteworthy given the use of a completely uniform grid. While traditional LES models often rely on highly refined grids near building surfaces to resolve steep velocity gradients, the LBM-LES framework utilized on TSUBAME 4.0 successfully reproduced the AIJ benchmark flow patterns to a high quality using a consistent cubic lattice across the entire domain. 
+
 \subsection{Particle Concentration}
+
+Particle concentration is measured in the same normalized locations as in the AIJ experiment. Subsequently, the accuracy of particle concentration is evaluated by observing the vertical profiles as well as the accuracy based on the validation metrics.
+
 \subsubsection{Particle Concentration Profile}
 
 \begin{figure}[htbp]
@@ -308,9 +317,15 @@ The vertical and spanwise velocity components ($v, w$) along with turbulence flu
         \caption{Part 4}
     \end{subfigure}
 
-    \caption{Normalized concentration ($C_{norm}$) profiles across 12 AIJ measurement locations, divided into (a) Part 1, (b) Part 2, (c) Part 3, and (d) Part 4.}
+    \caption{Normalized concentration ($C_{norm}$) profiles across 11 AIJ measurement locations, divided into (a) Part 1, (b) Part 2, (c) Part 3, and (d) Part 4.}
     \label{fig:concentration_profiles_grid}
 \end{figure}
+
+\autoref{fig:concentration_profiles_grid} presents the normalized particle concentration profiles across the various roughness scenarios. Several key observations regarding the dispersion characteristics can be identified. In the windward regions, the LBM-LPT model detects no particle concentration, whereas the AIJ benchmark reports low but measurable gas concentrations, with a few points recording negative concentration which could be attributed to measurement error. This discrepancy is likely attributable to the fundamental difference in dispersion physics; while the AIJ experimental tracer gas undergoes molecular and turbulent diffusion in all directions, the Lagrangian particles in this study are strictly advected by the instantaneous wind field. 
+
+Directly above the building roof, a significant concentration spike is observed. The model tends to overpredict these values in the no roughness and small roughness cases. However, this overprediction is mitigated as the approach roughness increases, with the large roughness scenarios demonstrating the highest predictive accuracy for the building-top concentrations compared to the medium-roughness cases. In the immediate leeward wake ($x/H = 0$ to $x/H = 0.5$), the concentration profiles are relatively well-reproduced. The LBM results follow a curve similar to an inverse exponential function, effectively mimicking the vertical distribution observed in the AIJ experimental data. From $x/H = 0.75$ to the furthest measurement point at $x/H = 1.5$, the profiles deviate noticeably from the benchmark. Consistent with the velocity results, the "no turbulence" case exhibits the lowest accuracy, with particles dispersing more uniformly up to heights of $z = 1.5H$. While the inclusion of inflow turbulence improves the general vertical distribution—particularly in medium and high-roughness scenarios—the specific morphology of the profile remains distinct from the AIJ results. 
+
+Specifically, the simulated profiles in the far wake region exhibit a shape reminiscent of a lowercase "b," characterized by a peak between $z/H = 0.2$ and $0.5$ followed by a gradual decline toward the ground. This contrasts with the AIJ experimental results, which show an inverse exponential profile peaking very close to the surface, rapidly declining with height. Finally, some of the observed deviations may be attributed to statistical noise, as the discrete release rate of 150 particles per second provides a lower sampling density compared to the continuous tracer gas release in the wind tunnel experiment.
 
 \subsubsection{Validation of Particle Concentration}
 
@@ -341,10 +356,10 @@ The vertical and spanwise velocity components ($v, w$) along with turbulence flu
     \end{tabular}
 \end{table}
 
-The concentration validation results show a marked contrast to the velocity validation, with significantly lower accuracy across all metrics. For all simulation cases, the hit rate ($q$) remains well below the $0.66$ standard, peaking at only 0.420 in Case 7. While the $FAC2$ values mostly meet the $0.50$ threshold (with the exception of the "No Approach" baseline), they are considerably lower than the scores achieved for the flow field. These results suggest that the current Lagrangian particle tracker (LPT) within the LBM solver may not yet fully capture the complex dispersion characteristics of pollutants in an urban environment. This discrepancy could be attributed to the simplified physical modeling of generic particles in the solver, whereas the experimental data were collected using gases that exhibit different diffusion behaviors. Furthermore, the high RMSE observed in Case 6 (9.4304) suggests that even with optimized inflow roughness, the modeling of pollutant concentration remains highly sensitive and requires more specialized treatment of gas-phase physics or turbulent mass diffusion to align with physical observations.
+The concentration validation results, summarized in Table \ref{tab:concentration_validation}, show a marked contrast to the velocity validation, with significantly lower accuracy across all metrics. For all simulation cases, the hit rate ($q$) remains well below the $0.66$ standard established by VDI 3783 Part 9, peaking at $0.420$ in Case 7. While the $FAC2$ values mostly meet the $0.50$ threshold—with the exception of the "No Approach" baseline—they are considerably lower than the scores achieved for the flow field.
 
-% Kanda-sensei comment 1: The results on the wind are actually quite good because with the uniform grid in LBM, it should be very difficult to reproduce results since in other LES, the grid becomes very fine as it gets closer to the building. Note this for the discussion in the thesis.
+Despite the generally lower scores, specific trends emerge regarding approach flow configurations. Case 7 (16m roughness height with $z_0 = 0.1$) performs the best (albeit not by a significant margin) across most metrics, followed by Case 3 (16m roughness with $z_0 = 0.01$). The scenarios utilizing 20m roughness also show moderate performance, suggesting that medium roughness configurations are generally more accurate in this LBM framework. This finding aligns with the wind and turbulence results.
 
-% Kanda-sensei comment 2: The results on the concentration may not be very accurate due to the 1. grid issues, 2. the LBM is perfect passive scalar, the experiment uses C2H2 and does not specify the particle release momentum or speed. Better to clarify in the discussion and in the presentation, that I am using a perfect passive scalar.
+Despite the success in the velocity field, the lower accuracy in concentration profiles suggests that the dispersion of pollutants may be more sensitive to local grid resolution than the wind field itself. \textcite{Hu2025} observes that accurately resolving near-wall flows remains crucial in LBM-based urban simulations. Future work could benefit from LBM-compatible adaptive grid refinement techniques driven by in-field parameters such as vorticity or shear strain to balance the need for localized detail with the high computational efficiency of the GPU-accelerated LBM framework.
 
 \newpage

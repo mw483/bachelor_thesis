@@ -1,9 +1,9 @@
-\documentclass{article}
+\documentclass[12pt]{article}
 \usepackage{amsmath}
 \usepackage{booktabs}
 \usepackage{caption}
 \usepackage{csquotes}
-\usepackage[left=2.54cm,right=2.54cm,top=2.54cm,bottom=2.54cm]{geometry}
+\usepackage[left=2.5cm,right=2.5cm,top=2.0cm,bottom=2.5cm]{geometry}
 \usepackage{graphicx}
 \usepackage{setspace}
 \usepackage{subcaption}
@@ -19,18 +19,6 @@
 \usepackage[backend=biber, style=apa]{biblatex}
 \addbibresource{bibliography.bib}
 
-% --- Nomenclature ---
-\usepackage[intoc]{nomencl}
-\makenomenclature
-
-% Fixed syntax for nomgroup
-\renewcommand{\nomgroup}[1]{%
-  \item[\bfseries
-  \ifstrequal{#1}{P}{Physical and Flow Parameters}{%
-  \ifstrequal{#1}{S}{Statistical and Validation Metrics}{%
-  \ifstrequal{#1}{F}{Footprint and Source Area Theory}{}}}%
-]}
-
 % --- Hyperref (LOAD LAST) ---
 \usepackage{hyperref}
 \hypersetup{
@@ -40,9 +28,6 @@
     urlcolor=cyan,
     citecolor=black
 }
-
-% Input definitions after hyperref to ensure anchors work
-\input{sections/nomenclature.tex}
 
 \begin{document}
 \onehalfspacing{}
@@ -57,7 +42,7 @@
     \vspace{1.5cm}
 
     % 18pt Bold - Title
-    {\fontsize{18}{22}\selectfont \textbf{Evaluation of particle dispersion characteristics over flat field and idealized building array using Lattice Boltzmann method}\par}
+    {\fontsize{18}{22}\selectfont \textbf{Evaluation of wind and particle dispersion characteristics over idealized single building using Lattice Boltzmann method}\par}
 
     \vspace{2cm}
 
@@ -86,6 +71,20 @@
     \vspace{1cm}
 \end{titlepage}
 
+\input{sections/acknowledgement}
+
+\begin{abstract}
+The assessment of near-field pollutant dispersion in complex urban environments requires high-resolution Computational Fluid Dynamics (CFD) to capture the intricate interactions between atmospheric flow and building geometry. Traditional Finite Volume Method (FVM) approaches, while mature, often face computational resources challenges in complex urban scenarios. This study investigates the viability and predictive performance of a GPGPU-accelerated Lattice Boltzmann Method (LBM) coupled with a Large Eddy Simulation (LES) framework known for its computational efficiency advantages. 
+
+Simulations were conducted on the TSUBAME 4.0 supercomputer using a uniform Cartesian lattice to model the AIJ Case H cubic building benchmark. The model's accuracy was evaluated , comparing mean wind velocity, turbulent kinetic energy (TKE), and normalized pollutant concentrations ($C_{norm}$) against experimental wind tunnel data. 
+
+Results indicate that the LBM-LES framework achieves high aerodynamic accuracy, with results exceeding validation quality thresholds, despite the use of a non-refined uniform grid. This demonstrates the inherent strength of LBM in handling complex boundary conditions without the need for intensive re-meshing. However, pollutant dispersion results modeled via a Lagrangian Stochastic Model (LSM) representing pollutants as perfect passive scalars showed lower predictive performance below standards. Discrepancies in the far-wake concentration profiles, characterized by a distinct morphology shift from the experimental inverse exponential curve, suggest limitations in the current particle-tracking physics and sampling density. 
+
+% Finally, the study evaluates the spatial representativeness of simulated hotspots through Source Area and Flux Footprint Prediction (FFP) theories. The findings contribute to the establishment of standardized LBM workflows for urban environmental engineering, highlighting the potential of GPU acceleration to transform high-fidelity transient modeling into a practical tool for climate adaptation and air quality management.
+
+\end{abstract}
+
+
 \newpage
 \tableofcontents
 \newpage
@@ -94,7 +93,6 @@
 \listoftables
 \newpage
 
-\printnomenclature
 \newpage
 
 % Main Content

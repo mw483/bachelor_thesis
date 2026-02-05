@@ -1,13 +1,5 @@
 
 \begin{thenomenclature} 
-\nomgroup{F}
-  \item [{$\eta$}]\begingroup Measured scalar concentration or flux\nomeqref {0}\nompageref{1}
-  \item [{$\Omega_P$}]\begingroup Source area of level $P$\nomeqref {0}\nompageref{1}
-  \item [{$\Phi_{tot}$}]\begingroup Total influence (integral of the source weight function)\nomeqref {0}\nompageref{1}
-  \item [{$f$}]\begingroup Source weight function (footprint function)\nomeqref {0}\nompageref{1}
-  \item [{$L$}]\begingroup Obukhov length (atmospheric stability parameter) [m]\nomeqref {0}\nompageref{1}
-  \item [{$P$}]\begingroup Fractional contribution to total measured signal\nomeqref {0}\nompageref{1}
-  \item [{$Q$}]\begingroup Source strength or emission rate\nomeqref {0}\nompageref{1}
 \nomgroup{P}
   \item [{$\nu$}]\begingroup Kinematic viscosity of air [m$^2$/s]\nomeqref {0}\nompageref{1}
   \item [{$H$}]\begingroup Reference building height [m]\nomeqref {0}\nompageref{1}
