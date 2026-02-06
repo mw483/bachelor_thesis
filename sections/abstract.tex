@@ -1,0 +1,15 @@
+\begin{center}
+    % Size options: \large, \Large, \LARGE, \huge, \Huge
+    \textbf{\Huge Abstract} \\
+    \vspace{0.4cm}
+\end{center}
+
+Accurately predicting near-field pollutant dispersion in urban environments is critical for air quality management, yet traditional Finite Volume Method (FVM) approaches often face prohibitive computational costs when resolving the turbulence required for street-scale hotspots. This study investigates the viability of a GPGPU-accelerated Lattice Boltzmann Method (LBM) coupled with a Large Eddy Simulation (LES) framework as a high-efficiency alternative for urban CFD. 
+% c. Methodology
+Using the TSUBAME 4.0 supercomputer, simulations were performed on the AIJ Case H cubic building benchmark using a uniform Cartesian lattice. The model's predictive performance was validated against experimental wind tunnel data for mean velocity, velocity variance, turbulent kinetic energy (TKE), and normalized pollutant concentrations ($C_{norm}$), utilizing statistical thresholds such as hit rate $q$, factor of two observations $FAC2$, as well as absolute and relative errors. 
+% d. Results & e. Analysis
+Results demonstrate that the LBM-LES framework achieves high aerodynamic accuracy, with hit rates ($q$) and $FAC2$ consistently surpassing quality thresholds and even reaching near-perfect accuracy, when suitable inflow turbulence modeling is performed. This confirms that LBM can reliably resolve complex building-induced flow patterns using a non-refined uniform grid, significantly simplifying the preprocessing labor required by traditional body-fitted meshes. However, dispersion results from particles modeled via a Lagrangian Stochastic Model (LSM) showed lower predictive performance.
+
+Analysis suggests this discrepancy stems from the perfect passive scalar assumption and finite output rate of particles, which fail to capture the molecular diffusion and release momentum of the experimental tracer gas. These findings are significant as they establish a performance baseline for GPU-accelerated LBM in urban planning, highlighting that while aerodynamic prediction is ready for practical application with appropriately modeled turbulence conditions, refined particle-tracking physics or adaptive grid techniques are necessary for high-fidelity pollution mapping.
+
+\newpage

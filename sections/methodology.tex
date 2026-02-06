@@ -28,6 +28,7 @@ In this research, the LBM-LES solver employs a uniform grid that remains perfect
     \caption{Numerical domain configuration and measurement locations for the LES validation study  \parencite[adapted from][]{Okaze2021LES}.}
 \label{fig:Okaze_setting}
 \end{figure}
+\newpage
 
 \subsubsection{Computational Implementation and Workflow}
 
@@ -44,7 +45,7 @@ The simulation is designed to run efficiently by using the Graphics Processing U
 
 The graphical overview of the system architecure described above can be seen in \autoref{fig:sys_arch}.
 
-\begin{figure}[ht]
+\begin{figure}[H]
     \centering
     \begin{tikzpicture}[
         node distance=1.2cm and 0.8cm,
@@ -103,7 +104,7 @@ The graphical overview of the system architecure described above can be seen in 
 
 The same source code for the simulation can also be used when running the simulation on a larger scale. However, to handle an even larger calculation and longer periods of time, multiple nodes and GPUs must be used. As such, even though the base code and the output process is the same, the code is ran in the TSUBAME 4.0 Supercomputer. A shell script \texttt{run\_program.sh} is used to queue the LBM-LSM simulation program into the supercomputer job scheduler, before the simulation is run. The system architecture diagram of this process can be viewed in \autoref{fig:tsubame_arch}.
 
-\begin{figure}[ht]
+\begin{figure}[H]
     \centering
     \begin{tikzpicture}[
         node distance=1cm and 0.8cm,
@@ -168,6 +169,7 @@ The same source code for the simulation can also be used when running the simula
     \label{fig:tsubame_arch}
 \end{figure}
 
+\newpage
 \subsection{Simulation Parameters and Case Setup}
 
 To validate the LBM against the AIJ experimental data and the results by \textcite{Okaze2021LES}, several simulations were performed with different parameters. The initial aim of these simulations are to evaluate the accuracy of the LBM across a number of different cases that affect the turbulent boundary layer development and inflow turbulence. The specific configurations for the validation and research cases are summarized in Table~\ref{tab:simulation_cases_full}. These cases represent the transition from local prototyping to large-scale supercomputer execution.
@@ -194,7 +196,9 @@ To validate the LBM against the AIJ experimental data and the results by \textci
 
 Additionally, to provide a spatial context for the validation studies, Figure \ref{fig:case_map_visualizations} presents the plan-view (birds-eye view) layouts for the various simulation domains. These maps illustrate the placement of the central building model relative to the upwind approach sections.
 
-\begin{figure}[htbp]
+The domain layouts demonstrate the transition from the isolated building simulation in Case 1 to the extended domains used on the TSUBAME 4.0 supercomputer. The extended upwind area allows for the physical development of a turbulent boundary layer as the wind passes over the array of roughness cubes. As the height of these blocks ($H_{cube}$) increases across the cases, the resulting turbulence intensity is expected to better match the conditions of the AIJ Case H wind tunnel experiment.
+
+\begin{figure}[H]
     \centering
     % Row 1
     \begin{subfigure}[b]{0.48\textwidth}
@@ -243,11 +247,10 @@ Additionally, to provide a spatial context for the validation studies, Figure \r
     \label{fig:case_map_visualizations}
 \end{figure}
 
-The domain layouts demonstrate the transition from the isolated building simulation in Case 1 to the extended domains used on the TSUBAME 4.0 supercomputer. The extended upwind area allows for the physical development of a turbulent boundary layer as the wind passes over the array of roughness cubes. As the height of these blocks ($H_{cube}$) increases across the cases, the resulting turbulence intensity is expected to better match the conditions of the AIJ Case H wind tunnel experiment.
-
 To ensure a direct comparison with the AIJ wind tunnel benchmarks, statistical data were extracted at specific coordinates within the LBM domain. As shown in Figure~\ref{fig:measurement_points}, 12 vertical profiles were selected along the center-line of the domain. These locations cover the windward, rooftop, and leeward wake regions, defined by their normalized distance from the building ($x/H$). 
 
-\begin{figure}[htbp]
+
+\begin{figure}[H]
     \centering
     \begin{subfigure}[b]{\textwidth}
         \centering
@@ -264,6 +267,7 @@ To ensure a direct comparison with the AIJ wind tunnel benchmarks, statistical d
     \label{fig:measurement_points}
 \end{figure}
 
+\newpage
 The $xy$-plane view (Figure~\ref{fig:measurement_points}a) confirms the streamwise alignment of the points, while the $xz$-plane view (Figure~\ref{fig:measurement_points}b) illustrates the vertical extent of the profiles relative to the building height $H$. This setup allows for the systematic evaluation of the flow field and pollutant dispersion in the near-field region.
 
 \subsection{Post-Processing and Statistical Analysis of Output Data}

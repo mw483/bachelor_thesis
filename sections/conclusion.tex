@@ -1,3 +1,23 @@
 \section{Conclusion}
-    Overall, ....
+\subsection{Research Findings}
+The Lattice Boltzmann Method (LBM) represents a compelling alternative for conducting CFD analysis in complex urban environments. Compared to traditional CPU-based Navier-Stokes solvers and Finite Volume Methods (FVM), LBM offers significant advantages in both preprocessing simplicity and computational throughput. In recent years, the viability of LBM has been further enhanced by the proliferation of GPGPU acceleration, which leverages the algorithm's inherent locality for massively parallel computing. However, as a relatively emerging field in urban meteorology, LBM currently faces a research gap regarding standardized benchmarking, which served as the primary motivation for this study.
+
+By conducting a sensitivity analysis on inflow turbulence modeling and aerodynamic roughness length ($z_0$), this research demonstrated that the LBM-LES framework successfully predicts the aerodynamic properties, which include mean wind velocity and turbulent kinetic energy obtained from the AIJ Case H wind tunnel experiment. 
+
+The results showed a level of agreement comparable to an established study utilizing filtered Navier-Stokes equations for incompressible flow. This performance is particularly significant given the use of a uniform 2.0~m grid; the solver maintained high predictive quality without the localized grid refinement typically required by traditional LES near building surfaces.
+
+Conversely, the validation of pollutant concentration profiles yielded less favorable results. The inaccuracies observed, particularly near wall boundaries and in the far-wake region, suggest that the "perfect passive scalar" particles are more sensitive to grid resolution than the underlying wind field. The discrepancies between the Lagrangian particle trajectories and the experimental tracer gas highlights a clear limitation in using generic physical particles to replicate complex gas-phase diffusion within a uniform lattice structure.
+
+\newpage
+
+\subsection{Future Work}
+To address the current limitations of the GPGPU-LBM framework, the following areas are proposed for future research:
+\begin{itemize}
+    \item Further investigation is needed into refined particle modeling, including the implementation of source-release momentum and the determination of optimal particle release rates to reduce statistical noise.
+    \item Expanding the solver to account for non-isothermal conditions, coriolis forces, and gravity, will allow for the study of urban heat islands and buoyancy-driven dispersion.
+    \item Future studies should evaluate the model across a broader range of building configurations beyond the single-building benchmark to assess the impact of urban density on LBM accuracy.
+    \item To improve concentration accuracy near boundaries, it is essential to implement and test LBM-compatible refinement algorithms (such as octree structures) that can increase resolution near walls without compromising global computational efficiency.
+\end{itemize}
+
+
 \newpage

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.1.27)  5 FEB 2026 18:00
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.1.27)  6 FEB 2026 15:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -176,6 +176,14 @@ Package csquotes Info: ... configuration file loaded successfully.
 es.cfg
 File: csquotes.cfg 
 ))
+(C:\Users\Mikael Wijaya\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count304
+\float@exts=\toks24
+\float@box=\box55
+\@float@everytoks=\toks25
+\@floatcapt=\box56
+)
 (C:\Users\Mikael Wijaya\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geomet
 ry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
@@ -188,9 +196,9 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 ty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 ))
-\Gm@cnth=\count304
-\Gm@cntv=\count305
-\c@Gm@tempcnt=\count306
+\Gm@cnth=\count305
+\Gm@cntv=\count306
+\c@Gm@tempcnt=\count307
 \Gm@bindingoffset=\dimen179
 \Gm@wd@mp=\dimen180
 \Gm@odd@mp=\dimen181
@@ -199,7 +207,7 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@layoutheight=\dimen184
 \Gm@layouthoffset=\dimen185
 \Gm@layoutvoffset=\dimen186
-\Gm@dimlist=\toks24
+\Gm@dimlist=\toks26
 
 (C:\Users\Mikael Wijaya\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geomet
 ry.cfg))
@@ -236,9 +244,9 @@ Package: setspace 2022/12/04 v6.7b set line spacing
 ion.sty
 Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
 Package caption Info: New subtype `subfigure' on input line 238.
-\c@subfigure=\count307
+\c@subfigure=\count308
 Package caption Info: New subtype `subtable' on input line 238.
-\c@subtable=\count308
+\c@subtable=\count309
 )
 (C:\Users\Mikael Wijaya\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlay
 er\tikz.sty
@@ -248,13 +256,13 @@ pgf.sty
 gfrcs.sty
 (C:\Users\Mikael Wijaya\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities
 \pgfutil-common.tex
-\pgfutil@everybye=\toks25
+\pgfutil@everybye=\toks27
 \pgfutil@tempdima=\dimen189
 \pgfutil@tempdimb=\dimen190
 )
 (C:\Users\Mikael Wijaya\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities
 \pgfutil-latex.def
-\pgfutil@abb=\box55
+\pgfutil@abb=\box57
 )
 (C:\Users\Mikael Wijaya\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities
 \pgfrcs.code.tex
@@ -274,12 +282,12 @@ Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
 
 (C:\Users\Mikael Wijaya\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities
 \pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks26
-\pgfkeys@temptoks=\toks27
+\pgfkeys@pathtoks=\toks28
+\pgfkeys@temptoks=\toks29
 
 (C:\Users\Mikael Wijaya\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities
 \pgfkeyslibraryfiltered.code.tex
-\pgfkeys@tmptoks=\toks28
+\pgfkeys@tmptoks=\toks30
 ))
 \pgf@x=\dimen191
 \pgf@y=\dimen192
@@ -293,14 +301,14 @@ Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@yd=\dimen256
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count309
-\c@pgf@countb=\count310
-\c@pgf@countc=\count311
-\c@pgf@countd=\count312
-\t@pgf@toka=\toks29
-\t@pgf@tokb=\toks30
-\t@pgf@tokc=\toks31
-\pgf@sys@id@count=\count313
+\c@pgf@counta=\count310
+\c@pgf@countb=\count311
+\c@pgf@countc=\count312
+\c@pgf@countd=\count313
+\t@pgf@toka=\toks31
+\t@pgf@tokb=\toks32
+\t@pgf@tokc=\toks33
+\pgf@sys@id@count=\count314
 
 (C:\Users\Mikael Wijaya\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlay
 er\pgf.cfg
@@ -320,13 +328,13 @@ File: pgfsys-dvipdfmx.def 2025-08-29 v3.1.11a (3.1.11a)
 er\pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
 )
-\pgfsys@objnum=\count314
+\pgfsys@objnum=\count315
 )))
 (C:\Users\Mikael Wijaya\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlay
 er\pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfsyssoftpath@smallbuffer@items=\count315
-\pgfsyssoftpath@bigbuffer@items=\count316
+\pgfsyssoftpath@smallbuffer@items=\count316
+\pgfsyssoftpath@bigbuffer@items=\count317
 )
 (C:\Users\Mikael Wijaya\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlay
 er\pgfsysprotocol.code.tex
@@ -364,11 +372,11 @@ athutil.code.tex)
 (C:\Users\Mikael Wijaya\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfm
 athparser.code.tex
 \pgfmath@dimen=\dimen257
-\pgfmath@count=\count317
-\pgfmath@box=\box56
-\pgfmath@toks=\toks32
-\pgfmath@stack@operand=\toks33
-\pgfmath@stack@operation=\toks34
+\pgfmath@count=\count318
+\pgfmath@box=\box58
+\pgfmath@toks=\toks34
+\pgfmath@stack@operand=\toks35
+\pgfmath@stack@operation=\toks36
 )
 (C:\Users\Mikael Wijaya\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfm
 athfunctions.code.tex)
@@ -392,7 +400,7 @@ athfunctions.integerarithmetics.code.tex)
 athcalc.code.tex)
 (C:\Users\Mikael Wijaya\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfm
 athfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count318
+\c@pgfmathroundto@lastzeros=\count319
 ))
 (C:\Users\Mikael Wijaya\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfi
 nt.code.tex)
@@ -429,10 +437,10 @@ File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 (C:\Users\Mikael Wijaya\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclaye
 r\pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfpic=\box57
-\pgf@hbox=\box58
-\pgf@layerbox@main=\box59
-\pgf@picture@serial@count=\count319
+\pgfpic=\box59
+\pgf@hbox=\box60
+\pgf@layerbox@main=\box61
+\pgf@picture@serial@count=\count320
 )
 (C:\Users\Mikael Wijaya\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclaye
 r\pgfcoregraphicstate.code.tex
@@ -467,8 +475,8 @@ File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 r\pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@max=\dimen281
-\pgf@sys@shading@range@num=\count320
-\pgf@shadingcount=\count321
+\pgf@sys@shading@range@num=\count321
+\pgf@shadingcount=\count322
 )
 (C:\Users\Mikael Wijaya\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclaye
 r\pgfcoreimage.code.tex
@@ -477,7 +485,7 @@ File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 (C:\Users\Mikael Wijaya\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclaye
 r\pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfexternal@startupbox=\box60
+\pgfexternal@startupbox=\box62
 )
 (C:\Users\Mikael Wijaya\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclaye
 r\pgfcorelayers.code.tex
@@ -498,7 +506,7 @@ File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 (C:\Users\Mikael Wijaya\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\p
 gfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfnodeparttextbox=\box61
+\pgfnodeparttextbox=\box63
 )
 (C:\Users\Mikael Wijaya\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\p
 gfmoduleplot.code.tex
@@ -529,8 +537,8 @@ ath.code.tex))
 Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
 \pgffor@iter=\dimen284
 \pgffor@skip=\dimen285
-\pgffor@stack=\toks35
-\pgffor@toks=\toks36
+\pgffor@stack=\toks37
+\pgffor@toks=\toks38
 ))
 (C:\Users\Mikael Wijaya\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendl
 ayer/tikz\tikz.code.tex
@@ -539,7 +547,7 @@ Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
 (C:\Users\Mikael Wijaya\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries
 \pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@plot@mark@count=\count322
+\pgf@plot@mark@count=\count323
 \pgfplotmarksize=\dimen286
 )
 \tikz@lastx=\dimen287
@@ -550,23 +558,23 @@ File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \tikz@lastmovetoy=\dimen292
 \tikzleveldistance=\dimen293
 \tikzsiblingdistance=\dimen294
-\tikz@figbox=\box62
-\tikz@figbox@bg=\box63
-\tikz@tempbox=\box64
-\tikz@tempbox@bg=\box65
-\tikztreelevel=\count323
-\tikznumberofchildren=\count324
-\tikznumberofcurrentchild=\count325
-\tikz@fig@count=\count326
+\tikz@figbox=\box64
+\tikz@figbox@bg=\box65
+\tikz@tempbox=\box66
+\tikz@tempbox@bg=\box67
+\tikztreelevel=\count324
+\tikznumberofchildren=\count325
+\tikznumberofcurrentchild=\count326
+\tikz@fig@count=\count327
 
 (C:\Users\Mikael Wijaya\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\p
 gfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfmatrixcurrentrow=\count327
-\pgfmatrixcurrentcolumn=\count328
-\pgf@matrix@numberofcolumns=\count329
+\pgfmatrixcurrentrow=\count328
+\pgfmatrixcurrentcolumn=\count329
+\pgf@matrix@numberofcolumns=\count330
 )
-\tikz@expandcount=\count330
+\tikz@expandcount=\count331
 
 (C:\Users\Mikael Wijaya\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendl
 ayer/tikz/libraries\tikzlibrarytopaths.code.tex
@@ -605,9 +613,9 @@ Package: expl3 2025-12-29 L3 programming layer (loader)
 (C:\Users\Mikael Wijaya\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3bac
 kend-xetex.def
 File: l3backend-xetex.def 2025-10-09 L3 backend support: XeTeX
-\g__graphics_track_int=\count331
-\g__pdfannot_backend_int=\count332
-\g__pdfannot_backend_link_int=\count333
+\g__graphics_track_int=\count332
+\g__pdfannot_backend_int=\count333
+\g__pdfannot_backend_link_int=\count334
 ))
 Package: xeCJK 2022/08/05 v3.9.1 Typesetting CJK scripts with XeLaTeX
 
@@ -619,13 +627,13 @@ Package: ctexhook 2022/07/14 v2.5.10 Document and package hooks (CTEX)
 plate\xtemplate.sty
 Package: xtemplate 2025-10-09 L3 Experimental prototype document functions
 )
-\l__xeCJK_tmp_int=\count334
-\l__xeCJK_tmp_box=\box66
+\l__xeCJK_tmp_int=\count335
+\l__xeCJK_tmp_box=\box68
 \l__xeCJK_tmp_dim=\dimen299
 \l__xeCJK_tmp_skip=\skip54
-\g__xeCJK_space_factor_int=\count335
-\l__xeCJK_begin_int=\count336
-\l__xeCJK_end_int=\count337
+\g__xeCJK_space_factor_int=\count336
+\l__xeCJK_begin_int=\count337
+\l__xeCJK_end_int=\count338
 \c__xeCJK_CJK_class_int=\XeTeXcharclass1
 \c__xeCJK_FullLeft_class_int=\XeTeXcharclass2
 \c__xeCJK_FullRight_class_int=\XeTeXcharclass3
@@ -635,8 +643,8 @@ Package: xtemplate 2025-10-09 L3 Experimental prototype document functions
 \c__xeCJK_CM_class_int=\XeTeXcharclass7
 \c__xeCJK_HangulJamo_class_int=\XeTeXcharclass8
 \l__xeCJK_last_skip=\skip55
-\c__xeCJK_none_node=\count338
-\g__xeCJK_node_int=\count339
+\c__xeCJK_none_node=\count339
+\g__xeCJK_node_int=\count340
 \c__xeCJK_CJK_node_dim=\dimen300
 \c__xeCJK_CJK-space_node_dim=\dimen301
 \c__xeCJK_default_node_dim=\dimen302
@@ -646,11 +654,11 @@ Package: xtemplate 2025-10-09 L3 Experimental prototype document functions
 \l__xeCJK_ccglue_skip=\skip57
 \l__xeCJK_ecglue_skip=\skip58
 \l__xeCJK_punct_kern_skip=\skip59
-\l__xeCJK_indent_box=\box67
-\l__xeCJK_last_penalty_int=\count340
+\l__xeCJK_indent_box=\box69
+\l__xeCJK_last_penalty_int=\count341
 \l__xeCJK_last_bound_dim=\dimen305
 \l__xeCJK_last_kern_dim=\dimen306
-\l__xeCJK_widow_penalty_int=\count341
+\l__xeCJK_widow_penalty_int=\count342
 
 LaTeX template Info: Declaring template type 'xeCJK/punctuation' taking 0
 (template)           argument(s) on line 2396.
@@ -674,10 +682,10 @@ LaTeX template Info: Declaring template type 'xeCJK/punctuation' taking 0
 \l__xeCJK_margin_dim=\dimen323
 \l__xeCJK_minimum_bound_dim=\dimen324
 \l__xeCJK_kerning_margin_dim=\dimen325
-\g__xeCJK_family_int=\count342
-\l__xeCJK_fam_int=\count343
-\g__xeCJK_fam_allocation_int=\count344
-\l__xeCJK_verb_case_int=\count345
+\g__xeCJK_family_int=\count343
+\l__xeCJK_fam_int=\count344
+\g__xeCJK_fam_allocation_int=\count345
+\l__xeCJK_verb_case_int=\count346
 \l__xeCJK_verb_exspace_skip=\skip60
 
 (C:\Users\Mikael Wijaya\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontsp
@@ -692,17 +700,17 @@ Package: fontspec 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTeX
 ec-xetex.sty
 Package: fontspec-xetex 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTe
 X
-\l__fontspec_script_int=\count346
-\l__fontspec_language_int=\count347
-\l__fontspec_strnum_int=\count348
-\l__fontspec_tmp_int=\count349
-\l__fontspec_tmpa_int=\count350
-\l__fontspec_tmpb_int=\count351
-\l__fontspec_tmpc_int=\count352
-\l__fontspec_em_int=\count353
-\l__fontspec_emdef_int=\count354
-\l__fontspec_strong_int=\count355
-\l__fontspec_strongdef_int=\count356
+\l__fontspec_script_int=\count347
+\l__fontspec_language_int=\count348
+\l__fontspec_strnum_int=\count349
+\l__fontspec_tmp_int=\count350
+\l__fontspec_tmpa_int=\count351
+\l__fontspec_tmpb_int=\count352
+\l__fontspec_tmpc_int=\count353
+\l__fontspec_em_int=\count354
+\l__fontspec_emdef_int=\count355
+\l__fontspec_strong_int=\count356
+\l__fontspec_strongdef_int=\count357
 \l__fontspec_tmpa_dim=\dimen326
 \l__fontspec_tmpb_dim=\dimen327
 \l__fontspec_tmpc_dim=\dimen328
@@ -776,7 +784,7 @@ Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 (C:\Users\Mikael Wijaya\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.s
 ty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count357
+\lrq@indent=\count358
 
 (C:\Users\Mikael Wijaya\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.d
 ef
@@ -788,49 +796,49 @@ Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count358
-\c@listtotal=\count359
-\c@listcount=\count360
-\c@liststart=\count361
-\c@liststop=\count362
-\c@citecount=\count363
-\c@citetotal=\count364
-\c@multicitecount=\count365
-\c@multicitetotal=\count366
-\c@instcount=\count367
-\c@maxnames=\count368
-\c@minnames=\count369
-\c@maxitems=\count370
-\c@minitems=\count371
-\c@citecounter=\count372
-\c@maxcitecounter=\count373
-\c@savedcitecounter=\count374
-\c@uniquelist=\count375
-\c@uniquename=\count376
-\c@refsection=\count377
-\c@refsegment=\count378
-\c@maxextratitle=\count379
-\c@maxextratitleyear=\count380
-\c@maxextraname=\count381
-\c@maxextradate=\count382
-\c@maxextraalpha=\count383
-\c@abbrvpenalty=\count384
-\c@highnamepenalty=\count385
-\c@lownamepenalty=\count386
-\c@maxparens=\count387
-\c@parenlevel=\count388
-\blx@tempcnta=\count389
-\blx@tempcntb=\count390
-\blx@tempcntc=\count391
-\c@blx@maxsection=\count392
-\blx@maxsegment@0=\count393
-\blx@notetype=\count394
-\blx@parenlevel@text=\count395
-\blx@parenlevel@foot=\count396
-\blx@sectionciteorder@0=\count397
-\blx@sectionciteorderinternal@0=\count398
-\blx@entrysetcounter=\count399
-\blx@biblioinstance=\count400
+\c@tabx@nest=\count359
+\c@listtotal=\count360
+\c@listcount=\count361
+\c@liststart=\count362
+\c@liststop=\count363
+\c@citecount=\count364
+\c@citetotal=\count365
+\c@multicitecount=\count366
+\c@multicitetotal=\count367
+\c@instcount=\count368
+\c@maxnames=\count369
+\c@minnames=\count370
+\c@maxitems=\count371
+\c@minitems=\count372
+\c@citecounter=\count373
+\c@maxcitecounter=\count374
+\c@savedcitecounter=\count375
+\c@uniquelist=\count376
+\c@uniquename=\count377
+\c@refsection=\count378
+\c@refsegment=\count379
+\c@maxextratitle=\count380
+\c@maxextratitleyear=\count381
+\c@maxextraname=\count382
+\c@maxextradate=\count383
+\c@maxextraalpha=\count384
+\c@abbrvpenalty=\count385
+\c@highnamepenalty=\count386
+\c@lownamepenalty=\count387
+\c@maxparens=\count388
+\c@parenlevel=\count389
+\blx@tempcnta=\count390
+\blx@tempcntb=\count391
+\blx@tempcntc=\count392
+\c@blx@maxsection=\count393
+\blx@maxsegment@0=\count394
+\blx@notetype=\count395
+\blx@parenlevel@text=\count396
+\blx@parenlevel@foot=\count397
+\blx@sectionciteorder@0=\count398
+\blx@sectionciteorderinternal@0=\count399
+\blx@entrysetcounter=\count400
+\blx@biblioinstance=\count401
 \labelnumberwidth=\skip61
 \labelalphawidth=\skip62
 \biblabelsep=\skip63
@@ -842,9 +850,9 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \blx@bcfin=\read3
 \blx@bcfout=\write4
 \blx@langwohyphens=\language79
-\c@mincomprange=\count401
-\c@maxcomprange=\count402
-\c@mincompwidth=\count403
+\c@mincomprange=\count402
+\c@maxcomprange=\count403
+\c@mincompwidth=\count404
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -861,84 +869,84 @@ File: apa.dbx 2025/08/27 v9.20 APA biblatex style data model
 )
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count404
-\c@savedafterword=\count405
-\c@annotator=\count406
-\c@savedannotator=\count407
-\c@author=\count408
-\c@savedauthor=\count409
-\c@bookauthor=\count410
-\c@savedbookauthor=\count411
-\c@commentator=\count412
-\c@savedcommentator=\count413
-\c@editor=\count414
-\c@savededitor=\count415
-\c@editora=\count416
-\c@savededitora=\count417
-\c@editorb=\count418
-\c@savededitorb=\count419
-\c@editorc=\count420
-\c@savededitorc=\count421
-\c@foreword=\count422
-\c@savedforeword=\count423
-\c@holder=\count424
-\c@savedholder=\count425
-\c@introduction=\count426
-\c@savedintroduction=\count427
-\c@namea=\count428
-\c@savednamea=\count429
-\c@nameb=\count430
-\c@savednameb=\count431
-\c@namec=\count432
-\c@savednamec=\count433
-\c@translator=\count434
-\c@savedtranslator=\count435
-\c@shortauthor=\count436
-\c@savedshortauthor=\count437
-\c@shorteditor=\count438
-\c@savedshorteditor=\count439
-\c@narrator=\count440
-\c@savednarrator=\count441
-\c@execproducer=\count442
-\c@savedexecproducer=\count443
-\c@execdirector=\count444
-\c@savedexecdirector=\count445
-\c@with=\count446
-\c@savedwith=\count447
-\c@labelname=\count448
-\c@savedlabelname=\count449
-\c@institution=\count450
-\c@savedinstitution=\count451
-\c@lista=\count452
-\c@savedlista=\count453
-\c@listb=\count454
-\c@savedlistb=\count455
-\c@listc=\count456
-\c@savedlistc=\count457
-\c@listd=\count458
-\c@savedlistd=\count459
-\c@liste=\count460
-\c@savedliste=\count461
-\c@listf=\count462
-\c@savedlistf=\count463
-\c@location=\count464
-\c@savedlocation=\count465
-\c@organization=\count466
-\c@savedorganization=\count467
-\c@origlocation=\count468
-\c@savedoriglocation=\count469
-\c@origpublisher=\count470
-\c@savedorigpublisher=\count471
-\c@publisher=\count472
-\c@savedpublisher=\count473
-\c@language=\count474
-\c@savedlanguage=\count475
-\c@origlanguage=\count476
-\c@savedoriglanguage=\count477
-\c@citation=\count478
-\c@savedcitation=\count479
-\c@pageref=\count480
-\c@savedpageref=\count481
+\c@afterword=\count405
+\c@savedafterword=\count406
+\c@annotator=\count407
+\c@savedannotator=\count408
+\c@author=\count409
+\c@savedauthor=\count410
+\c@bookauthor=\count411
+\c@savedbookauthor=\count412
+\c@commentator=\count413
+\c@savedcommentator=\count414
+\c@editor=\count415
+\c@savededitor=\count416
+\c@editora=\count417
+\c@savededitora=\count418
+\c@editorb=\count419
+\c@savededitorb=\count420
+\c@editorc=\count421
+\c@savededitorc=\count422
+\c@foreword=\count423
+\c@savedforeword=\count424
+\c@holder=\count425
+\c@savedholder=\count426
+\c@introduction=\count427
+\c@savedintroduction=\count428
+\c@namea=\count429
+\c@savednamea=\count430
+\c@nameb=\count431
+\c@savednameb=\count432
+\c@namec=\count433
+\c@savednamec=\count434
+\c@translator=\count435
+\c@savedtranslator=\count436
+\c@shortauthor=\count437
+\c@savedshortauthor=\count438
+\c@shorteditor=\count439
+\c@savedshorteditor=\count440
+\c@narrator=\count441
+\c@savednarrator=\count442
+\c@execproducer=\count443
+\c@savedexecproducer=\count444
+\c@execdirector=\count445
+\c@savedexecdirector=\count446
+\c@with=\count447
+\c@savedwith=\count448
+\c@labelname=\count449
+\c@savedlabelname=\count450
+\c@institution=\count451
+\c@savedinstitution=\count452
+\c@lista=\count453
+\c@savedlista=\count454
+\c@listb=\count455
+\c@savedlistb=\count456
+\c@listc=\count457
+\c@savedlistc=\count458
+\c@listd=\count459
+\c@savedlistd=\count460
+\c@liste=\count461
+\c@savedliste=\count462
+\c@listf=\count463
+\c@savedlistf=\count464
+\c@location=\count465
+\c@savedlocation=\count466
+\c@organization=\count467
+\c@savedorganization=\count468
+\c@origlocation=\count469
+\c@savedoriglocation=\count470
+\c@origpublisher=\count471
+\c@savedorigpublisher=\count472
+\c@publisher=\count473
+\c@savedpublisher=\count474
+\c@language=\count475
+\c@savedlanguage=\count476
+\c@origlanguage=\count477
+\c@savedoriglanguage=\count478
+\c@citation=\count479
+\c@savedcitation=\count480
+\c@pageref=\count481
+\c@savedpageref=\count482
 \shorthandwidth=\skip69
 \shortjournalwidth=\skip70
 \shortserieswidth=\skip71
@@ -971,19 +979,19 @@ Package biblatex Info: ... file 'biblatex.def' found.
 (C:\Users\Mikael Wijaya\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblat
 ex.def
 File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
-\c@textcitecount=\count482
-\c@textcitetotal=\count483
-\c@textcitemaxnames=\count484
-\c@biburlbigbreakpenalty=\count485
-\c@biburlbreakpenalty=\count486
-\c@biburlnumpenalty=\count487
-\c@biburlucpenalty=\count488
-\c@biburllcpenalty=\count489
+\c@textcitecount=\count483
+\c@textcitetotal=\count484
+\c@textcitemaxnames=\count485
+\c@biburlbigbreakpenalty=\count486
+\c@biburlbreakpenalty=\count487
+\c@biburlnumpenalty=\count488
+\c@biburlucpenalty=\count489
+\c@biburllcpenalty=\count490
 \biburlbigskip=\muskip19
 \biburlnumskip=\muskip20
 \biburlucskip=\muskip21
 \biburllcskip=\muskip22
-\c@smartand=\count490
+\c@smartand=\count491
 )
 Package biblatex Info: Trying to load bibliography style 'apa'...
 Package biblatex Info: ... file 'apa.bbx' found.
@@ -997,8 +1005,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 (C:\Users\Mikael Wijaya\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\st
 andard.bbx
 File: standard.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count491
-\c@bbx:relatedtotal=\count492
+\c@bbx:relatedcount=\count492
+\c@bbx:relatedtotal=\count493
 )
 Package biblatex Info: Delimiter 'nameyeardelim' in context 'bib' already defin
 ed, overwriting.
@@ -1082,7 +1090,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 g\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count493
+\c@section@level=\count494
 )
 (C:\Users\Mikael Wijaya\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\str
 ingenc.sty
@@ -1090,8 +1098,8 @@ Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
 \@linkdim=\dimen329
-\Hy@linkcounter=\count494
-\Hy@pagecounter=\count495
+\Hy@linkcounter=\count495
+\Hy@pagecounter=\count496
 
 (C:\Users\Mikael Wijaya\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc
 .def
@@ -1101,7 +1109,7 @@ File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
 lc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count496
+\Hy@SavedSpaceFactor=\count497
 
 (C:\Users\Mikael Wijaya\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.
 def
@@ -1114,7 +1122,7 @@ Package hyperref Info: Plain pages OFF on input line 4210.
 Package hyperref Info: Backreferencing OFF on input line 4215.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4462.
-\c@Hy@tempcnt=\count497
+\c@Hy@tempcnt=\count498
 LaTeX Info: Redefining \url on input line 4801.
 \XeTeXLinkMargin=\dimen330
 
@@ -1127,7 +1135,7 @@ gintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count498
+\Fld@menulength=\count499
 \Field@Width=\dimen331
 \Fld@charsize=\dimen332
 Package hyperref Info: Hyper figures OFF on input line 6078.
@@ -1137,20 +1145,20 @@ Package hyperref Info: backreferencing OFF on input line 6093.
 Package hyperref Info: Link coloring OFF on input line 6098.
 Package hyperref Info: Link coloring with OCG OFF on input line 6103.
 Package hyperref Info: PDF/A mode OFF on input line 6108.
-\Hy@abspage=\count499
-\c@Item=\count500
-\c@Hfootnote=\count501
+\Hy@abspage=\count500
+\c@Item=\count501
+\c@Hfootnote=\count502
 )
 Package hyperref Info: Driver (autodetected): hxetex.
 
 (C:\Users\Mikael Wijaya\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hxetex
 .def
 File: hxetex.def 2025-07-12 v7.01o Hyperref driver for XeTeX
-\pdfm@box=\box68
-\c@Hy@AnnotLevel=\count502
-\HyField@AnnotCount=\count503
-\Fld@listcount=\count504
-\c@bookmark@seq@number=\count505
+\pdfm@box=\box70
+\c@Hy@AnnotLevel=\count503
+\HyField@AnnotCount=\count504
+\Fld@listcount=\count505
+\c@bookmark@seq@number=\count506
 
 (C:\Users\Mikael Wijaya\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\
 rerunfilecheck.sty
@@ -1165,33 +1173,34 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip83
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 30.
+Package hyperref Info: Option `colorlinks' set `true' on input line 31.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
  (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
@@ -1236,56 +1245,56 @@ Package fontspec Info:
 
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 32.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 32.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 32.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 32.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 32.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 32.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 32.
-LaTeX Font Info:    Redeclaring math accent \check on input line 32.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 32.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 32.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 32.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 32.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 32.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 32.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 32.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 32.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 32.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 32.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 32.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 32.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 32.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 32.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 32.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 32.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 33.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 33.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 33.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 33.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 33.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 33.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 33.
+LaTeX Font Info:    Redeclaring math accent \check on input line 33.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 33.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 33.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 33.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 33.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 33.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 33.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 33.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 33.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 33.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 33.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 33.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 33.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 33.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 33.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 33.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 33.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 32.
+(Font)              `operators' in the math version `normal' on input line 33.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 32.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 33.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 32.
+(Font)              `operators' in the math version `bold' on input line 33.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 32.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 33.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 32.
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 32.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 32.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 32.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 32.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 33.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 32.
+(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 32.
+(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 32.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 32.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 33.
 Package biblatex Info: Trying to load language 'english' -> 'english-apa'...
 Package biblatex Info: ... file 'english-apa.lbx' found.
 
@@ -1327,9 +1336,9 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl)
-Package biblatex Info: Reference section=0 on input line 32.
-Package biblatex Info: Reference segment=0 on input line 32.
-Package hyperref Info: Link coloring ON on input line 32.
+Package biblatex Info: Reference section=0 on input line 33.
+Package biblatex Info: Reference segment=0 on input line 33.
+Package hyperref Info: Link coloring ON on input line 33.
  (main.out) (main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
@@ -1337,11 +1346,12 @@ Package hyperref Info: Link coloring ON on input line 32.
  [1
 
 ]
-(sections/acknowledgement.tex [1]) [2] (main.toc)
+(sections/acknowledgement.tex [1]) (sections/abstract.tex [2]) (main.toc)
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [3] (main.lof
+
+[3] (main.lof
 Overfull \hbox (5.97902pt too wide) in paragraph at lines 10--10
  [][] [][][]\TU/lmr/m/n/12 Normalized streamwise velocity fluctuations ($\OML/c
 mm/m/it/12 u[]\OT1/cmr/m/n/12 /\OML/cmm/m/it/12 U[]$\TU/lmr/m/n/12 ) at (a) Upw
@@ -1370,19 +1380,19 @@ File: figures/AIJ_setting.jpg Graphic file (type bmp)
 [15]
 File: figures/Okaze_setting.jpg Graphic file (type bmp)
 <figures/Okaze_setting.jpg>
-
+ [16]
 
 Package xeCJK Warning: Unknown CJK family `\CJKttdefault' is being ignored.
 (xeCJK)                
 (xeCJK)                Try to use `\setCJKmonofont[<...>]{<...>}' to define
 (xeCJK)                it.
 
-[16] [17]
-Overfull \hbox (29.58728pt too wide) in paragraph at lines 166--167
+[17]
+Overfull \hbox (29.58728pt too wide) in paragraph at lines 167--168
  [][] 
  []
 
-[18]
+[18] [19]
 File: figures/case_maps/c_AIJ_caseH_no_approach_case1_visualization.png Graphic
  file (type bmp)
 <figures/case_maps/c_AIJ_caseH_no_approach_case1_visualization.png>
@@ -1401,11 +1411,13 @@ raphic file (type bmp)
 File: figures/case_maps/c_AIJ_caseH_with_approach_case6_32m_visualization.png G
 raphic file (type bmp)
 <figures/case_maps/c_AIJ_caseH_with_approach_case6_32m_visualization.png>
+ [20]
 File: figures/measurement-point-xy.png Graphic file (type bmp)
 <figures/measurement-point-xy.png>
 File: figures/measurement-point-xz.png Graphic file (type bmp)
 <figures/measurement-point-xz.png>
- [19] [20] [21] [22] [23] [24]) (sections/results_discussion.tex
+ [21] [22] [23] [24] [25] [26] [27])
+(sections/results_discussion.tex
 File: figures/multi_case_comparisons_z0change/multi_case_comparison_um_part1.pn
 g Graphic file (type bmp)
 <figures/multi_case_comparisons_z0change/multi_case_comparison_um_part1.png>
@@ -1415,6 +1427,7 @@ g Graphic file (type bmp)
 File: figures/multi_case_comparisons_z0change/multi_case_comparison_um_part3.pn
 g Graphic file (type bmp)
 <figures/multi_case_comparisons_z0change/multi_case_comparison_um_part3.png>
+ [28]
 File: figures/multi_case_comparisons_z0change/multi_case_comparison_vm_part1.pn
 g Graphic file (type bmp)
 <figures/multi_case_comparisons_z0change/multi_case_comparison_vm_part1.png>
@@ -1424,6 +1437,7 @@ g Graphic file (type bmp)
 File: figures/multi_case_comparisons_z0change/multi_case_comparison_vm_part3.pn
 g Graphic file (type bmp)
 <figures/multi_case_comparisons_z0change/multi_case_comparison_vm_part3.png>
+ [29]
 File: figures/multi_case_comparisons_z0change/multi_case_comparison_wm_part1.pn
 g Graphic file (type bmp)
 <figures/multi_case_comparisons_z0change/multi_case_comparison_wm_part1.png>
@@ -1433,7 +1447,7 @@ g Graphic file (type bmp)
 File: figures/multi_case_comparisons_z0change/multi_case_comparison_wm_part3.pn
 g Graphic file (type bmp)
 <figures/multi_case_comparisons_z0change/multi_case_comparison_wm_part3.png>
- [25]
+ [30] [31]
 File: figures/multi_case_comparisons_z0change/u/comparison_u_rms_part1.png Grap
 hic file (type bmp)
 <figures/multi_case_comparisons_z0change/u/comparison_u_rms_part1.png>
@@ -1443,6 +1457,7 @@ hic file (type bmp)
 File: figures/multi_case_comparisons_z0change/u/comparison_u_rms_part3.png Grap
 hic file (type bmp)
 <figures/multi_case_comparisons_z0change/u/comparison_u_rms_part3.png>
+ [32] [33]
 File: figures/multi_case_comparisons_z0change/v/comparison_v_rms_part1.png Grap
 hic file (type bmp)
 <figures/multi_case_comparisons_z0change/v/comparison_v_rms_part1.png>
@@ -1452,8 +1467,7 @@ hic file (type bmp)
 File: figures/multi_case_comparisons_z0change/v/comparison_v_rms_part3.png Grap
 hic file (type bmp)
 <figures/multi_case_comparisons_z0change/v/comparison_v_rms_part3.png>
-
-[26]
+ [34]
 File: figures/multi_case_comparisons_z0change/w/comparison_w_rms_part1.png Grap
 hic file (type bmp)
 <figures/multi_case_comparisons_z0change/w/comparison_w_rms_part1.png>
@@ -1463,6 +1477,7 @@ hic file (type bmp)
 File: figures/multi_case_comparisons_z0change/w/comparison_w_rms_part3.png Grap
 hic file (type bmp)
 <figures/multi_case_comparisons_z0change/w/comparison_w_rms_part3.png>
+ [35]
 File: figures/multi_case_comparisons_z0change/multi_case_comparison_TKE_part1.p
 ng Graphic file (type bmp)
 <figures/multi_case_comparisons_z0change/multi_case_comparison_TKE_part1.png>
@@ -1472,17 +1487,20 @@ ng Graphic file (type bmp)
 File: figures/multi_case_comparisons_z0change/multi_case_comparison_TKE_part3.p
 ng Graphic file (type bmp)
 <figures/multi_case_comparisons_z0change/multi_case_comparison_TKE_part3.png>
- [27]
+
+[36] [37]
 File: figures/validation_plots_combined_z0change/combined_mean_velocities.png G
 raphic file (type bmp)
 <figures/validation_plots_combined_z0change/combined_mean_velocities.png>
+ [38]
 File: figures/validation_plots_combined_z0change/combined_rms_velocities.png Gr
 aphic file (type bmp)
 <figures/validation_plots_combined_z0change/combined_rms_velocities.png>
+ [39]
 File: figures/validation_plots_combined_z0change/combined_tke.png Graphic file 
 (type bmp)
 <figures/validation_plots_combined_z0change/combined_tke.png>
- [28] [29]
+ [40] [41] [42]
 File: figures/concentration_comparison/multi_case_comparison_part1.png Graphic 
 file (type bmp)
 <figures/concentration_comparison/multi_case_comparison_part1.png>
@@ -1495,35 +1513,35 @@ file (type bmp)
 File: figures/concentration_comparison/multi_case_comparison_part4.png Graphic 
 file (type bmp)
 <figures/concentration_comparison/multi_case_comparison_part4.png>
- [30]
+ [43] [44]
 File: figures/concentration_comparison/validation_scatter.png Graphic file (typ
 e bmp)
 <figures/concentration_comparison/validation_scatter.png>
- [31] [32]) (sections/conclusion.tex [33])
-Overfull \hbox (1.51021pt too wide) in paragraph at lines 106--106
+ [45] [46])
+(sections/conclusion.tex [47] [48])
+Overfull \hbox (1.51021pt too wide) in paragraph at lines 98--98
 [][]\TU/lmr/m/n/12 Han, M., Ooka, R., & Kikumoto, H. (2021). Effects of wall fu
 nction model in lattice Boltzmann
  []
 
-[34] [35] [36] [37] [38] [39] [40] [41] [42] [43] [44] [45] [46] [47] [48]
-(main.aux)
+[49] [50] (main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/08/05>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 274E284EFE1B478164B1AC4CCDF72B64;6403.
+(rerunfilecheck)             Checksum: D3FE192E41EF5FA9FCE1BF7BFFB9172F;6665.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 35398 strings out of 402987
- 753305 string characters out of 5446868
- 1767973 words of memory out of 5000000
- 63601 multiletter control sequences out of 15000+600000
+ 35465 strings out of 402987
+ 754346 string characters out of 5446868
+ 1732395 words of memory out of 5000000
+ 63663 multiletter control sequences out of 15000+600000
  633405 words of font info for 86 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 84i,12n,104p,1720b,5569s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,12n,104p,1720b,5571s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (49 pages).
+Output written on main.pdf (51 pages).

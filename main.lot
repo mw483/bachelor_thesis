@@ -1,4 +1,4 @@
-\contentsline {table}{\numberline {1}{\ignorespaces Detailed Simulation Case Parameters}}{19}{table.caption.8}%
-\contentsline {table}{\numberline {2}{\ignorespaces Full validation results ($q$ and $FAC2$) for velocity components and turbulence metrics across all approach flow cases. Underlined values indicate performance below the standard thresholds ($q < 0.66$, $FAC2 < 0.50$).}}{29}{table.caption.21}%
-\contentsline {table}{\numberline {3}{\ignorespaces MAE and RMSE validation metrics for velocity components and TKE across all approach flow cases.}}{29}{table.caption.22}%
-\contentsline {table}{\numberline {4}{\ignorespaces Concentration validation metrics across all approach flow cases. Underlined values indicate performance below the standard thresholds ($q < 0.66$, $FAC2 < 0.50$).}}{31}{table.caption.25}%
+\contentsline {table}{\numberline {1}{\ignorespaces Detailed Simulation Case Parameters}}{20}{table.caption.8}%
+\contentsline {table}{\numberline {2}{\ignorespaces Full validation results ($q$ and $FAC2$) for velocity components and turbulence metrics across all approach flow cases. Underlined values indicate performance below the standard thresholds ($q < 0.66$, $FAC2 < 0.50$).}}{41}{table.caption.21}%
+\contentsline {table}{\numberline {3}{\ignorespaces MAE and RMSE validation metrics for velocity components and TKE across all approach flow cases.}}{42}{table.caption.22}%
+\contentsline {table}{\numberline {4}{\ignorespaces Concentration validation metrics across all approach flow cases. Underlined values indicate performance below the standard thresholds ($q < 0.66$, $FAC2 < 0.50$).}}{46}{table.caption.25}%
